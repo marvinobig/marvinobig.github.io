@@ -1,9 +1,13 @@
 /* -------------------- Layout --------------------   */
 
 /* Body */
+body {
+    background-image: url(../media/background-image.jpg);
+    background-attachment: fixed;
+}
 #container {
     min-height: 100vh;
-    margin: 0px 440px 0px 440px;
+    margin: 0px 400px 0px 400px;
     background-color: #8b4c4c;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
