@@ -67,17 +67,15 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 40px;
+    gap: 50px;
 }
 
 .card {
-    background-image: url(../media/project-image.jpg);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.19), 0 12px 12px rgba(0,0,0,0.23);
     width: 300px;
     height: 300px;
     border-radius: 5px;
     margin-bottom: 100px;
-    transition: 0.2s;
 }
 
 .card img {
@@ -92,12 +90,6 @@ body {
     text-align: center;
     padding: 6px;
     border-radius: 0 0 5px 5px;
-}
-
-.card:hover {
-    transition: 0.2s;
-    width: 290px;
-    height: 290px;
 }
 
 
@@ -165,12 +157,6 @@ input[type=text], input[type=email], textarea {
     .card {
         background-color: #575252;
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        width: 500px;
-        height: 500px;
-    }
-
-    .card:hover {
-        transition: 0.2s;
         width: 500px;
         height: 500px;
     }
