@@ -10,11 +10,33 @@
         margin-right: 30px;
     }
 
+    #navigation a {
+        font-size: 40px;
+    }
+
+
+/* "Me" Section */
+    #me h1 {
+        position: relative;
+        top: 45%;
+        font-size: 100px;
+    }
+
+    #me p {
+        position: relative;
+        top: 50%;
+        font-size: 60px;
+    }
+
 
     /* "Project" Section */
     #project-display {
         flex-direction: column;
         align-items: center;
+    }
+
+    #projects h3 {
+        font-size: 52px;
     }
 
     .card {
@@ -24,17 +46,23 @@
         height: auto;
     }
 
+    .card p {
+        font-size: 40px;
+    }
+
 
     /* "Contact" Section */
     #contact h3 {
         text-align: center;
+        font-size: 52px;
     }
 
     #contact {
         flex-direction: column-reverse;
         align-items: center;
         margin-top: 30px; 
-        height: 100vh;
+        min-height: 100vh;
+        font-size: 40px;
     }
 
     #contact-form {
