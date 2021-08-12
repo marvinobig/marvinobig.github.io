@@ -7,11 +7,12 @@ body {
 
 #container {
     min-height: 100vh;
-    margin: 0px 400px 0px 400px;
+    margin: 0px 300px 0px 300px;
 }
 
 /* Navigation */
 #navigation {
+    height: auto;
     padding: 16px;
     margin-bottom: 20px;
     position: sticky;

@@ -1,4 +1,7 @@
 /* Navigation */
+#navigation {
+    
+}
 
 
 /* "Me" Section */
@@ -12,8 +15,16 @@
     font-weight: bold;
 }
 
+#projects p {
+    
+}
+
 
 /* "Contact" Section */
+#contact {
+    font-size: ;
+}
+
 #contact h3 {
     font-weight: bold;
 }
