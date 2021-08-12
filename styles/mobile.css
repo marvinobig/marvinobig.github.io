@@ -16,6 +16,10 @@
 
 
 /* "Me" Section */
+    #me {
+        min-height: 100vh;
+    }
+    
     #me h1 {
         position: relative;
         top: 38%;
