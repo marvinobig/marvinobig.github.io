@@ -12,7 +12,7 @@ body {
 
 /* Navigation */
 #navigation {
-    padding: 10px;
+    padding: 16px;
     margin-bottom: 20px;
     position: sticky;
     top: 0;
@@ -25,6 +25,10 @@ body {
 #navigation li {
     display: inline;
     margin-right: 30px;
+}
+
+#navigation a {
+    padding: 10px;
 }
 
 
