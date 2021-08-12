@@ -44,6 +44,10 @@ body {
 
 
 /* "Project" Section */
+#projects {
+    margin-bottom: 30px;
+}
+
 #projects h3 {
     text-align: center;
     margin-bottom: 20px;
@@ -54,26 +58,25 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 50px;
+    gap: 60px;
 }
 
 .card {
     width: 300px;
-    height: 300px;
+    height: auto;
     border-radius: 5px;
-    margin-bottom: 100px;
 }
 
 .card img {
     max-width: 100%; 
     height: auto;
-    border-radius: 5px 5px 0 0;
+    border-radius: 3px 3px 0 0;
 }
 
 .card-text {
     text-align: center;
-    padding: 6px;
-    border-radius: 0 0 5px 5px;
+    padding: 10px;
+    border-radius: 0 0 3px 3px;
 }
 
 
