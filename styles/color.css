@@ -1,0 +1,44 @@
+body {
+    background-image: url(../media/background-image.jpg);
+}
+#container {
+    background-color: #8b4c4c;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/* Navigation */
+#navigation {
+    background-color: #575252;
+}
+
+#navigation a {
+    color: #ffffff;
+}
+
+
+/* "Project" Section */
+.card {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.19), 0 12px 12px rgba(0,0,0,0.23);
+}
+
+.card-text {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+/* "Contact" Section */
+#contact {
+    background-color: #575252;
+}
+
+
+button[type=submit] {
+    background-color: #000000;
+    color: white;
+}
+
+button[type=submit]:hover {
+    background-color: #ffffff;
+    color: #000000;
+} 
