@@ -18,13 +18,13 @@
 /* "Me" Section */
     #me h1 {
         position: relative;
-        top: 45%;
+        top: 40%;
         font-size: 100px;
     }
 
     #me p {
         position: relative;
-        top: 50%;
+        top: 45%;
         font-size: 60px;
     }
 
@@ -67,5 +67,9 @@
 
     #contact-form {
         width: 600px;
+    }
+
+    input[type=text], input[type=email], textarea {
+        font-size: 40px;
     }
 }
