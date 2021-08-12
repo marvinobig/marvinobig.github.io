@@ -18,13 +18,13 @@
 /* "Me" Section */
     #me h1 {
         position: relative;
-        top: 40%;
+        top: 38%;
         font-size: 100px;
     }
 
     #me p {
         position: relative;
-        top: 45%;
+        top: 42%;
         font-size: 60px;
     }
 
