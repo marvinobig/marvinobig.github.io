@@ -14,7 +14,6 @@ body {
 #navigation {
     height: auto;
     padding: 16px;
-    margin-bottom: 20px;
     position: sticky;
     top: 0;
 }
@@ -35,22 +34,24 @@ body {
 
 /* "Me" Section */
 #me {
+    height: 100vh;
     text-align: center;
-    margin: 0px 20px 0px 20px
 }
 
 #me h1 {
-    margin-bottom: 20px;
+    position: relative;
+    top: 300px;
 }
 
 #me p {
-    margin-bottom: 20px;
+    position: relative;
+    top: 360px;
 }
 
 
 /* "Project" Section */
 #projects {
-    margin-bottom: 30px;
+    margin: 30px 0px 30px 0px;
 }
 
 #projects h3 {
