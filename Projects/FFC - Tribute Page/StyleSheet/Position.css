@@ -1,0 +1,31 @@
+header {
+    margin: 0 auto;
+    width: 60%;
+    text-align: justify;
+}
+
+#img-div {
+    text-align: center;
+}
+
+#image {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#title {
+    text-align: center;
+}
+
+#timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+#learn-more {
+    text-align: center;
+}
+
+.cent-img {
+    text-align: center;
+}
