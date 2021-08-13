@@ -1,0 +1,125 @@
+/* general */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* navigation */
+ul {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+
+/* color */
+header {
+    background-color: #1b1919;
+    background-image: linear-gradient(-45deg, #000000, #2e2c2c);
+}
+
+#navbar {
+    background-color: #9d0a0a;
+}
+
+#cent {
+    color: #ffffff;
+}
+
+#services hr {
+    border: 2px solid #000000;
+}
+
+#contact {
+    background-color: #1b1919;
+    color: #ffffff;
+}
+
+#contact hr {
+    border: 2px solid #ffffff;
+}
+
+#con-l a {
+    color: #ffffff;
+}
+
+
+/* shadow */
+#navbar {
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.4);
+}
+
+.service-tile img{
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.2s;
+}
+
+.service-tile img:hover {
+    box-shadow: 8px 8px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+/* fonts and font sizes */
+body {
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+#navbar {
+    font-size: 28px;
+    font-family: 'Mulish', sans-serif;
+}
+
+#cent {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#cent p {
+    font-size: 28px;
+}
+
+#service h1 {
+    font-size: 32px;
+}
+
+#contact {
+    font-size: 46px;
+}
+
+/* social media */
+#contact-link:hover {
+    font-size: 66px;
+}
+
+#contact-link2:hover {
+    font-size: 66px;
+}
+
+#profile-link:hover {
+    font-size: 66px;
+}

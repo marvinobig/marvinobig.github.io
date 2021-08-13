@@ -1,0 +1,54 @@
+/* general styling */
+ul, li, a {
+    text-decoration: none; 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* grid */
+#navbar {
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#content {
+    background-color: #9b9a9a;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav-bar */
+#title {
+    color: #ffffff;
+    border-bottom: 4px solid #9b9a9a;
+}
+
+.nav-link {
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    font-size: 24px;
+    transition: 0.2s;
+}
+
+/* section titles */
+.s_title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+
+
