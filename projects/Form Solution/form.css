@@ -1,0 +1,48 @@
+#container {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+form {
+    height: auto;
+    width: auto;
+    border: 3px solid #3c3c3b;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    padding: 40px 30px 10px 30px;
+    background-color: #89c82e;
+    color: #3c3c3b;
+    font-size: 18px;
+}
+
+input {
+    width: 220px;
+}
+
+input:required:invalid, input:focus:invalid {
+    border: 2px solid #700064;
+  }
+
+  input:required:valid {
+    background-color: 2px solid #89c82e;
+  }
+
+label {
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button[type=submit] {
+    border: 2px solid #3c3c3b;
+    background-color: #700064;
+    border-radius: 6px;
+    padding: 4px 10px 4px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
