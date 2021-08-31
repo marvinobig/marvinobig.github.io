@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Marvin Obigwilo - Solution</title>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> <!--Font family imported from google fonts-->
         <link href="reset.css" rel="stylesheet" type="text/css"> <!--resetting browser styling to prevent interferance-->
         <link href="form.css" rel="stylesheet" type="text/css"> <!--stylesheet for website form-->
@@ -9,14 +13,19 @@
 
     <body>
         <div id="container">
-                <form action="form-validation.js">
+                <form name="myform" action="#">
+                    
+                    <!--HTML5 validated name input field that only accepts letters and no special characters-->
+                    
                     <label for="name"> Name:</label>
-                        <input id="name" name="card-info" type="text" pattern="[A-Za-z ]{1,40}" value="full name" placeholder="Enter Your Full Name" 
+                        <input id="name" name="card-info" type="text" pattern="[A-Za-z ]{5,40}" value="full name" placeholder="Enter Your Full Name" 
                         oninvalid="this.setCustomValidity('Enter Valid Full Name Here')" oninput="this.setCustomValidity('')" required>
                     
                         
                         <br/>
                         <br/>
+
+                    <!--HTML5 validated email input field that only accepts letters and and @-->
 
                     <label for="email"> Email:</label> 
                         <input id="email" name="card-info" type="email" value="email" placeholder="Enter Your Email" 
@@ -26,15 +35,21 @@
                         <br/>
                         <br/>
                         
+                    <!--HTML5 and JavaScript validated card number input field limited to 13-16 characters and accepts numbers as a valid input-->
+
                     <label for="card-num"> Card:</label>  
-                        <input id="card-num" name="card-info" type="text" pattern="[0-9+]{13,16}" maxlength="16" placeholder="Enter a Proxy Credit Card Number."
-                        oninvalid="this.setCustomValidity('Enter Valid Card Number Here')" oninput="this.setCustomValidity('')" required>
-                      
-
+                        <input id="card-num" name="card-info" type="text" onkeyup="update(this.value);" pattern="[0-9+]{13,16}" maxlength="16" placeholder="Enter a Proxy Credit Card Number."
+                        oninvalid="this.setCustomValidity('Enter Valid Card Number Here')" oninput="this.setCustomValidity('')" autocomplete="off" required>
                         <br/>
                         <br/>
 
-                    <button type="submit">Submit</button>
+                        <p style="color:#700064;" id="valid">Card Number Doesn't Conform To LUHN</p>
+
+                        <br/>
+                        
+                    <!--Button that triggers javascript validation on inputted card number-->
+
+                    <button type="submit" >Submit</button>
                 </form>
         </div>
     </body>

@@ -29,6 +29,11 @@ input:required:invalid, input:focus:invalid {
     background-color: 2px solid #89c82e;
   }
 
+#valid {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
 label {
     display: inline-block;
     width: 60px;
