@@ -25,7 +25,7 @@ input:required:invalid, input:focus:invalid {
     border: 2px solid #700064;
   }
 
-  input:required:valid {
+input:required:valid {
     background-color: 2px solid #89c82e;
   }
 
