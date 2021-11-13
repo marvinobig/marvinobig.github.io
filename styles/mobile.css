@@ -77,4 +77,9 @@
     input[type=text], input[type=email], textarea {
         font-size: 40px;
     }
+
+    /* "Socials" section */
+    .sl {
+        display: inline;
+    }
 }
