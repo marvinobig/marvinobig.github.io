@@ -126,3 +126,19 @@ button[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
+
+
+/* "Socials" Section */
+#socials {
+    position: relative;
+    top: 30px;
+}
+
+.sl {
+    display: block;
+    border-radius: 40px;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    margin-top: 40px;
+}
+

@@ -10,12 +10,14 @@
 
 #navigation a {
     color: #ffffff;
+    transition: 0.2s;
 }
 
 #navigation a:hover {
     background-color: #FCA311;
     padding: 10px;
     border-radius: 40px;
+    transition: 0.2s;
 }
 
 
@@ -35,6 +37,10 @@
 
 /* "Project" Section */
 .card {
+    transition: 0.2s;
+}
+
+.card:hover {
     box-shadow: 0 20px 40px rgba(0,0,0,0.19), 0 12px 12px rgba(0,0,0,0.23);
 }
 
@@ -60,3 +66,15 @@ button[type=submit]:hover {
     background-color: #ffffff;
     color: #000000;
 } 
+
+
+/* "Socials" section */
+.sl {
+    background-color: #FCA311;
+    transition: 0.2s;
+}
+
+.sl:hover {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.19), 0 12px 12px rgba(0,0,0,0.23);
+    transition: 0.2s;
+}
