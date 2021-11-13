@@ -82,4 +82,14 @@
     .sl {
         display: inline;
     }
+
+    #socials {
+        position: relative;
+        top: 30px;
+        margin: 100px;
+    }
+    
+    #socials h3 {
+        margin-bottom: 100px;
+    }
 }
