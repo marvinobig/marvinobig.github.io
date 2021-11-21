@@ -94,8 +94,6 @@ body {
     flex-direction: row;
     padding: 20px;
     justify-content: space-around;
-    position: relative;
-    bottom: 0;
 }
 
 #contact-form {
