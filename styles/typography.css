@@ -42,3 +42,7 @@
     font-weight: bolder;
     font-size: 26px;
 }
+
+#contact-form button {
+    font-size: 20px;
+}

@@ -74,6 +74,10 @@
         width: 600px;
     }
 
+    #contact-form button {
+        font-size: 30px;
+    }
+
     input[type=text], input[type=email], textarea {
         font-size: 40px;
     }
