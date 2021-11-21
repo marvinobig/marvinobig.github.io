@@ -10,6 +10,7 @@
 
 #navigation a {
     color: #ffffff;
+    border-radius: 40px;
     transition: 0.2s;
 }
 
