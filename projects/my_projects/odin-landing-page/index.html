@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="./styles/layout.css" /> <!-- Link to CSS for layout -->
+    <link rel="stylesheet" href="./styles/typography.css" /> <!-- Link to CSS for fonts & font-sizes -->
+    <link rel="stylesheet" href="./styles/colorscheme.css" /> <!-- Link to CSS for colors used -->
+  </head>
+  <body>
+    <div class="container"> <!-- Main flex container-->
+      <header> <!-- Main flex child 0 / Header flex container -->
+        <nav> <!-- Header flex child 0 / Navigation flex container-->
+          <div class="hlogo"> <!-- Navigation flex child 0 -->
+            <img src="#" alt="Logo" />
+          </div>
+
+          <ul> <!-- Navigation flex child 1 -->
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </nav>
+
+        <div class="h-content"> <!-- Header flex child 1 / Header content flex container-->
+          <div id="h-img"> <!-- Header content flex child 0 -->
+            <img
+              id="codeimg"
+              src="./Images/code.jpg"
+              alt="picture of CSS code"
+            />
+          </div>
+
+          <div id="intro"> <!-- Header content flex child 1 -->
+            <h1>This website is amazing</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a class="c-link" href="#">Link 1</a> <!-- Link button -->
+            <a class="c-link" href="#">LInk 2</a> <!-- Link button -->
+          </div>
+        </div>
+      </header>
+
+      <h2 id="info-heading">Some random information</h2> <!-- Title for information section -->
+
+      <section class="card-container"> <!-- Main flex child 1 / Information card flex container -->
+        <div class="card"> <!-- Information card flex child 0 / Card flex container -->
+          <img
+            src="./Images/project-image.jpg"
+            alt="project image"
+            class="card-img"
+          /> <!-- Card flex child 0 / Card image -->
+          <div> <!-- Card flex child 1 / Card info -->
+            <p>Something</p>
+          </div>
+        </div>
+
+        <div class="card"> <!-- Information card flex child 1 / Card flex container -->
+          <img 
+          src="./Images/project-image.jpg" 
+          alt="project image" 
+          class="card-img" 
+          /> <!-- Card flex child 0 / Card image -->
+          <div> <!-- Card flex child 1 / Card info -->
+            <p>Something</p>
+          </div>
+        </div>
+
+        <div class="card"> <!-- Information card flex child 2 / Card flex container -->
+          <img 
+          src="./Images/project-image.jpg" 
+          alt="project image" 
+          class="card-img" 
+          /> <!-- Card flex child 0 / Card image -->
+          <div> <!-- Card flex child 1 / Card info -->
+            <p>Something</p>
+          </div>
+        </div>
+
+        <div class="card"> <!-- Information card flex child 3 / Card flex container -->
+          <img 
+          src="./Images/project-image.jpg" 
+          alt="project image" 
+          class="card-img" 
+          /> <!-- Card flex child 0 / Card image -->
+          <div> <!-- Card flex child 1 / Card info -->
+            <p>Something</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote"> <!-- Main flex child 2 -->
+        <p id="quoteP">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh
+          praesent tristique magna sit amet purus gravida quis. Lectus magna
+          fringilla urna porttitor rhoncus. Felis eget nunc lobortis mattis
+          aliquam faucibus purus in. Phasellus vestibulum lorem sed risus
+          ultricies.
+        </p>
+        <p id="quote-credit">-- imperdiet nulla</p>
+      </section>
+
+      <section class="cta"> <!-- Main flex child 3 / Call to action flex container-->
+        <div id="cta-cont"> <!-- Call to action flex child 0 -->
+          <div>
+            <h3>Imperdiet nulla</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+
+          <div id="cta-link"> <!-- Call to action flex child 1 -->
+            <a href="#">Contact</a> <!-- Link button -->
+          </div>
+        </div>
+      </section>
+
+      <footer> <!-- Main flex child 4 -->
+        <p>Copyright &copy; Marvin Obig Landing Page 2021</p> <!-- Copy right information -->
+      </footer>
+    </div>
+  </body>
+</html>

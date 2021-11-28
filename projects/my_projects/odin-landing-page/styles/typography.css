@@ -1,0 +1,42 @@
+/* Removing default styles */
+* {
+    font-family: monospace, sans-serif; /* Applies the font to every element */
+}
+/* ^^ Removing default styles ^^ */
+
+
+/* Navigation & header section */
+.hlogo {
+    font-size: 24px;
+}
+
+#intro h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#intro p {
+    font-size: 18px;
+}
+/* ^^ Navigation & header section ^^ */
+
+
+/* Information section */
+#info-heading {
+    font-size: 36px;
+    font-weight: bolder;
+}
+/* ^^ Information section ^^ */
+
+
+/* Quote section */
+#quoteP {
+    font-size: 36px;
+    font-style: italic;
+}
+
+#quote-credit {
+    font-size: 28px;
+    font-weight: bold;
+}
+/* ^^ Quote section ^^ */
