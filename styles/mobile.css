@@ -85,6 +85,7 @@
     /* "Socials" section */
     .sl {
         display: inline;
+        width: 140px;
     }
 
     #socials {
