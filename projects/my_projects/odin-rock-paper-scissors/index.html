@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <title>Marvin: Rock, Paper, Scissors</title>
+
+    <link rel="stylesheet" href="./styles/rps.css"/> <!-- game stylesheet -->
+  </head>
+  <body>
+    <main> <!-- main UI flexbox container -->
+
+      <div id="gameContainer">
+        <div id="resetContainer">
+          <button type="button" class="rps-b" id="reset-b">Reset</button> <!-- game reset button -->
+        </div>
+  
+        <div id="gameScreen"> <!-- game info screen flex item / flex container -->
+          <div id="player"> <!-- player info screen flex item -->
+            <h3 id="p-name">Human</h3> <!-- player name -->
+            <img id="p-img" src="" alt="">
+            <p id="p-choice"></p> <!-- players game choice -->
+
+            <div class="score"> <!-- game score flex item-->
+              <h2>Score:</h2>
+              <h2 id="p-score">0</h2> <!-- player score -->
+            </div>
+          </div>
+  
+          <div id="computer"> <!-- computer info flex item -->
+            <h3>Computer</h3> <!-- title for computer player -->
+            <img id="c-img" src="" alt="">
+            <p id="c-choice"></p> <!-- computer's game choice -->
+
+            <div class="score"> <!-- game score flex item-->
+              <h2>Score:</h2>
+              <h2 id="c-score">0</h2> <!-- computer score -->
+            </div>
+          </div>
+        </div>
+  
+        <div id="controls"> <!-- controls for player flex item -->
+          <button type="button" class="rps-b" id="rock">Rock</button> 
+          <button type="button" class="rps-b" id="paper">Paper</button> 
+          <button type="button" class="rps-b" id="scissors">Scissors</button>
+        </div>
+      </div>
+      
+      
+
+      <script src="./scripts/rps.js"></script> <!-- game script -->
+
+    </main>
+  </body>
+</html>
