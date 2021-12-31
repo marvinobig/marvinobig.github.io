@@ -1,8 +1,5 @@
 # Rich-Media-Final
 
-## Installation Guide
-
-
 ## Objectives
 Create an animated storyboard of groups final version of the movie script which will include sound (i.e. music, sound effects, dialogue etc.).
 
