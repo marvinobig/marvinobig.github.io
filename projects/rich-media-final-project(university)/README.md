@@ -31,6 +31,9 @@ Also this dialogue reveals relevant information about every character because ea
 
 Our group came to conclusion on this particular one cause it fits exactly what a dialogue in a shot film should be, short and simple and at the same time.
 
+## Final Work
+The final plot for the movie uses bits and pieces from every group member's individual plot. The final plot was chosen for its dark theme, to deliver a lesson an action's consequences must be demonstrated which in our case is the Main Character's death after overdosing on drugs. The movie's purpose was to deliver a lesson and it did so in a respectable manner due to the group's remarkable efforts. Our group decided to use this final version because the dialogue was able to move the story forward every. We felt like the audience will be one step closer to the climax after each conversation in this story. Also this dialogue reveals relevant information about every character because each conversation shows how they’re feeling at that time and what they are about to do and lastly it helps the audience understand the relationships between each character. Our group came to conclusion on this particular one cause it fits exactly what a dialogue in a shot film should be, short and simple and at the same time.
+
 ## Credit:
 * Marvin
 * Lare
