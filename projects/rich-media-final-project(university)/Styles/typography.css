@@ -1,0 +1,18 @@
+/* page wide font */
+body {
+  font-family: monospace, sans-serif;
+}
+
+/* main navigation */
+.mainNav {
+  font-size: 20px;
+}
+
+.mNav {
+  font-size: 40px;
+}
+
+/* content */
+#imgCounter {
+  font-size: 24px;
+}

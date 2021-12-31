@@ -1,0 +1,56 @@
+/* css reset */
+a, li {
+  list-style-type: none;
+  color: #000000;
+}
+
+
+/* main navigation */
+.mainNav {
+  background-color: #000000;
+  box-shadow: 5px 5px 16px #413f3f;
+}
+
+.mainNav li {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.mNav {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+}
+
+
+/* content container */
+main {
+  background-color: #ffffff;
+}
+
+
+/* sub navigation */
+.subNav button {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  transition: 0.2s;
+}
+
+.subNav button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transition: 0.2s;
+}
+
+
+/*storyboard images */
+#storyboardImg {
+  box-shadow: 5px 5px 16px #413f3f;
+}
+
+
+/* footer */
+footer {
+  background-color: #ffffff;
+}
