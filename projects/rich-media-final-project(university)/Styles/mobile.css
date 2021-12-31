@@ -72,7 +72,8 @@
   }
 
   #finalDescription {
-    width: 400px;
+    height: auto;
+    max-width: 400px;
     text-align: justify;
     margin-left: 40px;
     margin-right: 40px;
