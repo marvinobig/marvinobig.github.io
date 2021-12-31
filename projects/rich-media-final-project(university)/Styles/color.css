@@ -14,6 +14,12 @@ a, li {
 .mainNav li {
   background-color: #ffffff;
   color: #000000;
+  transition: 0.2s;
+}
+
+.mainNav li:hover {
+  background-color: #a8a2a2;
+  transition: 0.2s;
 }
 
 .mNav {
