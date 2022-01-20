@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    gap: 10px;
+    min-height: 400px;
+    min-width: 200px;
+    border-radius: 0.2em;
+    padding: 20px;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    min-height: 50px;
+    width: 200px;
+    text-align: right;
+    border-radius: 0.2em;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#inputDisplay, #calculation {
+    overflow:hidden;
+}
+
+.calButtons {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    gap: 10px;
+}
+
+.number, .operator, #decimal, #sum, #clear, #backSpace {
+    flex: 1 1 auto;
+    border-radius: 0.2em;
+}

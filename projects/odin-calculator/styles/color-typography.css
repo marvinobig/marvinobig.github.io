@@ -1,0 +1,49 @@
+* {
+    font-family: monospace, sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    background-color: rgba(56, 161, 209, 0.693);
+}
+
+main {
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px #0000004f;
+    background-color: rgba(118, 61, 61, 0.708);
+}
+
+#display {
+    border: 1px solid black;
+    background-color: white;
+}
+
+#inputDisplay {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#calculation {
+    font-size: 0.8rem;
+}
+
+.number, .operator, #decimal, #sum, #clear, #backSpace {
+    border: 1px solid black;
+}
+
+.operator, #backSpace {
+    background-color: #9d2e2ebb;
+}
+
+.operator:hover, #backSpace:hover {
+    background-color: #9d2e2e;
+}
+
+#sum, #clear {
+    background-color: #e31b1bc9;
+}
+
+#sum:hover, #clear:hover {
+    background-color: #e31b1b;
+}
+
