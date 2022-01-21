@@ -27,7 +27,7 @@ main {
     font-size: 0.8rem;
 }
 
-.number, .operator, #decimal, #sum, #clear, #backSpace {
+.number, .operator, #decimal, #sum, #clear, #backSpace, #negative {
     border: 1px solid black;
 }
 
