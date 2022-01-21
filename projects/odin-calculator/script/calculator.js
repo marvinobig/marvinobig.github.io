@@ -4,6 +4,9 @@ backSpace.addEventListener("click", back);
 const allClearBtn = document.getElementById("clear");
 allClearBtn.addEventListener("click", del);
 
+const negativeInput = document.getElementById("negative");
+negativeInput.addEventListener("click", negativeBtn);
+
 const zeroBtn = document.getElementById("number0");
 zeroBtn.addEventListener("click", BtnInput);
 
@@ -40,6 +43,22 @@ const container4 = document
 const container5 = document
   .getElementById("row5")
   .addEventListener("click", BtnInput);
+
+function negativeBtn(e) {
+  let inputDisplay = document.getElementById("inputDisplay");
+  let numberCheck = inputDisplay.textContent.split("");
+  let answerCheck = calculation.textContent.split(" ");
+
+  if (
+    inputDisplay.textContent === "" ||
+    numberCheck.includes(" ") ||
+    answerCheck.length === 5
+  ) {
+    inputDisplay.textContent += "";
+  } else {
+    inputDisplay.textContent = -inputDisplay.textContent;
+  }
+}
 
 function BtnInput(e) {
   let inputDisplay = document.getElementById("inputDisplay");
