@@ -31,7 +31,7 @@ main {
 }
 
 #inputDisplay, #calculation {
-    overflow:hidden;
+    overflow-wrap: break-word;
 }
 
 .calButtons {

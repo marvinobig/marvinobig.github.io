@@ -1,15 +1,17 @@
-const container1 = document
-  .getElementById("row1")
-  .addEventListener("click", (e) => {
-    let backSpace = document.getElementById("backSpace");
-    let AC = document.getElementById("clear");
+const backSpace = document.getElementById("backSpace");
+backSpace.addEventListener("click", back);
 
-    if (e.target == backSpace) {
-      back();
-    } else if (e.target == AC) {
-      del();
-    }
-  });
+const allClearBtn = document.getElementById("clear");
+allClearBtn.addEventListener("click", del);
+
+const zeroBtn = document.getElementById("number0");
+zeroBtn.addEventListener("click", BtnInput);
+
+const deciBtn = document.getElementById("decimal");
+deciBtn.addEventListener("click", deciInput);
+
+const sumButton = document.getElementById("sum");
+sumButton.addEventListener("click", sumBtn);
 
 const container2 = document
   .getElementById("row2")
@@ -31,97 +33,62 @@ const container2 = document
 
 const container3 = document
   .getElementById("row3")
-  .addEventListener("click", (e) => {
-    let inputDisplay = document.getElementById("inputDisplay");
-    let calculation = document.getElementById("calculation");
-
-
-    if (e.target.matches("button")) {
-      if (calculation.textContent.split(" ").length === 5) {
-        calculation.textContent = "";
-        inputDisplay.textContent = "";
-        inputDisplay.textContent += e.target.textContent;
-      }else {
-        inputDisplay.textContent += e.target.textContent;
-      }
-    }
-  });
-
+  .addEventListener("click", BtnInput);
 const container4 = document
   .getElementById("row4")
-  .addEventListener("click", (e) => {
-    let inputDisplay = document.getElementById("inputDisplay");
-    let calculation = document.getElementById("calculation");
-
-
-    if (e.target.matches("button")) {
-      if (calculation.textContent.split(" ").length === 5) {
-        calculation.textContent = "";
-        inputDisplay.textContent = "";
-        inputDisplay.textContent += e.target.textContent;
-      }else {
-        inputDisplay.textContent += e.target.textContent;
-      }
-    }
-  });
-
+  .addEventListener("click", BtnInput);
 const container5 = document
   .getElementById("row5")
-  .addEventListener("click", (e) => {
-    let inputDisplay = document.getElementById("inputDisplay");
-    let calculation = document.getElementById("calculation");
+  .addEventListener("click", BtnInput);
 
+function BtnInput(e) {
+  let inputDisplay = document.getElementById("inputDisplay");
+  let calculation = document.getElementById("calculation");
 
-    if (e.target.matches("button")) {
-      if (calculation.textContent.split(" ").length === 5) {
-        calculation.textContent = "";
-        inputDisplay.textContent = "";
-        inputDisplay.textContent += e.target.textContent;
-      }else {
-        inputDisplay.textContent += e.target.textContent;
-      }
-    }
-  });
-
-const container6 = document
-  .getElementById("row6")
-  .addEventListener("click", (e) => {
-    let inputDisplay = document.getElementById("inputDisplay");
-    let calculation = document.getElementById("calculation");
-    let decimal = document.getElementById("decimal");
-    let sum = document.getElementById("sum");
-    let deciCheck = inputDisplay.textContent.split("");
-    let answerCheck = calculation.textContent.split(" ");
-
-    if (e.target != sum && e.target != decimal) {
-      if (calculation.textContent.split(" ").length === 5) {
-        calculation.textContent = "";
-        inputDisplay.textContent = "";
-        inputDisplay.textContent += e.target.textContent;
-      }else {
-        inputDisplay.textContent += e.target.textContent;
-      }
-    } else if (e.target == sum) {
-        if (!calculation.textContent.split(" ").includes("=")) {
-          inputDisplay.textContent += e.target.textContent;
-          calculation.textContent += inputDisplay.textContent;
-          inputDisplay.textContent = ""
-          total();
-        }
+  if (e.target.matches("button")) {
+    if (calculation.textContent.split(" ").length === 5) {
+      calculation.textContent = "";
+      inputDisplay.textContent = "";
+      inputDisplay.textContent += e.target.textContent;
     } else {
-        if (inputDisplay.textContent === "" || deciCheck.includes(".") || 
-          answerCheck.length === 5) {
-
-          inputDisplay.textContent += "";
-        } else {
-          inputDisplay.textContent += e.target.textContent;
-        }
+      inputDisplay.textContent += e.target.textContent;
     }
-  });
+  }
+}
 
+function deciInput(e) {
+  let inputDisplay = document.getElementById("inputDisplay");
+  let calculation = document.getElementById("calculation");
+  let deciCheck = inputDisplay.textContent.split("");
+  let answerCheck = calculation.textContent.split(" ");
 
+  if (
+    inputDisplay.textContent === "" ||
+    deciCheck.includes(".") ||
+    answerCheck.length === 5
+  ) {
+    inputDisplay.textContent += "";
+  } else {
+    inputDisplay.textContent += e.target.textContent;
+  }
+}
 
+function sumBtn(e) {
+  let inputDisplay = document.getElementById("inputDisplay");
+  let calculation = document.getElementById("calculation");
+  let sum = document.getElementById("sum");
 
+  if (e.target == sum) {
+    if (calculation.textContent.split(" ").length < 3) {
+      return;
+    } else if (!calculation.textContent.split(" ").includes("=")) {
+      inputDisplay.textContent += e.target.textContent;
+      calculation.textContent += inputDisplay.textContent;
+      inputDisplay.textContent = "";
+      total();
+    }
+  }
+}
 
 function total() {
   let display = document.getElementById("calculation"); //Initialize a variable with display text content
@@ -173,27 +140,25 @@ function total() {
     } else {
       displayCalculation.textContent = result;
     }
+
     /* If the array includes a multiplication sign it will multiply the first 
     and third element and place the result into the sumDisplay as its text content */
   } else if (displayArray.includes("÷")) {
-      if (secondNum === 0) { //if user divides by zero
-        displayCalculation.textContent = "Nope";
-      }else {
-        let result = firstNum / secondNum;
-        let floatCheck = result.toString().split("");
+    if (secondNum === 0) {
+      //if user divides by zero
+      displayCalculation.textContent = "Nope";
+    } else {
+      let result = firstNum / secondNum;
+      let floatCheck = result.toString().split("");
 
-        if (floatCheck.includes(".")) {
-          displayCalculation.textContent = result.toFixed(2);
-        } else {
-          displayCalculation.textContent = result;
-        }
+      if (floatCheck.includes(".")) {
+        displayCalculation.textContent = result.toFixed(2);
+      } else {
+        displayCalculation.textContent = result;
       }
+    }
   }
 }
-
-
-
-
 
 function back() {
   //Initialize a variable with display text content
@@ -205,10 +170,6 @@ function back() {
 
   display.textContent = editedText; //Displays string with the last letter removed
 }
-
-
-
-
 
 function del() {
   //Initialize a variable with display text content
