@@ -51,7 +51,7 @@ function negativeBtn(e) {
 
   if (
     inputDisplay.textContent === "" ||
-    numberCheck.includes(" ") ||
+    numberCheck.includes("-") ||
     answerCheck.length === 5
   ) {
     inputDisplay.textContent += "";
