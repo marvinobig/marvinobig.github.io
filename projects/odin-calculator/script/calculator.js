@@ -165,7 +165,7 @@ function total() {
   } else if (displayArray.includes("÷")) {
     if (secondNum === 0) {
       //if user divides by zero
-      displayCalculation.textContent = "Nope";
+      return;
     } else {
       let result = firstNum / secondNum;
       let floatCheck = result.toString().split("");
