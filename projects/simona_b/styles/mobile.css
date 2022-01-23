@@ -1,0 +1,104 @@
+@media only screen and (max-width: 1000px){
+    /* main body */
+    main {
+        gap: 0px;
+    }
+
+    #name, #portfolio {
+        display: none;
+    }
+
+    /* navigation */
+    nav {
+        display: none;
+    }
+
+    #mobileNavContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        flex: 1 1 auto;
+        padding: 15px 10px 15px 10px;
+    }
+
+    #navLinks {
+        display: none;
+    }
+
+    li {
+        display: block;
+        padding: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgba(70, 65, 65, 0.885);
+        font-size: 4vw;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #nav-title {
+        font-size: 8vw;
+        font-weight: bold;
+        color: rgba(70, 65, 65, 0.885);
+    }
+
+    #hamburger {
+        font-size: 8vw;
+        font-weight: bolder;
+        background: none;
+        border: hidden;
+        color: rgba(70, 65, 65, 0.885);
+    }
+
+    /* content */
+   .contentContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 40px;
+        flex: 1 1 auto;
+    }
+
+    .infoContainer {
+        flex-direction: column;
+    }
+
+    .info h2{
+        font-size: 8vw;
+        word-wrap: break-word;
+    }
+    
+    .info p {
+        font-size: 4vw;
+        word-wrap: break-word;
+    }
+
+    .title {
+        font-size: 10vw;
+    }
+
+    .imgCount p {
+        display: inline;
+        font-size: 4vw;
+    }
+
+    /* social media */
+    #socialMedia {
+        background-color: rgba(70, 65, 65, 0.885);
+        border-radius: 2rem;
+        right: 0px;
+    }
+}

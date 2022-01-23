@@ -1,0 +1,143 @@
+/* main body */
+body {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#name, #portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    flex: 1 1 auto;
+    width: 400px;
+}
+
+/* navigation */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    flex: 1 1 auto;
+}
+
+#mobileNavContainer {
+    display: none;
+}
+
+li {
+    display: inline;
+}
+
+hr {
+    display: inline;
+    margin: 1px 8px 1px 1px
+}
+
+/* content */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    gap: 60px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 40px 40px 40px;
+    flex: 1 1 auto;
+    margin-bottom: 50px;
+}
+
+.title {
+    align-self: flex-start;
+}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    gap: 20px;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    flex: 1 1 auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    flex: 1 1 auto;
+    padding: 0px 20px 0px 20px;
+    align-self: stretch;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    max-width: 780px;
+    min-width: 320px;
+}
+
+.slideControls {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex: 1 1 auto;
+}
+
+.imgCount{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+
+/* social media */
+#socialMedia {
+    align-self: flex-end;
+    position: sticky;
+    bottom: 10px;
+    right: 10px;
+    width: 190px;
+    z-index: 6;
+}
+
+#socialMedia a:hover {
+    color: #ffffff;
+}
+
+.fa {
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-instagram {
+    padding: 10px;
+}
+
+.fa-arrow-left, .fa-arrow-right {
+    padding: 10px;
+}
