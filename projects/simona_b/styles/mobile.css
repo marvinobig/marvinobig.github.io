@@ -90,6 +90,10 @@
         font-size: 10vw;
     }
 
+    img {
+        min-width: 350px;
+    }
+
     .imgCount p {
         display: inline;
         font-size: 4vw;
