@@ -13,11 +13,6 @@
     color: var(--textColor);
 }
 
-main {
-    border-right: 1px solid #0000004f;
-    border-left: 1px solid #0000004f;
-}
-
 /* navigation */
 nav {
     font-family: 'Oswald', sans-serif; 
@@ -58,16 +53,16 @@ a:hover {
 
 /* content */
 .title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: bold; 
-    font-size: 3vw;
+    font-size: 4vw;
     color: var(--textColor);
 }
 
 .info h2{
     word-wrap: break-word;
     font-family: 'Oswald', sans-serif; 
-    font-size: 4vw;
+    font-size: 2.5vw;
     color: var(--textColor);
 }
 
@@ -105,5 +100,5 @@ a:hover {
 
 .fa-instagram {
     background: none;
-    color: #000000;
+    color: #ffffff;
 }

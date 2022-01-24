@@ -3,8 +3,8 @@ body {
     display: flex;
     flex: 1 1 auto;
     justify-content: space-between;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
+    max-height: 100vh;
 }
 
 #name, #portfolio {
@@ -15,6 +15,8 @@ body {
     min-width: 120px;
     flex: 1 1 auto;
     width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* navigation */
@@ -70,7 +72,7 @@ main {
 
 .infoContainer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex: 1 1 auto;
     gap: 20px;
 }
@@ -97,6 +99,10 @@ img {
     height: auto;
     width: 100%;
     max-width: 780px;
+    min-width: 350px;
+}
+
+#simona {
     min-width: 320px;
 }
 
@@ -122,10 +128,6 @@ img {
     right: 10px;
     width: 190px;
     z-index: 6;
-}
-
-#socialMedia a:hover {
-    color: #ffffff;
 }
 
 .fa {
