@@ -25,14 +25,14 @@
 
 #navigation a {
     color: #ffffff;
-    border-radius: 40px;
+    border-radius: 6px;
     transition: 0.2s;
 }
 
 #navigation a:hover {
     background-color: #FCA311;
     padding: 10px;
-    border-radius: 40px;
+    border-radius: 6px;
     transition: 0.2s;
 }
 
