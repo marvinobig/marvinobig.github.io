@@ -1,0 +1,11 @@
+@mixin navigation($numOfColumns, $color) {
+    display: grid;
+    grid-template-columns: repeat($numOfColumns, 1fr);
+    place-items: center;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    padding: 10px 20px 10px 20px;
+    background-color: $color;
+}

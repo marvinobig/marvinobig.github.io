@@ -1,0 +1,18 @@
+@mixin layout-grid($numOfColumns, $sizeOfColumns, $numOfRows, $sizeOfRows, $gap) {
+    display: grid;
+    grid-template-columns: repeat($numOfColumns, $sizeOfColumns);
+    grid-template-rows: repeat($numOfRows, $sizeOfRows);
+    gap: $gap;
+}
+
+@mixin layout-flex($direction, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    @if $direction == column {
+        align-items: center;
+    }
+    @else {
+        justify-content: center;
+    }
+    gap: $gap;
+}

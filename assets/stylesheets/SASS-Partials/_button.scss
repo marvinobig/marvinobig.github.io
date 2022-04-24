@@ -1,0 +1,13 @@
+@mixin custom-button($btn-color) {
+    background-color: $btn-color;
+    padding: 8px 28px 8px 28px;
+    width: 80px;
+    border: hidden;
+    border-radius: 2px;
+    transition: all ease-in 0.1s;
+
+    &:hover {
+        transition: all ease-out 0.1s;
+        filter: brightness(85%);
+    }
+}

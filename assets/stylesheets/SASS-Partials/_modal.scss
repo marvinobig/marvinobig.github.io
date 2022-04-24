@@ -1,0 +1,30 @@
+@mixin pop-up {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+    width: 260px;
+    padding: 20px;
+    border-radius: 2px;
+    background-color: #cec3c3;
+    font-size: 1.2rem;
+
+    #cancel {
+        align-self: flex-end;
+        font-weight: 900;
+        font-size: 1.2rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    #submit {
+        align-self: center;
+        padding: 10px 20px 10px 20px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        background-color: rgb(10, 97, 10);
+        color: #ffffff;
+        border-radius: 2px;
+        border: none;
+    }
+}
