@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Learn a little about me & view my projects."
+      content="Learn a little about me, view my projects & contact me."
     />
 
     <title>Marvin Obig</title>
@@ -14,7 +14,7 @@
     <!-- Favicon -->
     <link
       rel="shortcut icon"
-      href="/assets/icons/favicon.ico"
+      href="./assets/icons/favicon.ico"
       type="image/x-icon"
     />
 
@@ -22,15 +22,303 @@
     <link rel="stylesheet" href="./assets/stylesheets/reset.css" />
     <link rel="stylesheet" href="./assets//stylesheets/styles.css" />
 
-    <!-- Google Icons -->
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/d781852125.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav></nav>
-    <header></header>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <footer></footer>
+    <nav class="nav">
+      <p class="nav__title">Marvin Obigwilo</p>
+      <ul class="nav__list" id="nav__list">
+        <li><a href="#about" class="nav__list__link">About</a></li>
+        <li><a href="#skills" class="nav__list__link">Skills</a></li>
+        <li><a href="#projects" class="nav__list__link">Projects</a></li>
+        <li><a href="#contact" class="nav__list__link">Contact</a></li>
+      </ul>
+      <button class="btn nav__btn" id="nav__btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+    <header id="header" class="header">
+      <img class="header__img" src="./assets/images/code.png" alt="my resume" />
+      <div class="header__description">
+        <h1 class="header__description__title">Hi, I'm Marvin.</h1>
+        <p class="header__description__para">
+          I'm a fullstack javascript developer.
+        </p>
+        <p class="header__description__para">
+          Download my CV/resume with the button below.
+        </p>
+        <a href="./assets/resume/Web Developer Resume.pdf" target="_blank"
+          ><button class="btn header__description__btn">
+            <i class="fa-solid fa-file-arrow-down"></i>Resume
+          </button></a
+        >
+      </div>
+    </header>
+    <section id="about" class="about">
+      <h2 class="about__title">About Me</h2>
+      <p class="about__text">
+        The summer was about to end and I was heading into my third year at
+        university. I was just googling around and I came across freeCodeCamp.
+        That was when my journey into development really began. It was through
+        freeCodeCamp that I learnt HTML & CSS. University taught me JavaScript
+        but The Odin Project taught me to understand it, taught me to enjoy it
+        and then taught me how to really learn. After my first experience with
+        coding, I realised that this is something I enjoyed a lot, being able to
+        have a mixture of creativity and logic and teach myself how to turn an
+        idea into a product/service or develop someone's ideas into reality.
+      </p>
+    </section>
+    <section id="skills" class="skills">
+      <h2 class="skills__title">Skills</h2>
+      <div class="skills__cards__container">
+        <div class="skills__cards__container__card">
+          <h3 class="skills__cards__container__card__title">Front-End</h3>
+          <div class="skills__cards__container__card__list">
+            <div class="skills__cards__container__card__list__skill">
+              <img
+                src="./assets/icons/Dev-icons/front-end/html.png"
+                alt="html"
+                class="skills__cards__container__card__list__skill__img"
+              />
+              <p>HTML</p>
+            </div>
+            <div class="skills__cards__container__card__list__skill">
+              <img
+                src="./assets/icons/Dev-icons/front-end/sass.png"
+                alt="sass"
+                class="skills__cards__container__card__list__skill__img"
+              />
+              <p>SASS</p>
+            </div>
+            <div class="skills__cards__container__card__list__skill">
+              <img
+                src="./assets/icons/Dev-icons/front-end/javascript.png"
+                alt="javascript"
+                class="skills__cards__container__card__list__skill__img"
+              />
+              <p>JavaScript</p>
+            </div>
+            <div class="skills__cards__container__card__list__skill">
+              <img
+                src="./assets/icons/Dev-icons/front-end/react.png"
+                alt="javascript"
+                class="skills__cards__container__card__list__skill__img"
+              />
+              <p>React</p>
+            </div>
+          </div>
+        </div>
+        <div class="skills__cards__container__card">
+          <h3 class="skills__cards__container__card__title">Back-End</h3>
+          <div class="skills__cards__container__card__list">
+            <div class="skills__cards__container__card__list__skill">
+              <img
+                src="./assets/icons/Dev-icons/back-end/nodeJs.png"
+                alt="node js"
+                class="skills__cards__container__card__list__skill__img"
+              />
+              <p>Node JS</p>
+            </div>
+            <div class="skills__cards__container__card__list__skill">
+              <img
+                src="./assets/icons/Dev-icons/back-end/expressJs.png"
+                alt="express js"
+                class="skills__cards__container__card__list__skill__img"
+              />
+              <p>Express JS</p>
+            </div>
+            <div class="skills__cards__container__card__list__skill">
+              <img
+                src="./assets/icons/Dev-icons/back-end/mongoDb.png"
+                alt="mongo DB"
+                class="skills__cards__container__card__list__skill__img"
+              />
+              <p>MongoDB</p>
+            </div>
+          </div>
+        </div>
+        <div class="skills__cards__container__card">
+          <h3 class="skills__cards__container__card__title">Deployment</h3>
+          <div class="skills__cards__container__card__list">
+            <div class="skills__cards__container__card__list__skill">
+              <img
+                src="./assets/icons/Dev-icons/deployment/githubPages.png"
+                alt="github pages"
+                class="skills__cards__container__card__list__skill__img"
+              />
+              <p>Github Pages</p>
+            </div>
+            <div class="skills__cards__container__card__list__skill">
+              <img
+                src="./assets/icons/Dev-icons/deployment/heroku.png"
+                alt="heroku"
+                class="skills__cards__container__card__list__skill__img"
+              />
+              <p>Heroku</p>
+            </div>
+            <div class="skills__cards__container__card__list__skill">
+              <img
+                src="./assets/icons/Dev-icons/deployment/netlify.png"
+                alt="netlify"
+                class="skills__cards__container__card__list__skill__img"
+              />
+              <p>Netlify</p>
+            </div>
+          </div>
+        </div>
+        <div class="skills__cards__container__card">
+          <h3 class="skills__cards__container__card__title">Tools</h3>
+          <div class="skills__cards__container__card__list">
+            <div class="skills__cards__container__card__list__skill">
+              <img
+                src="./assets/icons/Dev-icons/tools/git.png"
+                alt="git"
+                class="skills__cards__container__card__list__skill__img"
+              />
+              <p>Git</p>
+            </div>
+            <div class="skills__cards__container__card__list__skill">
+              <img
+                src="./assets/icons/Dev-icons/tools/npm.png"
+                alt="npm"
+                class="skills__cards__container__card__list__skill__img"
+              />
+              <p>NPM</p>
+            </div>
+            <div class="skills__cards__container__card__list__skill">
+              <img
+                src="./assets/icons/Dev-icons/tools/webpack.png"
+                alt="webpack"
+                class="skills__cards__container__card__list__skill__img"
+              />
+              <p>Webpack</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <h2 class="projects__title">Projects</h2>
+      <div class="projects__cards__container">
+        <div class="projects__cards__container__card">
+          <div class="projects__cards__container__card__header">
+            <h3 class="projects__cards__container__card__header__title">
+              Recipes
+            </h3>
+            <img
+              class="projects__cards__container__card__header__img"
+              src="./assets/images/recipes.jpg"
+              alt="recipes app"
+            />
+            <p class="projects__cards__container__card__header__description">
+              This application is a recipe website that allows users to upload,
+              view, edit and delete their food recipes.
+            </p>
+          </div>
+          <div class="projects__cards__container__card__actions">
+            <a href="https://recipes-wa.herokuapp.com/recipes" target="_blank"
+              ><button
+                class="btn projects__cards__container__card__actions__btn"
+              >
+                <i class="fa-solid fa-eye"></i>View
+              </button></a
+            >
+            <a href="https://github.com/marvinobig/elements.git" target="_blank"
+              ><button
+                class="btn projects__cards__container__card__actions__btn"
+              >
+                <i class="fa-brands fa-github-square"></i>Github
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="projects__cards__container__card">
+          <div class="projects__cards__container__card__header">
+            <h3 class="projects__cards__container__card__header__title">
+              Elements
+            </h3>
+            <img
+              class="projects__cards__container__card__header__img"
+              src="./assets/images/elements.jpg"
+              alt="elements pwa"
+            />
+            <p class="projects__cards__container__card__header__description">
+              A PWA (Progressive Web App) that allows users to fetch weather
+              data for a specific location. It also provides a 7 day forecast
+              from the current day.
+            </p>
+          </div>
+          <div class="projects__cards__container__card__actions">
+            <a href="https://elements-wa.netlify.app/" target="_blank"
+              ><button
+                class="btn projects__cards__container__card__actions__btn"
+              >
+                <i class="fa-solid fa-eye"></i>View
+              </button></a
+            >
+            <a href="https://github.com/marvinobig/elements.git" target="_blank"
+              ><button
+                class="btn projects__cards__container__card__actions__btn"
+              >
+                <i class="fa-brands fa-github-square"></i>Github
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="projects__cards__container__card">
+          <div class="projects__cards__container__card__header">
+            <h3 class="projects__cards__container__card__header__title">
+              Portfolio
+            </h3>
+            <img
+              class="projects__cards__container__card__header__img"
+              src="./assets/images/client-portfolio.jpeg"
+              alt="client portfolio"
+            />
+            <p class="projects__cards__container__card__header__description">
+              The purpose of this website is for potential employers looking to
+              hire her to have easy access to her best work as well as a way to
+              always have her work digitally ready to show anyone interested in
+              what she has created.
+            </p>
+          </div>
+          <div class="projects__cards__container__card__actions">
+            <a href="https://www.simonabairamova.co.uk/" target="_blank"
+              ><button
+                class="btn projects__cards__container__card__actions__btn"
+              >
+                <i class="fa-solid fa-eye"></i>View
+              </button></a
+            >
+            <a
+              href="https://github.com/marvinobig/graphic-design-portfolio.git"
+              target="_blank"
+              ><button
+                class="btn projects__cards__container__card__actions__btn"
+              >
+                <i class="fa-brands fa-github-square"></i>Github
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact" class="contact">
+      <div class="contact__container">
+        <a href="https://github.com/marvinobig" target="_blank"
+          ><i class="fa-brands fa-github-square"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/marvin-obigwilo/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="mailto:mobig.web@gmail.com" target="_blank"
+          ><i class="fa-solid fa-square-envelope"></i
+        ></a>
+      </div>
+    </footer>
   </body>
 </html>
