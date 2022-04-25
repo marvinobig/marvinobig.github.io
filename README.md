@@ -1,11 +1,11 @@
 # Marvin Obig Portfolio
 
-This is my portfolio website. [View]() to learn a little about me, my skills, my projects & how to contact me.
+This is my portfolio website. [View](https://marvinobig.github.io/) to learn a little about me, my skills, my projects & how to contact me.
 
 ## Languages/Tools used:
 
 - HTML
-- SASS
+- SCSS
 - Visual Studio Code
 - Firefox Dev Tools
 - Chrome Dev Tools
@@ -13,7 +13,7 @@ This is my portfolio website. [View]() to learn a little about me, my skills, my
 
 ## Live Link
 
-[View my portfolio]()
+[View my portfolio](https://marvinobig.github.io/)
 
 ## Installation
 
