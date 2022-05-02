@@ -1,0 +1,48 @@
+@import "/src/assets/SASS-Partials/variables";
+@import "/src/assets/SASS-Partials/layout";
+
+.skills {
+  @include layout-flex(column, 50px);
+  align-items: center;
+  padding: 40px;
+}
+
+.skillsContainer {
+  @include layout-flex(row, 20px);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.imgContainer {
+  @include layout-flex(column, 10px);
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  width: 134px;
+}
+
+.skillImg {
+  aspect-ratio: 1;
+  width: 100%;
+  max-width: 60px;
+  transition: $transition;
+
+  &:hover {
+    transition: $transition;
+    max-width: 100px;
+  }
+}
+
+.skillName {
+  display: none;
+  color: $secondary-color;
+  font-weight: $bold-font;
+}
+
+.title {
+  text-transform: uppercase;
+  color: $secondary-color;
+  text-align: center;
+}

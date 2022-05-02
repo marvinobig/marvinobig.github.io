@@ -1,0 +1,24 @@
+@import "/src/assets/SASS-Partials/variables";
+@import "/src/assets/SASS-Partials/layout";
+
+.contact {
+  padding: 40px;
+}
+
+.container {
+  @include layout-flex(row, 20px);
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+
+  a {
+    font-size: 50px;
+    color: $secondary-color;
+    transition: $transition;
+
+    &:hover {
+      transition: $transition;
+      filter: brightness(80%);
+    }
+  }
+}
