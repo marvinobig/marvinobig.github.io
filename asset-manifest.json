@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.11c98fc4.css",
-    "main.js": "/static/js/main.626d0f07.js",
+    "main.js": "/static/js/main.a84401d8.js",
     "static/media/recipes.jpg": "/static/media/recipes.30a4ea2e472a0bb6ebb5.jpg",
     "static/media/cv-builder.jpg": "/static/media/cv-builder.fe14b8d96a40d543953d.jpg",
     "static/media/webDevResume.pdf": "/static/media/webDevResume.2e73ca9d03a9c639108b.pdf",
@@ -10,10 +10,10 @@
     "static/media/react.png": "/static/media/react.b76a14371027e024020e.png",
     "index.html": "/index.html",
     "main.11c98fc4.css.map": "/static/css/main.11c98fc4.css.map",
-    "main.626d0f07.js.map": "/static/js/main.626d0f07.js.map"
+    "main.a84401d8.js.map": "/static/js/main.a84401d8.js.map"
   },
   "entrypoints": [
     "static/css/main.11c98fc4.css",
-    "static/js/main.626d0f07.js"
+    "static/js/main.a84401d8.js"
   ]
 }
