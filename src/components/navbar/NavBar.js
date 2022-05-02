@@ -20,24 +20,16 @@ function NavBar() {
       <div className={nav.list}>
         <ul id="list">
           <li>
-            <a href="#about" onClick={mobileNav}>
-              About
-            </a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#skills" onClick={mobileNav}>
-              Skills
-            </a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#projects" onClick={mobileNav}>
-              Projects
-            </a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact" onClick={mobileNav}>
-              Contact
-            </a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
