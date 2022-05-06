@@ -1,7 +1,9 @@
 import recipeImg from "../assets/images/recipes.jpg";
 import elementsImg from "../assets/images/elements.jpg";
 import cvBuilderImg from "../assets/images/cv-builder.jpg";
+import memeImg from "../assets/images/meme-generator.jpg";
 import html from "../assets/Dev-icons/front-end/html.png";
+import css from "../assets/Dev-icons/front-end/css.png";
 import sass from "../assets/Dev-icons/front-end/sass.png";
 import js from "../assets/Dev-icons/front-end/javascript.png";
 import react from "../assets/Dev-icons/front-end/react.png";
@@ -100,6 +102,36 @@ const projects = [
       {
         img: webpack,
         alt: "webpack",
+      },
+    ],
+  },
+  {
+    name: "Meme Generator",
+    img: memeImg,
+    description: `A react app that recives data from a meme API and then displays it on the users screen. 
+    It allows the user to add text to whatever image is produced.`,
+    github: "https://github.com/marvinobig/meme-generator.git",
+    live: "https://marvinobig.github.io/meme-generator",
+    technologies: [
+      {
+        img: html,
+        alt: "html",
+      },
+      {
+        img: css,
+        alt: "css",
+      },
+      {
+        img: js,
+        alt: "javascript",
+      },
+      {
+        img: react,
+        alt: "react",
+      },
+      {
+        img: webpack,
+        alt: "react",
       },
     ],
   },
