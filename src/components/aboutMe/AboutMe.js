@@ -1,5 +1,5 @@
 import about from "./AboutMe.module.scss";
-import resume from "../../assets/resume/webDevResume.pdf";
+import resume from "../../assets/resume/DeveloperCV.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 
