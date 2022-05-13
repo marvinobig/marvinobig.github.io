@@ -8,9 +8,8 @@ function AboutMe() {
     <header className={about.about} id="about">
       <h2 className={about.title}>Hi, I'm Marvin</h2>
       <p>
-        I'm a{" "}
-        <span className={about.important}>fullstack javascript developer</span>.
-        The summer was about to end and I was heading into my third year at
+        I'm a <span className={about.important}>fullstack developer</span>. The
+        summer was about to end and I was heading into my third year at
         university. I was just googling around and I came across freeCodeCamp.
         That was when my journey into development really began. It was through
         freeCodeCamp that I learnt{" "}
