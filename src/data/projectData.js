@@ -2,6 +2,7 @@ import bodTracImg from "../assets/images/track.jpg";
 import elementsImg from "../assets/images/elements.jpg";
 import cvBuilderImg from "../assets/images/cv-builder.jpg";
 import memeImg from "../assets/images/meme-generator.jpg";
+import recipes from "../assets/images/recipes.jpg";
 import html from "../assets/Dev-icons/front-end/html.png";
 import css from "../assets/Dev-icons/front-end/css.png";
 import sass from "../assets/Dev-icons/front-end/sass.png";
@@ -9,35 +10,43 @@ import js from "../assets/Dev-icons/front-end/javascript.png";
 import react from "../assets/Dev-icons/front-end/react.png";
 import python from "../assets/Dev-icons/back-end/python.png";
 import flask from "../assets/Dev-icons/back-end/flask.png";
+import node from "../assets/Dev-icons/back-end/nodeJs.png";
+import express from "../assets/Dev-icons/back-end/expressJs.png";
+import mongoDB from "../assets/Dev-icons/back-end/mongoDb.png";
 import webpack from "../assets/Dev-icons/tools/webpack.png";
 
 const projects = [
   {
-    name: "Bod-Trac",
-    img: bodTracImg,
-    description: `Track your body weight across time so you can keep track of your progress.`,
-    github: "https://github.com/marvinobig/bod-trac.git",
-    live: "https://mobig.pythonanywhere.com/",
+    name: "Recipes",
+    img: recipes,
+    description: `This application is a recipe website that allows users to 
+    upload, view, edit and delete their food recipes.`,
+    github: "https://github.com/marvinobig/recipes-wa.git",
+    live: "https://recipes-wa.herokuapp.com/recipes",
     technologies: [
       {
         img: html,
-        alt: "html",
+        alt: "ejs",
       },
       {
-        img: css,
-        alt: "css",
+        img: sass,
+        alt: "sass/scss",
       },
       {
         img: js,
         alt: "javascript",
       },
       {
-        img: python,
-        alt: "python",
+        img: node,
+        alt: "node js",
       },
       {
-        img: flask,
-        alt: "flask",
+        img: express,
+        alt: "express js",
+      },
+      {
+        img: mongoDB,
+        alt: "mongoDB",
       },
     ],
   },
@@ -56,7 +65,7 @@ const projects = [
       },
       {
         img: sass,
-        alt: "sass",
+        alt: "sass/scss",
       },
       {
         img: js,
@@ -83,7 +92,7 @@ const projects = [
       },
       {
         img: sass,
-        alt: "sass",
+        alt: "sass/scss",
       },
       {
         img: js,
@@ -126,6 +135,35 @@ const projects = [
       {
         img: webpack,
         alt: "react",
+      },
+    ],
+  },
+  {
+    name: "Bod-Trac",
+    img: bodTracImg,
+    description: `Track your body weight across time so you can keep track of your progress.`,
+    github: "https://github.com/marvinobig/bod-trac.git",
+    live: "https://mobig.pythonanywhere.com/",
+    technologies: [
+      {
+        img: html,
+        alt: "html",
+      },
+      {
+        img: css,
+        alt: "css",
+      },
+      {
+        img: js,
+        alt: "javascript",
+      },
+      {
+        img: python,
+        alt: "python",
+      },
+      {
+        img: flask,
+        alt: "flask",
       },
     ],
   },

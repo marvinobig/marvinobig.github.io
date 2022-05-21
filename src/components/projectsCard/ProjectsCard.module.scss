@@ -10,6 +10,7 @@
 .cardContainer {
   @include layout-flex(row, 40px);
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
