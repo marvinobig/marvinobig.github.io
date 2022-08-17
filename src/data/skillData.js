@@ -1,13 +1,12 @@
 import html from "../assets/Dev-icons/front-end/html.png";
 import css from "../assets/Dev-icons/front-end/css.png";
-import sass from "../assets/Dev-icons/front-end/sass.png";
 import js from "../assets/Dev-icons/front-end/javascript.png";
 import react from "../assets/Dev-icons/front-end/react.png";
 import node from "../assets/Dev-icons/back-end/nodeJs.png";
 import express from "../assets/Dev-icons/back-end/expressJs.png";
 import mongoDb from "../assets/Dev-icons/back-end/mongoDb.png";
+import postgre from "../assets/Dev-icons/back-end/postgreSql.png";
 import heroku from "../assets/Dev-icons/deployment/heroku.png";
-import netlify from "../assets/Dev-icons/deployment/netlify.png";
 import git from "../assets/Dev-icons/tools/git.png";
 
 const skills = [
@@ -22,10 +21,6 @@ const skills = [
   {
     img: css,
     alt: "CSS",
-  },
-  {
-    img: sass,
-    alt: "SASS",
   },
   {
     img: js,
@@ -48,8 +43,8 @@ const skills = [
     alt: "MongoDB",
   },
   {
-    img: netlify,
-    alt: "Netlify",
+    img: postgre,
+    alt: "PostgreSQL",
   },
   {
     img: heroku,
