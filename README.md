@@ -19,4 +19,3 @@ First download project from Github by going over to the green 'code' button and 
 ## Contributing
 
 Pull requests aren't nessesary as this is just my portfolio. View my other projects if you want to contribute.
-
