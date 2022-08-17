@@ -17,10 +17,10 @@ function AboutMe() {
       </p>
 
       <p>
-        University taught me JavaScript but The Odin Project taught me to
-        understand it, taught me to enjoy it and then taught me how to really
-        learn. After my first experience with coding, I realised that this is
-        something{" "}
+        University taught me <span className={about.important}>JavaScript</span>{" "}
+        but The Odin Project taught me to understand it, taught me to enjoy it
+        and then taught me how to really learn. After my first experience with
+        coding, I realised that this is something{" "}
         <span className={about.important}>I enjoy more than anything</span>,
         being able to have a mixture of{" "}
         <span className={about.important}>creativity and logic</span> and teach
