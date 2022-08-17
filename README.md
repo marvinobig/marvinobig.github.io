@@ -2,14 +2,11 @@
 
 This is my portfolio website. [View](https://marvinobig.github.io/) to learn a little about me, my skills, my projects & how to contact me.
 
-## Languages/Tools used:
+## Languages/Tools used
 
 - HTML
-- SCSS
-- Visual Studio Code
-- Firefox Dev Tools
-- Chrome Dev Tools
-- Favicon.cc
+- SCSS Modules
+- React Js
 
 ## Live Link
 
@@ -23,6 +20,3 @@ First download project from Github by going over to the green 'code' button and 
 
 Pull requests aren't nessesary as this is just my portfolio. View my other projects if you want to contribute.
 
-## License
-
-MIT
