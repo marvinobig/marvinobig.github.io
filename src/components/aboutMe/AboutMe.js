@@ -20,8 +20,9 @@ function AboutMe() {
         University taught me JavaScript but The Odin Project taught me to
         understand it, taught me to enjoy it and then taught me how to really
         learn. After my first experience with coding, I realised that this is
-        something <span className={about.important}>I enjoy a lot</span>, being
-        able to have a mixture of{" "}
+        something{" "}
+        <span className={about.important}>I enjoy more than anything</span>,
+        being able to have a mixture of{" "}
         <span className={about.important}>creativity and logic</span> and teach
         myself how to turn an idea into a product/service or develop someone's
         ideas into reality.{" "}
