@@ -16,7 +16,7 @@ const projects = [
   {
     name: "News Round API",
     img: newsRound,
-    description: `This project allows users to fetch articles and comments from other users, it allows users to also fetch usernames and topics from the database. Users can also partially update articles and post comments. This is still a work in progress as more endpoints are added & the front end is under development.`,
+    description: `This project allows users to fetch articles and comments from other users, it allows users to also fetch usernames and topics from the database. Users can also partially update articles, add articles and post comments.`,
     github: "https://github.com/marvinobig/news-round-api",
     live: "https://news-round-api.herokuapp.com/",
     technologies: [
