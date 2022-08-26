@@ -1,9 +1,8 @@
 import bodTracImg from "../assets/images/track.jpg";
-import cvBuilderImg from "../assets/images/cv-builder.jpg";
+import newsRoundFrontend from "../assets/images/news-round-frontend.jpg";
 import newsRound from "../assets/images/news-round.jpg";
 import html from "../assets/Dev-icons/front-end/html.png";
 import css from "../assets/Dev-icons/front-end/css.png";
-import sass from "../assets/Dev-icons/front-end/sass.png";
 import js from "../assets/Dev-icons/front-end/javascript.png";
 import react from "../assets/Dev-icons/front-end/react.png";
 import python from "../assets/Dev-icons/back-end/python.png";
@@ -39,29 +38,26 @@ const projects = [
     ],
   },
   {
-    name: "CV-Builder",
-    img: cvBuilderImg,
-    description: `A react JS application that allows users to generate a CV/resume 
-    with all their personal details, education, work experience and skills and print 
-    it off for use. This app makes use of react router.`,
-    github: "https://github.com/marvinobig/cv-builder.git",
-    live: "https://marvinobig.github.io/cv-builder/",
+    name: "News Round Frontend",
+    img: newsRoundFrontend,
+    description: `This is the React Js frontend for the News Round API. 
+    This react front end is a social news aggregation, web content rating, 
+    and discussion website that links to the News Round API that hosts and 
+    send the data being displayed by the website.`,
+    github: "https://github.com/marvinobig/news-round.git",
+    live: "https://news-round.netlify.app/",
     technologies: [
       {
-        img: html,
-        alt: "html",
-      },
-      {
-        img: sass,
-        alt: "sass/scss",
+        img: react,
+        alt: "react",
       },
       {
         img: js,
         alt: "javascript",
       },
       {
-        img: react,
-        alt: "react",
+        img: css,
+        alt: "css",
       },
     ],
   },
