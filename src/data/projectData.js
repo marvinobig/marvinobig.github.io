@@ -64,36 +64,6 @@ const projects = [
     ],
   },
   {
-    name: "Bod-Trac",
-    img: bodTracImg,
-    description: `Track your body weight across time so you can keep track of your progress. 
-    This app makes use of user authentication, SQLite and chart JS to track user inputted data.`,
-    github: "https://github.com/marvinobig/bod-trac.git",
-    live: "https://mobig.pythonanywhere.com/",
-    technologies: [
-      {
-        img: html,
-        alt: "html",
-      },
-      {
-        img: css,
-        alt: "css",
-      },
-      {
-        img: js,
-        alt: "javascript",
-      },
-      {
-        img: python,
-        alt: "python",
-      },
-      {
-        img: flask,
-        alt: "flask",
-      },
-    ],
-  },
-  {
     name: "CV Builder",
     img: cvBuilder,
     description: `This application is a CV web app that allows users to build a CV/resume from the ground up.
