@@ -1,4 +1,4 @@
-import bodTracImg from "../assets/images/track.jpg";
+import cvBuilder from "../assets/images/cv-builder.png";
 import newsRoundFrontend from "../assets/images/news-round-frontend.jpg";
 import newsRound from "../assets/images/news-round.jpg";
 import html from "../assets/Dev-icons/front-end/html.png";
@@ -15,7 +15,9 @@ const projects = [
   {
     name: "News Round API",
     img: newsRound,
-    description: `This project allows users to fetch articles and comments from other users, it allows users to also fetch usernames and topics from the database. Users can also partially update articles, add articles and post comments.`,
+    description: `This project allows users to fetch articles and comments from other users, 
+    it allows users to also fetch usernames and topics from the database. Users can also partially update articles, 
+    add articles and post comments.`,
     github: "https://github.com/marvinobig/news-round-api",
     live: "https://news-round-api.herokuapp.com/",
     technologies: [
@@ -64,7 +66,8 @@ const projects = [
   {
     name: "Bod-Trac",
     img: bodTracImg,
-    description: `Track your body weight across time so you can keep track of your progress. This app makes use of user authentication, SQLite and chart JS to track user inputted data.`,
+    description: `Track your body weight across time so you can keep track of your progress. 
+    This app makes use of user authentication, SQLite and chart JS to track user inputted data.`,
     github: "https://github.com/marvinobig/bod-trac.git",
     live: "https://mobig.pythonanywhere.com/",
     technologies: [
@@ -87,6 +90,28 @@ const projects = [
       {
         img: flask,
         alt: "flask",
+      },
+    ],
+  },
+  {
+    name: "CV Builder",
+    img: cvBuilder,
+    description: `This application is a CV web app that allows users to build a CV/resume from the ground up.
+    Once the user is done with building their CVs, they have the option of printing it`,
+    github: "https://github.com/marvinobig/cv-builder.git",
+    live: "https://cv-builder-web.netlify.app/",
+    technologies: [
+      {
+        img: react,
+        alt: "react",
+      },
+      {
+        img: js,
+        alt: "javascript",
+      },
+      {
+        img: css,
+        alt: "css",
       },
     ],
   },
