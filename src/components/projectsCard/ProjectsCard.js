@@ -15,7 +15,7 @@ function ProjectsCard({ infos }) {
               <img className={project.img} src={info.img} alt={info.name} />
               <p className={project.description}>{info.description}</p>
             </div>
-            <div>
+            <div className={project.techContainer}>
               <div className={project.techDisplay}>
                 {info.technologies.map((tech, index) => (
                   <img

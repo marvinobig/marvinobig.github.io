@@ -34,6 +34,11 @@
   padding: 20px;
 }
 
+.techContainer {
+  @include layout-flex(column, 0);
+  align-items: center;
+}
+
 .techDisplay {
   @include layout-flex(row, 10px);
   justify-content: center;

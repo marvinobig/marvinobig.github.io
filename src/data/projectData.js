@@ -18,8 +18,7 @@ const projects = [
   {
     name: "Bod Trac",
     img: bodTrac,
-    description: `Track your body weight & BMI across time so you can keep track of your progress. 
-    This website allows you to create/login to your own account from any device, 
+    description: `This website allows you to create/login to your own account from any device, 
     Add and track your weight across time, add and track your weight using your account & have your
     data visualised for easy viewing.`,
     github: "https://github.com/marvinobig/news-round-api",
