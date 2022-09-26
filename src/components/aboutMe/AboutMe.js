@@ -1,7 +1,6 @@
 import about from "./AboutMe.module.scss";
-import resume from "../../assets/resume/DeveloperCV.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faBlog } from "@fortawesome/free-solid-svg-icons";
 
 function AboutMe() {
   return (
@@ -29,10 +28,10 @@ function AboutMe() {
         <span className={about.important}>Download my CV/resume</span> with the
         button below.
       </p>
-      <a href={resume} target="_blank" rel="noreferrer">
+      <a href="#" target="_blank" rel="noreferrer">
         <button className={about.btn}>
-          <FontAwesomeIcon icon={faFileArrowDown} />
-          Resume
+          <FontAwesomeIcon icon={faBlog} />
+          Blog (Coming Soon)
         </button>
       </a>
     </header>
