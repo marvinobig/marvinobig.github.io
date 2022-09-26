@@ -21,8 +21,8 @@ const projects = [
     description: `This website allows you to create/login to your own account from any device, 
     Add and track your weight across time, add and track your weight using your account & have your
     data visualised for easy viewing.`,
-    github: "https://github.com/marvinobig/news-round-api",
-    live: "https://news-round-api.herokuapp.com/",
+    github: "https://github.com/marvinobig/bod-trac.git",
+    live: "https://mobig.pythonanywhere.com/",
     technologies: [
       {
         img: html,
