@@ -14,6 +14,8 @@ function ProjectsCard({ infos }) {
               <h3 className={project.heading}>{info.name}</h3>
               <img className={project.img} src={info.img} alt={info.name} />
               <p className={project.description}>{info.description}</p>
+            </div>
+            <div>
               <div className={project.techDisplay}>
                 {info.technologies.map((tech, index) => (
                   <img
@@ -24,20 +26,20 @@ function ProjectsCard({ infos }) {
                   />
                 ))}
               </div>
-            </div>
-            <div className={project.actions}>
-              <a href={info.live} target="_blank" rel="noreferrer">
-                <button className={project.btn}>
-                  <FontAwesomeIcon icon={faEye} />
-                  View
-                </button>
-              </a>
-              <a href={info.github} target="_blank" rel="noreferrer">
-                <button className={project.btn}>
-                  <FontAwesomeIcon icon={faGithubSquare} />
-                  Github
-                </button>
-              </a>
+              <div className={project.actions}>
+                <a href={info.live} target="_blank" rel="noreferrer">
+                  <button className={project.btn}>
+                    <FontAwesomeIcon icon={faEye} />
+                    View
+                  </button>
+                </a>
+                <a href={info.github} target="_blank" rel="noreferrer">
+                  <button className={project.btn}>
+                    <FontAwesomeIcon icon={faGithubSquare} />
+                    Github
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         ))}
