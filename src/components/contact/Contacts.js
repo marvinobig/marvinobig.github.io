@@ -20,13 +20,13 @@ function Contacts() {
 
   async function handleContact() {
     const emailObj = {
-      from: fromInput,
+      sender: fromInput,
       subject: subjectInput,
       name: nameInput,
       message: msgInput,
     };
 
-    if (formValidation(errors, setErrors, emailObj)) {
+    if (formValidation(setErrors, emailObj)) {
       const sendEmail = await fetch("http://localhost:8080/api/contact", {
         headers: { "Content-Type": "application/json" },
         method: "POST",
@@ -35,6 +35,7 @@ function Contacts() {
       const sendEmailJson = await sendEmail.json();
 
       if (sendEmail.status === 200) setSent(sendEmailJson.msg);
+      else setSent("Not Sent Successfully");
     } else setSent("Not Sent Successfully");
   }
 
