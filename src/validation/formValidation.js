@@ -65,8 +65,6 @@ const formValidation = (setErrors, { sender, subject, name, message }) => {
   const errorValues = Object.values(validationObj);
   const errorsExist = errorValues.every((value) => value === undefined);
 
-  console.log(errorsExist, errorValues);
-
   return errorsExist ? true : false;
 };
 
