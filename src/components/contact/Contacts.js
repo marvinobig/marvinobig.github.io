@@ -3,36 +3,44 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import formValidation from "../../validation/formValidation";
 
 function Contacts() {
   const [nameInput, setNameInput] = useState("");
   const [fromInput, setFromInput] = useState("");
   const [subjectInput, setSubjectInput] = useState("");
   const [msgInput, setMsgInput] = useState("");
+  const [sent, setSent] = useState("");
+  const [errors, setErrors] = useState({
+    from: undefined,
+    name: undefined,
+    subject: undefined,
+    message: undefined,
+  });
 
   async function handleContact() {
     const emailObj = {
-      sender: fromInput,
+      from: fromInput,
       subject: subjectInput,
       name: nameInput,
       message: msgInput,
     };
 
-    const sendEmail = await fetch("http://localhost:8080/api/contact", {
-      headers: { "Content-Type": "application/json" },
-      method: "POST",
-      body: JSON.stringify(emailObj),
-    });
+    if (formValidation(errors, setErrors, emailObj)) {
+      const sendEmail = await fetch("http://localhost:8080/api/contact", {
+        headers: { "Content-Type": "application/json" },
+        method: "POST",
+        body: JSON.stringify(emailObj),
+      });
+      const sendEmailJson = await sendEmail.json();
 
-    const sendEmailJson = await sendEmail.json();
-
-    if (sendEmail.status === 200) {
-      console.log(sendEmailJson.msg);
-    } else console.log("Not Sent Successfully");
+      if (sendEmail.status === 200) setSent(sendEmailJson.msg);
+    } else setSent("Not Sent Successfully");
   }
 
   return (
     <footer id="contact" className={contact.contact}>
+      <h2 className={contact.title}>Contact Me</h2>
       <form className={contact.contactForm}>
         <label>
           From
@@ -43,30 +51,33 @@ function Contacts() {
             placeholder="Enter Your Email"
           />
         </label>
+        {errors.from && <p className={contact.error}>{errors.from}</p>}
         <label>
           Name
           <input
-            type="email"
+            type="text"
             value={nameInput}
             onChange={(e) => setNameInput(e.target.value)}
             placeholder="Enter Your Full Name"
           />
         </label>
+        {errors.name && <p className={contact.error}>{errors.name}</p>}
         <label>
           Subject
           <input
-            type="email"
+            type="text"
             value={subjectInput}
             onChange={(e) => setSubjectInput(e.target.value)}
-            placeholder="Enter Subject of Email"
+            placeholder="Enter Email Subject"
           />
         </label>
+        {errors.subject && <p className={contact.error}>{errors.subject}</p>}
         <textarea
-          type="email"
           value={msgInput}
           onChange={(e) => setMsgInput(e.target.value)}
           placeholder="Enter Message"
         />
+        {errors.message && <p className={contact.error}>{errors.message}</p>}
         <button
           className={contact.contactFormBtn}
           type="button"
@@ -74,6 +85,7 @@ function Contacts() {
         >
           Send <FontAwesomeIcon icon={faEnvelope} />
         </button>
+        {sent && <p className={contact.error}>{sent}</p>}
       </form>
       <div className={contact.socialLinksContainer}>
         <a
