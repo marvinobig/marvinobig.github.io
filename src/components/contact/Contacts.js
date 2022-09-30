@@ -27,11 +27,14 @@ function Contacts() {
     };
 
     if (formValidation(setErrors, emailObj)) {
-      const sendEmail = await fetch("http://localhost:8080/api/contact", {
-        headers: { "Content-Type": "application/json" },
-        method: "POST",
-        body: JSON.stringify(emailObj),
-      });
+      const sendEmail = await fetch(
+        "https://busy-red-elephant-hem.cyclic.app/api/contact",
+        {
+          headers: { "Content-Type": "application/json" },
+          method: "POST",
+          body: JSON.stringify(emailObj),
+        }
+      );
       const sendEmailJson = await sendEmail.json();
 
       if (sendEmail.status === 200) setSent(sendEmailJson.msg);
