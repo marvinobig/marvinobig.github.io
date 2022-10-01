@@ -6,7 +6,7 @@ const formValidation = (setErrors, { sender, subject, name, message }) => {
     message: "",
   };
 
-  if (!sender.includes("@") || !sender.includes(".com")) {
+  if (!sender.match(/^([A-Za-z0-9\.]+)(@{1}[A-Za-z0-9\.]+)$/m)) {
     validationObj.from = "field needs an email address";
     setErrors((currErrors) => ({
       ...currErrors,
@@ -20,11 +20,11 @@ const formValidation = (setErrors, { sender, subject, name, message }) => {
     }));
   }
 
-  if (name.length <= 2 || !name.match(/\s/)) {
-    validationObj.name = "field needs your full name and 2 or more characters";
+  if (!name.match(/^(\w{2,})\s(\w{2,})$/m)) {
+    validationObj.name = "field needs your first & last name";
     setErrors((currErrors) => ({
       ...currErrors,
-      name: "field needs your full name and 2 or more characters",
+      name: "field needs your first & last name",
     }));
   } else {
     validationObj.name = undefined;
@@ -34,7 +34,7 @@ const formValidation = (setErrors, { sender, subject, name, message }) => {
     }));
   }
 
-  if (subject.length <= 5) {
+  if (!subject.match(/[A-Za-z0-9]{5,}/)) {
     validationObj.subject = "subject needs to be 5 characters or more";
     setErrors((currErrors) => ({
       ...currErrors,
@@ -48,7 +48,7 @@ const formValidation = (setErrors, { sender, subject, name, message }) => {
     }));
   }
 
-  if (message === "") {
+  if (!message.match(/([A-Za-z0-9\W]{5,})+/m)) {
     validationObj.message = "message needs to be provided";
     setErrors((currErrors) => ({
       ...currErrors,
