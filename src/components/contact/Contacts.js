@@ -37,8 +37,13 @@ function Contacts() {
       );
       const sendEmailJson = await sendEmail.json();
 
-      if (sendEmail.status === 200) setSent(sendEmailJson.msg);
-      else setSent("Not Sent Successfully");
+      if (sendEmail.status === 200) {
+        setFromInput("");
+        setNameInput("");
+        setSubjectInput("");
+        setMsgInput("");
+        setSent(sendEmailJson.msg);
+      } else setSent("Not Sent Successfully");
     } else setSent("Not Sent Successfully");
   }
 
