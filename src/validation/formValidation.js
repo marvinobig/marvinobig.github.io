@@ -49,7 +49,7 @@ const formValidation = (setErrors, { sender, subject, name, message }) => {
   }
 
   if (!message.match(/([A-Za-z0-9\W]{5,})+/m)) {
-    validationObj.message = "message needs to include a sentence";
+    validationObj.message = "field needs to include a sentence";
     setErrors((currErrors) => ({
       ...currErrors,
       message: validationObj.message,
