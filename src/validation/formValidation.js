@@ -7,16 +7,16 @@ const formValidation = (setErrors, { sender, subject, name, message }) => {
   };
 
   if (!sender.match(/^([A-Za-z0-9\.]+)(@{1}[A-Za-z0-9\.]+)$/m)) {
-    validationObj.from = "field needs an email address";
+    validationObj.from = "field needs a valid email address";
     setErrors((currErrors) => ({
       ...currErrors,
-      from: "field needs an email address",
+      from: validationObj.from,
     }));
   } else {
     validationObj.from = undefined;
     setErrors((currErrors) => ({
       ...currErrors,
-      from: undefined,
+      from: validationObj.from,
     }));
   }
 
@@ -24,41 +24,41 @@ const formValidation = (setErrors, { sender, subject, name, message }) => {
     validationObj.name = "field needs your first & last name";
     setErrors((currErrors) => ({
       ...currErrors,
-      name: "field needs your first & last name",
+      name: validationObj.name,
     }));
   } else {
     validationObj.name = undefined;
     setErrors((currErrors) => ({
       ...currErrors,
-      name: undefined,
+      name: validationObj.name,
     }));
   }
 
   if (!subject.match(/[A-Za-z0-9]{5,}/)) {
-    validationObj.subject = "subject needs to be 5 characters or more";
+    validationObj.subject = "field needs to include 5 characters or more";
     setErrors((currErrors) => ({
       ...currErrors,
-      subject: "subject needs to be 5 characters or more",
+      subject: validationObj.subject,
     }));
   } else {
     validationObj.subject = undefined;
     setErrors((currErrors) => ({
       ...currErrors,
-      subject: undefined,
+      subject: validationObj.subject,
     }));
   }
 
   if (!message.match(/([A-Za-z0-9\W]{5,})+/m)) {
-    validationObj.message = "message needs to be provided";
+    validationObj.message = "message needs to include a sentence";
     setErrors((currErrors) => ({
       ...currErrors,
-      message: "message needs to be provided",
+      message: validationObj.message,
     }));
   } else {
     validationObj.message = undefined;
     setErrors((currErrors) => ({
       ...currErrors,
-      message: undefined,
+      message: validationObj.message,
     }));
   }
 
