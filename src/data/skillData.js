@@ -6,6 +6,8 @@ import react from "../assets/Dev-icons/front-end/react.png";
 import node from "../assets/Dev-icons/back-end/nodeJs.png";
 import express from "../assets/Dev-icons/back-end/expressJs.png";
 import flask from "../assets/Dev-icons/back-end/flask.png";
+import php from "../assets/Dev-icons/back-end/php.png";
+import mySql from "../assets/Dev-icons/back-end/mySql.png";
 import mongoDb from "../assets/Dev-icons/back-end/mongoDb.png";
 import postgre from "../assets/Dev-icons/back-end/postgreSql.png";
 import heroku from "../assets/Dev-icons/deployment/heroku.png";
@@ -29,6 +31,10 @@ const skills = [
     alt: "JavaScript",
   },
   {
+    img: php,
+    alt: "PHP",
+  },
+  {
     img: python,
     alt: "Python",
   },
@@ -49,12 +55,16 @@ const skills = [
     alt: "Flask",
   },
   {
-    img: mongoDb,
-    alt: "MongoDB",
-  },
-  {
     img: postgre,
     alt: "PostgreSQL",
+  },
+  {
+    img: mySql,
+    alt: "MySQL",
+  },
+  {
+    img: mongoDb,
+    alt: "MongoDB",
   },
   {
     img: heroku,
