@@ -106,7 +106,7 @@ const projects = [
     The project includes MySQL database capabilities and can add products to a basket, 
     register and login users and also display product information stored on a database table.`,
     github: "https://github.com/marvinobig/pcmasterrace.git",
-    live: "https://pcmasterracemobig.000webhostapp.com/index.php",
+    live: "https://pcmasterracemobig.000webhostapp.com",
     technologies: [
       {
         img: html,
