@@ -1,6 +1,6 @@
 import contact from "./Contacts.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import formValidation from "../../validation/formValidation";
@@ -103,13 +103,6 @@ function Contacts() {
           rel="noreferrer"
         >
           <FontAwesomeIcon icon={faGithubSquare} />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/marvin-obigwilo/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </div>
     </footer>
