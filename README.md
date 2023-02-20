@@ -7,6 +7,7 @@ This is my portfolio website. [View](https://marvinobig.github.io/) to learn a l
 - HTML
 - SCSS Modules
 - React Js
+- Node Js/Express Js (Contact Form)
 
 ## Live Link
 
