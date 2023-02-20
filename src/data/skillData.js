@@ -1,6 +1,6 @@
 import html from "../assets/Dev-icons/front-end/html.png";
 import css from "../assets/Dev-icons/front-end/css.png";
-import sass from "../assets/Dev-icons/front-end/sass.png";
+import scss from "../assets/Dev-icons/front-end/scss.png";
 import bootstrap from "../assets/Dev-icons/front-end/bootstrap.png";
 import js from "../assets/Dev-icons/front-end/javascript.png";
 import react from "../assets/Dev-icons/front-end/react.png";
@@ -26,8 +26,8 @@ const skills = [
     alt: "CSS",
   },
   {
-    img: sass,
-    alt: "SASS",
+    img: scss,
+    alt: "SCSS",
   },
   {
     img: bootstrap,
