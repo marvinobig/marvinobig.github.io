@@ -1,47 +1,12 @@
 import pcMasterRace from "../assets/images/pc-masterrace.jpg";
 import elements from "../assets/images/elements.jpg";
-import bodTrac from "../assets/images/track.jpg";
 import css from "../assets/Dev-icons/front-end/css.png";
 import js from "../assets/Dev-icons/front-end/javascript.png";
 import html from "../assets/Dev-icons/front-end/html.png";
 import php from "../assets/Dev-icons/back-end/php.png";
 import mySql from "../assets/Dev-icons/back-end/mySql.png";
-import sql from "../assets/Dev-icons/back-end/sql.png";
-import python from "../assets/Dev-icons/back-end/python.png";
-import flask from "../assets/Dev-icons/back-end/flask.png";
 
 const projects = [
-  {
-    name: "Bod Trac",
-    img: bodTrac,
-    description: `This website allows you to create/login to your own account from any device, 
-    Add and track your weight across time, add and track your weight using your account & have your
-    data visualised for easy viewing.`,
-    github: "https://github.com/marvinobig/bod-trac.git",
-    live: "https://mobig.pythonanywhere.com/",
-    technologies: [
-      {
-        img: html,
-        alt: "python",
-      },
-      {
-        img: css,
-        alt: "css",
-      },
-      {
-        img: python,
-        alt: "pyhton",
-      },
-      {
-        img: flask,
-        alt: "flask",
-      },
-      {
-        img: sql,
-        alt: "SQLite",
-      },
-    ],
-  },
   {
     name: "PC Master Race",
     img: pcMasterRace,
