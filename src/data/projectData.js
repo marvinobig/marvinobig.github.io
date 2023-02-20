@@ -49,57 +49,6 @@ const projects = [
     ],
   },
   {
-    name: "News Round API",
-    img: newsRound,
-    description: `This API allows users to fetch articles and comments from other users, 
-    it allows users to also fetch usernames and topics from the database. Users can also partially update articles, 
-    add articles and post comments.`,
-    github: "https://github.com/marvinobig/news-round-api",
-    live: "https://news-round-api.herokuapp.com/",
-    technologies: [
-      {
-        img: js,
-        alt: "javascript",
-      },
-      {
-        img: node,
-        alt: "node js",
-      },
-      {
-        img: express,
-        alt: "express js",
-      },
-      {
-        img: postre,
-        alt: "postgreSQL",
-      },
-    ],
-  },
-  {
-    name: "News Round Frontend",
-    img: newsRoundFrontend,
-    description: `This is the React Js frontend for the News Round API. 
-    This React SPA is for social news aggregation, web content rating, 
-    and discussions. It links to the News Round API that hosts and 
-    sends the data being displayed by the website.`,
-    github: "https://github.com/marvinobig/news-round.git",
-    live: "https://news-round.netlify.app/",
-    technologies: [
-      {
-        img: react,
-        alt: "react",
-      },
-      {
-        img: js,
-        alt: "javascript",
-      },
-      {
-        img: css,
-        alt: "css",
-      },
-    ],
-  },
-  {
     name: "PC Master Race",
     img: pcMasterRace,
     description: `An e-commerce website that sells pc parts and accessories. 
