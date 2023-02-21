@@ -4,6 +4,7 @@ import scss from "../assets/Dev-icons/front-end/scss.png";
 import bootstrap from "../assets/Dev-icons/front-end/bootstrap.png";
 import js from "../assets/Dev-icons/front-end/javascript.png";
 import react from "../assets/Dev-icons/front-end/react.png";
+import drupal from "../assets/Dev-icons/tools/drupal.png";
 import node from "../assets/Dev-icons/back-end/nodeJs.png";
 import express from "../assets/Dev-icons/back-end/expressJs.png";
 import php from "../assets/Dev-icons/back-end/php.png";
@@ -64,6 +65,10 @@ const skills = [
   {
     img: mongoDb,
     alt: "MongoDB",
+  },
+  {
+    img: drupal,
+    alt: "Drupal",
   },
 ];
 
