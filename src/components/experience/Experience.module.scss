@@ -70,7 +70,7 @@
 .dutyList {
   @include layout-flex(column, 10px);
   list-style-type: disc;
-  margin-left: 16px;
+  margin-left: 18px;
 
   li::marker {
     color: $secondary-color;
