@@ -10,7 +10,12 @@ const Experience = () => {
         {workExperience.map((work, index) => (
           <div key={index}>
             <h2 className={experience.workTitles}>
-              <a className={experience.workLink} href={work.companyLink}>
+              <a
+                className={experience.workLink}
+                href={work.companyLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {work.companyName}
               </a>{" "}
               -- {moment(work.timeWorkedFor[0]).format("MMM Do YYYY")} to{" "}
