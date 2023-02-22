@@ -63,14 +63,18 @@
 
 .skillIcons {
   @include layout-flex(row, 20px);
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
 .dutyList {
   @include layout-flex(column, 10px);
   list-style-type: disc;
-  margin-left: 14px;
+  margin-left: 16px;
+
+  li::marker {
+    color: $secondary-color;
+  }
 }
 
 .seperator {
