@@ -52,8 +52,8 @@
 }
 
 .skillList {
-  @include layout-flex(row, 20px);
-  align-items: center;
+  @include layout-flex(column, 0);
+  align-items: start;
 }
 
 .skillTitle {

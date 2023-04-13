@@ -18,7 +18,7 @@ const Experience = () => {
               >
                 {work.companyName}
               </a>{" "}
-              -- {moment(work.timeWorkedFor[0]).format("MMM Do YYYY")} to{" "}
+              - {moment(work.timeWorkedFor[0]).format("MMM Do YYYY")} to{" "}
               {work.timeWorkedFor[1]}
             </h2>
             <p className={experience.seperator}>{work.companyDescription}</p>
