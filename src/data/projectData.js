@@ -14,7 +14,7 @@ import sql from "../assets/Dev-icons/back-end/sql.png";
 
 const projects = [
   {
-    name: "Bod Track",
+    name: "Bod Trac",
     img: track,
     description: `A website to track your body weight across time so you can keep track of your progress. 
     You can create/login to your own account, add and track your weight across time and have that data of 
