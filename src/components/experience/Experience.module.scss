@@ -48,7 +48,7 @@
 .skillImg {
   aspect-ratio: 1;
   width: 100%;
-  max-width: 30px;
+  max-width: 40px;
 }
 
 .skillList {
@@ -63,7 +63,7 @@
 
 .skillIcons {
   @include layout-flex(row, 20px);
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
 }
 
