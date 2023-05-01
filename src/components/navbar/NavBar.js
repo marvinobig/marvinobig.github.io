@@ -2,7 +2,7 @@ import nav from "./NavBar.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-function NavBar() {
+function NavBar({ navLinks }) {
   function mobileNav() {
     const navBtn = document.getElementById("list");
     navBtn.classList.toggle(nav.active);
@@ -10,32 +10,24 @@ function NavBar() {
 
   return (
     <nav className={nav.nav}>
-      <div className={nav.div}>
-        <p className={nav.title}>Marvin Obigwilo</p>
+      <section className={nav.logo}>
+        <p className={nav.title}>Marvin Obig</p>
         <button className={nav.btn} id="mobile-btn" onClick={mobileNav}>
           <FontAwesomeIcon icon={faBars} />
         </button>
-      </div>
+      </section>
 
-      <div className={nav.list}>
+      <section className={nav.list}>
         <ul id="list">
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <a href={`#${link}`}>{`${link
+                .charAt(0)
+                .toUpperCase()}${link.slice(1, link.length)}`}</a>
+            </li>
+          ))}
         </ul>
-      </div>
+      </section>
     </nav>
   );
 }

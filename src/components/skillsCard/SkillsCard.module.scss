@@ -4,15 +4,14 @@
 .skills {
   @include layout-flex(column, 50px);
   align-items: center;
-  padding: 40px;
 }
 
 .skillsContainer {
-  @include layout-flex(row, 20px);
-  justify-content: center;
+  @include layout-grid(4, 100px, 3, 100px, 10px);
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
   width: 100%;
+  text-align: center;
 }
 
 .imgContainer {
@@ -45,4 +44,10 @@
   text-transform: uppercase;
   color: $secondary-color;
   text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .skillsContainer {
+    @include layout-grid(2, 100px, 3, 100px, 20px);
+  }
 }

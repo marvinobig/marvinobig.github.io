@@ -68,7 +68,7 @@ ul {
     @include layout-flex(column, 0);
   }
 
-  .div {
+  .logo {
     @include layout-flex(row, 0);
     justify-content: space-between;
     width: 100%;

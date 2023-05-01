@@ -11,7 +11,6 @@ function SkillsCard({ skills }) {
 
   return (
     <section className={skillCard.skills} id="skills">
-      <h2 className={skillCard.title}>Skills</h2>
       <div className={skillCard.skillsContainer}>
         {skills.map((skill, index) => (
           <div

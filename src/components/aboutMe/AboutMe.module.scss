@@ -3,13 +3,19 @@
 @import "/src/assets/SASS-Partials/button";
 
 .about {
-  @include layout-flex(column, 50px);
+  @include layout-flex(row, 60px);
   justify-content: center;
   align-items: center;
   padding: 40px;
-  text-align: center;
   font-size: 20px;
   line-height: 2.5rem;
+}
+
+.me {
+  @include layout-flex(column, 50px);
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
 }
 
 .title {
@@ -29,4 +35,10 @@
   @include layout-flex(row, 5px);
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about {
+    @include layout-flex(column, 50px);
+  }
 }
