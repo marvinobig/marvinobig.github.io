@@ -3,7 +3,6 @@ import html from "../assets/Dev-icons/front-end/html.png";
 import scss from "../assets/Dev-icons/front-end/scss.png";
 import bootstrap from "../assets/Dev-icons/front-end/bootstrap.png";
 import js from "../assets/Dev-icons/front-end/javascript.png";
-import php from "../assets/Dev-icons/back-end/php.png";
 import drupal from "../assets/Dev-icons/tools/drupal.png";
 
 const workExperience = [
@@ -13,9 +12,10 @@ const workExperience = [
     companyDescription:
       "Adaptive are Drupal support, development and hosting specialists. They work with a wide range of clients from international brands and public sector organisations through to large non-profit charities.",
     companyLink: "https://www.adaptive.co.uk/team",
-    myDuties: [
-      "Moved parts of the mencap website over to bootstrap 5 from bootstrap 4",
-      "Helped implement the design for the CMSGuard landing page",
+    achievements: [
+      "Moved parts of the mencap website over to bootstrap 5, SCSS & ES6 JavaScript from bootstrap 4, CSS & jQuery",
+      "Helped implement the design for the CMSGuard.io landing page",
+      "Added to company documentation which sped up developer workflow",
     ],
     skillsUsed: [
       {
@@ -37,10 +37,6 @@ const workExperience = [
       {
         img: js,
         alt: "Javascript",
-      },
-      {
-        img: php,
-        alt: "PHP",
       },
       {
         img: drupal,
