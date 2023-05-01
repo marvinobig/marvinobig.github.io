@@ -67,7 +67,7 @@
   width: 100%;
 }
 
-.dutyList {
+.achievementsList {
   @include layout-flex(column, 10px);
   list-style-type: disc;
   margin-left: 18px;

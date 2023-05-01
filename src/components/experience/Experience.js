@@ -22,20 +22,7 @@ const Experience = () => {
               {work.timeWorkedFor[1]}
             </h2>
             <p className={experience.seperator}>{work.companyDescription}</p>
-            <div>
-              <h3 className={experience.workTitles}>My Duties</h3>
-              <ul className={experience.dutyList}>
-                {work.myDuties.map((duty, index) => (
-                  <li key={index}>{duty}</li>
-                ))}
-              </ul>
-            </div>
             <div className={experience.skillList}>
-              <h3
-                className={`${experience.workTitles} ${experience.skillTitle}`}
-              >
-                Skills Used
-              </h3>
               <ul className={experience.skillIcons}>
                 {work.skillsUsed.map((skill, index) => (
                   <li key={index}>
@@ -45,6 +32,14 @@ const Experience = () => {
                       alt={skill.alt}
                     />
                   </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className={experience.workTitles}>Achievements</h3>
+              <ul className={experience.achievementsList}>
+                {work.achievements.map((duty, index) => (
+                  <li key={index}>{duty}</li>
                 ))}
               </ul>
             </div>
