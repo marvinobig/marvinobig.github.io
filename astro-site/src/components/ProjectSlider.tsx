@@ -5,7 +5,7 @@ import '@splidejs/react-splide/css/core';
 import skills from "../data/skillData";
 
 const ProjectSlider = () => {
-    const options = {
+    const sliderOptions = {
         pagination: false,
         drag: true,
         autoplay: true,
@@ -13,14 +13,28 @@ const ProjectSlider = () => {
         cover: true,
         height: "600px"
     }
+
+    const sliderTextStyling = {
+        padding: "20px",
+        fontSize: "2rem",
+        fontWeight: "bold"
+    }
+
+    const sliderContainer = {
+        borderRadius: "10px",
+        border: "1px solid black",
+        margin: "20px",
+    }
+
+
     return (
-        <Splide options={options} tag="section" hasTrack={false} aria-label="My Skills">
-            <section>
+        <Splide options={sliderOptions} tag="section" hasTrack={false} aria-label="My Skills">
+            <section style={sliderContainer}>
                 <SplideTrack>
                     {skills.map((skill, index) => (
                         <SplideSlide key={index}>
                             <img src={skill.img} alt={skill.alt} />
-                            <p>{skill.alt}</p>
+                            <p style={sliderTextStyling}>{skill.alt}</p>
                         </SplideSlide>
                     ))}
                 </SplideTrack>
