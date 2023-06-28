@@ -1,4 +1,9 @@
 ---
+import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
+import ProjectSlider from "../components/ProjectSlider.tsx";
+
+const pageTitle = "Portfolio";
 ---
 
 <html lang="en">
@@ -7,12 +12,11 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Portfolio</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-        <a href="/about">About</a>
-		<a href="/blog">blog</a>
-		<h1>Astro - Hello World</h1>
+		<Navigation />
+		<h1>{pageTitle}</h1>
+		<ProjectSlider client:only="react"/>
 	</body>
 </html>

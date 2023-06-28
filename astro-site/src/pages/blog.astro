@@ -1,4 +1,8 @@
 ---
+import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
+
+const pageTitle: string = "marvinobig Blog"
 ---
 
 <html lang="en">
@@ -7,12 +11,17 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Blog</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-		<a href="/blog">blog</a>
-		<h1>Astro View My Dev Journey</h1>
+        <Navigation />
+
+		{pageTitle === "marvinobig Blog" ? <h1>{pageTitle}</h1> : <h1>Blogs</h1>}
+
+        <ul>
+			<li><a href="/posts/first-blog-post/">Post 1</a></li>
+			<li><a href="/posts/post-2/">Post 2</a></li>
+			<li><a href="/posts/post-3/">Post 3</a></li>
+		</ul>
 	</body>
 </html>
