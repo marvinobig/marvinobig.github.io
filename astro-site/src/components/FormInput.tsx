@@ -1,7 +1,7 @@
-const FormInput = ({ labelText, inputType, inputValue, setValue, placeHolder, error }) => {
+const FormInput = ({ styleObj, labelText, inputType, inputValue, setValue, placeHolder, error }) => {
     return (
         <>
-            <label>
+            <label style={styleObj}>
                 {labelText}
                 <input
                     type={inputType}
