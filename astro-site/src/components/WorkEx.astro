@@ -1,0 +1,31 @@
+---
+import Skills from "./Skills.astro";
+const { workData } = Astro.props;
+---
+
+<section>
+    <h2>Work Experience</h2>
+
+    <div>
+        {
+            workData.map((work) => (
+                <div>
+                    <h3>
+                        {work.title} - {work.company}
+                    </h3>
+                    <div>
+                        <p>
+                            {work.time[0]} - {work.time[1]}
+                        </p>
+                        <ul>
+                            {work.achievements.map((achievement) => (
+                                <li>{achievement}</li>
+                            ))}
+                        </ul>
+                    </div>
+                    <Skills skills={work.skillsUsed}/> 
+                </div>
+            ))
+        }
+    </div>
+</section>

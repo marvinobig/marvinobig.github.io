@@ -1,22 +1,41 @@
 ---
-import "../styles/global.css";
+// import "../styles/global.css";
+import workData from "../scripts/workData";
+import projectData from "../scripts/projectData";
+import skillsData from "../scripts/skillsData";
+import Head from "../components/Head.astro";
 import Navigation from "../components/Navigation.astro";
 import ProjectSlider from "../components/ProjectSlider";
+import WorkEx from "../components/WorkEx.astro"
+import MOImage from "../assets/images/m.o.png";
+import Skills from "../components/Skills.astro";
+import ContactForm from "../components/ContactForm";
 
-const pageTitle = "Portfolio";
+const mySkills = [];
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
+	<Head pageTitle="Marvin Obig"/>
 	<body>
 		<Navigation />
-		<h1>{pageTitle}</h1>
-		<ProjectSlider client:only="react"/>
+		<header>
+			<div>
+				<h1>HI, I'M MARVIN</h1>
+				<p>I'm a Fullstack Developer.
+					After my first experience with coding, 
+					I realized that this is something I enjoyed a lot, 
+					being able to have a mixture of creativity and logic 
+					and turning an idea into a product/service. 
+					In my spare time, I try to expand and develop my 
+					skills as much as I can by completing online courses 
+					and carrying out my own projects.
+				</p>
+				<Skills skills={skillsData} />
+			</div>
+			<img src={MOImage} alt="marvin obig">
+		</header>
+		<WorkEx workData={workData}/>
+		<ProjectSlider projects={projectData} client:only="react"/>
+		<ContactForm client:only="react"/>
 	</body>
 </html>

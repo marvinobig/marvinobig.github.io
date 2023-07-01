@@ -1,0 +1,9 @@
+---
+const {skills} = Astro.props;
+---
+
+<div>
+    {skills.map((skill) => (
+        <img src={skill.img} alt={skill.alt} />
+    ))}
+</div>
