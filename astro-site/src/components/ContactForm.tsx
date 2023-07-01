@@ -97,15 +97,6 @@ function ContactForm() {
         </button>
         {sent && <p className={contact.error}>{sent}</p>}
       </form>
-      <div className={contact.socialLinksContainer}>
-        <a
-          href="https://github.com/marvinobig"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FontAwesomeIcon icon={faGithubSquare} />
-        </a>
-      </div>
     </footer>
   );
 }
