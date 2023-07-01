@@ -7,6 +7,10 @@ const FormInput = ({ labelText, inputType, inputValue, setValue, placeHolder, er
 
     }
 
+    const errorStyle = {
+
+    }
+
     return (
         <>
             <label style={labelStyle}>
@@ -19,7 +23,7 @@ const FormInput = ({ labelText, inputType, inputValue, setValue, placeHolder, er
                     placeholder={placeHolder}
                 />
             </label>
-            {error && <p>{error}</p>}
+            {error && <p style={errorStyle}>{error}</p>}
         </>
     );
 };
