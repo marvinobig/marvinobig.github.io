@@ -2,50 +2,55 @@ import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import '@splidejs/react-splide/css/skyblue';
 import '@splidejs/react-splide/css/core';
-import skills from "../data/skillData";
 
-const ProjectSlider = () => {
+const ProjectSlider = ({ projects }) => {
     const sliderOptions = {
         pagination: false,
         drag: true,
         autoplay: true,
         lazyLoad: true,
         cover: true,
-        height: "600px"
+        height: "500px"
     }
 
     const sliderTextStyling = {
-        padding: "20px",
-        fontSize: "2rem",
-        fontWeight: "bold"
+        margin: "20px 0 0 30px"
     }
 
     const sliderContainer = {
-        borderRadius: "10px",
         border: "1px solid black",
-        margin: "20px",
     }
 
 
     return (
-        <Splide options={sliderOptions} tag="section" hasTrack={false} aria-label="My Skills">
-            <section style={sliderContainer}>
-                <SplideTrack>
-                    {skills.map((skill, index) => (
-                        <SplideSlide key={index}>
-                            <img src={skill.img} alt={skill.alt} />
-                            <p style={sliderTextStyling}>{skill.alt}</p>
-                        </SplideSlide>
-                    ))}
-                </SplideTrack>
-                <div className="splide__arrows">
-                    <div className="splide__arrows">
-                        <button className="splide__arrow splide__arrow--prev">Prev</button>
-                        <button className="splide__arrow splide__arrow--next">Next</button>
-                    </div>
+        <section>
+            <h2>Projects</h2>
+            <Splide options={sliderOptions} tag="div" hasTrack={false} aria-label="My Skills">
+                <div style={sliderContainer}>
+                    <SplideTrack>
+                        {projects.map((project, index) => (
+                            <SplideSlide key={index}>
+                                <img src={project.img} alt={project.name} />
+                                <div style={sliderTextStyling}>
+                                    <div>
+                                        <h3>{project.name}</h3>
+                                        <a href={project.live}>View</a>
+                                        <a href={project.github}>Code</a>
+                                    </div>
+                                    
+                                    <p>{project.description}</p>
+                                    <div>
+                                        {project.technologies.map((tech, index) => (
+                                            <img key={index} src={tech.img} alt={tech.alt} />
+                                        ))}
+                                    </div>
+                                </div>
+                            </SplideSlide>
+                        ))}
+                    </SplideTrack>
                 </div>
-            </section>
-        </Splide>
+            </Splide>
+        </section>
     );
 }
 
