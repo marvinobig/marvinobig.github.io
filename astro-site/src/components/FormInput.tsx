@@ -1,13 +1,18 @@
 const FormInput = ({ labelText, inputType, inputValue, setValue, placeHolder, error }) => {
-    const styleObj = {
+    const labelStyle = {
 
     }
-    
+
+    const inputStyle = {
+
+    }
+
     return (
         <>
-            <label style={styleObj}>
+            <label style={labelStyle}>
                 {labelText}
                 <input
+                    style={inputStyle}
                     type={inputType}
                     value={inputValue}
                     onChange={(e) => setValue(e.target.value)}
