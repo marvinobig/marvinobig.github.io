@@ -1,21 +1,32 @@
 {
-  "name": "astro-site",
-  "type": "module",
-  "version": "0.0.1",
+  "name": "marvinobig-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://marvinobig.github.io/",
   "scripts": {
     "dev": "astro dev",
+    "scss": "npx mix",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@astrojs/react": "^2.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.1.19",
     "@splidejs/react-splide": "^0.7.12",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "astro": "^2.7.1",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "laravel-mix": "^6.0.49"
   }
 }
