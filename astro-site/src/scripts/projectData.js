@@ -1,9 +1,9 @@
 import cv_builder from "../assets/images/cv-builder.jpg";
 import elements from "../assets/images/elements.jpg";
-import css from "../assets/Dev-icons/front-end/css.png";
-import react from "../assets/Dev-icons/front-end/react.png";
-import js from "../assets/Dev-icons/front-end/javascript.png";
-import html from "../assets/Dev-icons/front-end/html.png";
+import css from "../assets/icons/front-end/css.png";
+import react from "../assets/icons/front-end/react.png";
+import js from "../assets/icons/front-end/javascript.png";
+import html from "../assets/icons/front-end/html.png";
 
 const projects = [
   {
