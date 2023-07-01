@@ -1,6 +1,6 @@
 const FormInput = ({ labelText, inputType, inputValue, setValue, placeHolder, error }) => {
     return (
-        <div>
+        <>
             <label>
                 {labelText}
                 <input
@@ -11,7 +11,7 @@ const FormInput = ({ labelText, inputType, inputValue, setValue, placeHolder, er
                 />
             </label>
             {error && <p>{error}</p>}
-        </div>
+        </>
     );
 };
 
