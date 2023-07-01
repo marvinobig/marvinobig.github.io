@@ -1,4 +1,8 @@
-const FormInput = ({ styleObj, labelText, inputType, inputValue, setValue, placeHolder, error }) => {
+const FormInput = ({ labelText, inputType, inputValue, setValue, placeHolder, error }) => {
+    const styleObj = {
+
+    }
+    
     return (
         <>
             <label style={styleObj}>
