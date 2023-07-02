@@ -22,6 +22,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 	header > section > img {
 		max-width: 50%;
+		object-fit: cover;
 	}
 
 	header > section > div {
@@ -29,6 +30,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 		flex-direction: column;
 		gap: 20px;
 		padding: 20px;
+	}
+
+	@media only screen and (max-width: 720px) {
+		header > section {
+			flex-direction: column-reverse;
+			gap: unset;
+		}
+
+		header > section > img {
+			max-width: unset;
+		}
 	}
 </style>
 
