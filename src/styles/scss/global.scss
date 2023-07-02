@@ -50,7 +50,7 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -79,5 +79,8 @@ select {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   padding: 20px;
 }
