@@ -1,12 +1,13 @@
 @import "./partials/variables";
 @import "./partials/layout";
 
-/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  background-color: $background-color1;
+  font-family: $font-family;
 }
 
 /* Remove default margin */
@@ -75,4 +76,8 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+main {
+  padding: 20px;
 }
