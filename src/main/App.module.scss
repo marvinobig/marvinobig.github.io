@@ -1,8 +1,0 @@
-@import "/src/assets/SASS-Partials/layout";
-* {
-  scroll-margin: 60px;
-}
-
-.App {
-  @include layout-flex(column, 20px);
-}
