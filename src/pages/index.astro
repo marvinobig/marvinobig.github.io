@@ -10,12 +10,34 @@ import RecentPosts from "../components/RecentPosts.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
+<style>
+	header {
+		border: 1px solid #272727;
+	}
+	
+	header > section {
+		display: flex;
+		gap: 20px;
+	}
+
+	header > section > img {
+		max-width: 50%;
+	}
+
+	header > section > div {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 20px;
+	}
+</style>
+
 <BaseLayout pageTitle="Marvin Obig">
 	<main>
 		<header>
-			<h1>HI, I'M MARVIN</h1>
 			<section>
 				<div>
+					<h1>HI, I'M MARVIN</h1>
 					<p>
 						I'm a Fullstack Developer. After my first experience with
 						coding, I realized that this is something I enjoyed a lot,
