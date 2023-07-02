@@ -23,9 +23,9 @@ const ProjectSlider = ({ projects }) => {
 
 
     return (
-        <section>
+        <article>
             <h2>Projects</h2>
-            <Splide options={sliderOptions} tag="div" hasTrack={false} aria-label="My Skills">
+            <Splide options={sliderOptions} tag="section" hasTrack={false} aria-label="My Skills">
                 <div style={sliderContainer}>
                     <SplideTrack>
                         {projects.map((project, index) => (
@@ -50,7 +50,7 @@ const ProjectSlider = ({ projects }) => {
                     </SplideTrack>
                 </div>
             </Splide>
-        </section>
+        </article>
     );
 }
 

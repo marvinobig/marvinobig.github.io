@@ -3,10 +3,10 @@ import Skills from "./Skills.astro";
 const { workData } = Astro.props;
 ---
 
-<section>
+<article>
     <h2>Work Experience</h2>
 
-    <div>
+    <section>
         {
             workData.map((work) => (
                 <div>
@@ -27,5 +27,5 @@ const { workData } = Astro.props;
                 </div>
             ))
         }
-    </div>
-</section>
+    </section>
+</article>
