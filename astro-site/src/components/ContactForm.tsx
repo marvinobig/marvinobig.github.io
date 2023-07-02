@@ -1,8 +1,8 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import formValidation from "../scripts/formValidation";
-import contact from "../styles/scss/Contacts.module.scss";
+import FormInput from "./FormInput";
+import FormTextareaInput from "./FormTextareaInput";
+import Button from "./Button";
 
 function ContactForm() {
   const [nameInput, setNameInput] = useState("");
@@ -48,53 +48,19 @@ function ContactForm() {
   }
 
   return (
-    <footer id="contact" className={contact.contact}>
-      <h2 className={contact.title}>Contact Me</h2>
-      <form className={contact.contactForm}>
-        <label>
-          From
-          <input
-            type="email"
-            value={fromInput}
-            onChange={(e) => setFromInput(e.target.value)}
-            placeholder="Enter Your Email"
-          />
-        </label>
-        {errors.from && <p className={contact.error}>{errors.from}</p>}
-        <label>
-          Name
-          <input
-            type="text"
-            value={nameInput}
-            onChange={(e) => setNameInput(e.target.value)}
-            placeholder="Enter Your Full Name"
-          />
-        </label>
-        {errors.name && <p className={contact.error}>{errors.name}</p>}
-        <label>
-          Subject
-          <input
-            type="text"
-            value={subjectInput}
-            onChange={(e) => setSubjectInput(e.target.value)}
-            placeholder="Enter Email Subject"
-          />
-        </label>
-        {errors.subject && <p className={contact.error}>{errors.subject}</p>}
-        <textarea
-          value={msgInput}
-          onChange={(e) => setMsgInput(e.target.value)}
-          placeholder="Enter Message"
-        />
-        {errors.message && <p className={contact.error}>{errors.message}</p>}
-        <button
-          className={contact.contactFormBtn}
-          type="button"
-          onClick={handleContact}
-        >
-          Send <FontAwesomeIcon icon={faEnvelope} />
-        </button>
-        {sent && <p className={contact.error}>{sent}</p>}
+    <footer>
+      <h2>Contact Me</h2>
+      <form id="contact">
+        <div>
+          <FormInput labelText="From" inputType="email" inputValue={fromInput} setValue={setFromInput} placeHolder="Enter Your Email" error={errors.from}/>
+          <FormInput labelText="Name" inputType="text" inputValue={nameInput} setValue={setNameInput} placeHolder="Enter Your Full Name" error={errors.name}/>
+          <FormInput labelText="Subject" inputType="text" inputValue={subjectInput} setValue={setSubjectInput} placeHolder="Enter Email Subject" error={errors.subject}/>
+        </div>
+        <div>
+          <FormTextareaInput inputValue={msgInput} setValue={setMsgInput} placeHolder="Enter Your Message" error={errors.message}/>
+          <Button btnType="button" btnText="Send" eventFunction={handleContact}/>
+          {sent && <p>{sent}</p>}
+        </div>
       </form>
     </footer>
   );
