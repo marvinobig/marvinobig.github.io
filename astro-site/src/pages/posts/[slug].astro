@@ -1,0 +1,39 @@
+---
+import { getCollection } from "astro:content";
+import moment from "moment";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostTags from "../../components/PostTags.astro";
+
+export async function getStaticPaths() {
+    const posts = await getCollection("blog");
+
+    return posts.map((post) => ({
+        params: { slug: post.slug },
+        props: { post },
+    }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<BaseLayout>
+    <main>
+        <header>
+            <section>
+                <img src={post.data.banner.url} alt={post.data.banner.alt}>
+            </section>
+            <section>
+                <h1>
+                    {post.data.title}
+                </h1>
+                <p>{moment(post.data.pubDate).format("dddd DD MMMM, YYYY")}</p>
+                <PostTags tags={post.data.tags} />
+            </section>
+        </header>
+
+        <article>
+            <Content />
+        </article>
+    </main>
+</BaseLayout>
