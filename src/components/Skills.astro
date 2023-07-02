@@ -2,6 +2,23 @@
 const {skills} = Astro.props;
 ---
 
+<style>
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 30px;
+        max-height: 30px;
+    }
+</style>
+
 <section>
     {skills.map((skill) => (
         <img src={skill.img} alt={skill.alt} />
