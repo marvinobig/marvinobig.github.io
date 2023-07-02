@@ -3,39 +3,33 @@
 import workData from "../scripts/workData";
 import projectData from "../scripts/projectData";
 import skillsData from "../scripts/skillsData";
-import Head from "../components/Head.astro";
-import Navigation from "../components/Navigation.astro";
 import ProjectSlider from "../components/ProjectSlider";
-import WorkEx from "../components/WorkEx.astro"
+import WorkEx from "../components/WorkEx.astro";
 import MOImage from "../assets/images/m.o.png";
 import Skills from "../components/Skills.astro";
-import ContactForm from "../components/ContactForm";
-
-const mySkills = [];
+import RecentPosts from "../components/RecentPosts.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<Head pageTitle="Marvin Obig"/>
-	<body>
-		<Navigation />
+<BaseLayout>
+	<main>
 		<header>
-			<div>
-				<h1>HI, I'M MARVIN</h1>
-				<p>I'm a Fullstack Developer.
-					After my first experience with coding, 
-					I realized that this is something I enjoyed a lot, 
-					being able to have a mixture of creativity and logic 
-					and turning an idea into a product/service. 
-					In my spare time, I try to expand and develop my 
-					skills as much as I can by completing online courses 
-					and carrying out my own projects.
+			<h1>HI, I'M MARVIN</h1>
+			<section>
+				<p>
+					I'm a Fullstack Developer. After my first experience with
+					coding, I realized that this is something I enjoyed a lot,
+					being able to have a mixture of creativity and logic and
+					turning an idea into a product/service. In my spare time, I
+					try to expand and develop my skills as much as I can by
+					completing online courses and carrying out my own projects.
 				</p>
-				<Skills skills={skillsData} />
-			</div>
-			<img src={MOImage} alt="marvin obig">
+				<img src={MOImage} alt="marvin obig" />
+			</section>
+			<Skills skills={skillsData} />
 		</header>
-		<WorkEx workData={workData}/>
-		<ProjectSlider projects={projectData} client:only="react"/>
-		<ContactForm client:only="react"/>
-	</body>
-</html>
+		<WorkEx workData={workData} />
+		<ProjectSlider projects={projectData} client:only="react" />
+		<RecentPosts />
+	</main>
+</BaseLayout>
