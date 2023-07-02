@@ -2,6 +2,9 @@
 title: My Third Blog Post
 author: Astro Learner
 summary: "I had some challenges, but asking in the community really helped!"
+banner:
+    url: 'https://docs.astro.build/assets/arc.webp'
+    alt: "My First Blog Post Banner"
 image: 
     url: "https://docs.astro.build/assets/rays.webp"
     alt: "Thumbnail of Astro rays."

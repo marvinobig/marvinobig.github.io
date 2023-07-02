@@ -3,6 +3,9 @@ title: 'My First Blog Post'
 pubDate: 2023-07-28
 author: 'marvinobig'
 summary: "Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website."
+banner:
+    url: 'https://docs.astro.build/assets/arc.webp'
+    alt: "My First Blog Post Banner"
 image:
     url: 'https://docs.astro.build/assets/arc.webp' 
     alt: 'The full Astro logo.'
@@ -26,5 +29,3 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 ## What's next
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-
-
