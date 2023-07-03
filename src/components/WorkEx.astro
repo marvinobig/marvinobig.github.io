@@ -3,6 +3,19 @@ import Skills from "./Skills.astro";
 const { workData } = Astro.props;
 ---
 
+<style>
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    section {
+        border: 1px solid #272727;
+        padding: 20px;
+    }
+</style>
+
 <article>
     <h2>Work Experience</h2>
 
