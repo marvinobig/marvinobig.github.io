@@ -8,6 +8,14 @@ import MOImage from "../assets/images/m.o.png";
 import Skills from "../components/Skills.astro";
 import RecentPosts from "../components/RecentPosts.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Socials from "../components/Socials.astro";
+
+const socials = [
+	{
+		href: "https://github.com/marvinobig",
+		text: "Github"
+	}
+];
 ---
 
 <style>
@@ -59,6 +67,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 						completing online courses and carrying out my own projects.
 					</p>
 					<Skills skills={skillsData} />
+					<Socials socials={socials} />
 				</div>
 				<img src={MOImage} alt="marvin obig" />
 			</section>
