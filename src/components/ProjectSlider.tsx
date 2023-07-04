@@ -10,45 +10,81 @@ const ProjectSlider = ({ projects }) => {
         autoplay: true,
         lazyLoad: true,
         cover: true,
-        height: "500px"
-    }
-
-    const sliderTextStyling = {
-        margin: "20px 0 0 30px"
+        height: "600px"
     }
 
     const sliderContainer = {
         border: "1px solid black",
     }
 
+    const sliderHeaderStyle = {
+        display: "flex",
+        flexDirection: "column",
+        gap: "20px",
+        backgroundColor: "transparent",
+        margin: "30px",
+    }
+
+    const sliderHeaderSectionStyle = {
+        display: "flex",
+        alignItems: "center",
+        gap: "20px",
+        backgroundColor: "transparent",
+    }
+
+    const textStyle = {
+        width: "fit-content",
+        color: "#fcfcfc",
+        backgroundColor: "#272727",
+        padding: "10px 20px"
+    }
+
+    const skillContainerStyle = {
+        display: "flex",
+        alignItems: "center",
+        gap: "20px",
+        width: "fit-content",
+        backgroundColor: "#272727",
+        padding: "10px 20px"
+    }
+
+    const skillImgStyle = {
+        backgroundColor: "transparent",
+        maxWidth: "30px"
+    }
+
+    const bgImgStyle = {
+
+    }
+
 
     return (
         <article>
             <h2>Projects</h2>
-            <Splide options={sliderOptions} tag="section" hasTrack={false} aria-label="My Skills">
-                <div style={sliderContainer}>
-                    <SplideTrack>
-                        {projects.map((project, index) => (
-                            <SplideSlide key={index}>
-                                <img src={project.img} alt={project.name} />
-                                <div style={sliderTextStyling}>
-                                    <div>
-                                        <h3>{project.name}</h3>
-                                        <a href={project.live}>View</a>
-                                        <a href={project.github}>Code</a>
-                                    </div>
-                                    
-                                    <p>{project.description}</p>
-                                    <div>
-                                        {project.technologies.map((tech, index) => (
-                                            <img key={index} src={tech.img} alt={tech.alt} />
-                                        ))}
-                                    </div>
-                                </div>
-                            </SplideSlide>
-                        ))}
-                    </SplideTrack>
-                </div>
+            <Splide options={sliderOptions} tag="section" hasTrack={false} aria-label="My Skills" style={sliderContainer}>
+                <SplideTrack>
+                    {projects.map((project, index) => (
+                        <SplideSlide style={bgImgStyle} key={index}>
+                            <header style={sliderHeaderStyle}>
+                                <h3 style={textStyle}>{project.name}</h3>
+
+                                <p style={textStyle}>{project.description}</p>
+
+                                <section style={skillContainerStyle}>
+                                    {project.technologies.map((tech, index) => (
+                                        <img key={index} src={tech.img} alt={tech.alt} style={skillImgStyle} />
+                                    ))}
+                                </section>
+
+                                <section style={sliderHeaderSectionStyle}>
+                                    <a style={textStyle} href={project.live} target='_blank'>View</a>
+                                    <a style={textStyle} href={project.github} target='_blank'>Code</a>
+                                </section>
+                            </header>
+                            <img src={project.img} alt={project.name} />
+                        </SplideSlide>
+                    ))}
+                </SplideTrack>
             </Splide>
         </article>
     );
