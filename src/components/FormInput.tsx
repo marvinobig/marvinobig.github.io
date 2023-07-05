@@ -1,14 +1,18 @@
 const FormInput = ({ labelText, inputType, inputValue, setValue, placeHolder, error }) => {
     const labelStyle = {
-
+        display: 'flex',
+        alignItems: 'center',
+        gap: "10px",
+        height: "80px",
+        padding: "4px 16px",
+        border: "1px solid #272727"
     }
 
     const inputStyle = {
-
-    }
-
-    const errorStyle = {
-
+        height: "100%",
+        width: "100%",
+        padding: "0 0 0 16px",
+        border: "0",
     }
 
     return (
@@ -23,7 +27,7 @@ const FormInput = ({ labelText, inputType, inputValue, setValue, placeHolder, er
                     placeholder={placeHolder}
                 />
             </label>
-            {error && <p style={errorStyle}>{error}</p>}
+            {error && <p className="error">{error}</p>}
         </>
     );
 };
