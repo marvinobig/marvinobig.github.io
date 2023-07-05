@@ -48,29 +48,22 @@ const allPosts = await getCollection("blog");
 </style>
 
 <BaseLayout pageTitle="Blog">
-	<main>
-		<h1>Posts</h1>
+	<h1>Posts</h1>
 
-		<article>
-			{allPosts.length === 0 && <p>Coming Soon 👀...</p>}
-			
-			{
-				allPosts.map((post) => (
-					<section>
-						<img
-							src={post.data.image.url}
-							alt={post.data.image.alt}
-						/>
-						<div>
-							<a href={`/posts/${post.slug}`}>
-								{post.data.title}
-							</a>
-							<p>{post.data.summary}</p>
-							<PostTags tags={post.data.tags} />
-						</div>
-					</section>
-				))
-			}
-		</article>
-	</main>
+	<article>
+		{allPosts.length === 0 && <p>Coming Soon 👀...</p>}
+
+		{
+			allPosts.map((post) => (
+				<section>
+					<img src={post.data.image.url} alt={post.data.image.alt} />
+					<div>
+						<a href={`/posts/${post.slug}`}>{post.data.title}</a>
+						<p>{post.data.summary}</p>
+						<PostTags tags={post.data.tags} />
+					</div>
+				</section>
+			))
+		}
+	</article>
 </BaseLayout>
