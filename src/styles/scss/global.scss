@@ -25,7 +25,9 @@ dd {
 }
 
 h1,
-h2 {
+h2,
+h3 {
+  text-transform: uppercase;
   width: fit-content;
   color: $background-color1;
   background-color: $background-color2;
@@ -52,9 +54,12 @@ main,
 footer {
   @include layout-flex(column, 0);
   width: 100%;
-  max-width: 1200px;
   gap: 40px;
   padding: $site-padding;
+}
+
+nav, main, footer {
+  max-width: $site-width;
 }
 
 article {
