@@ -65,7 +65,7 @@ body {
 
 main,
 footer {
-  @include layout-flex(column, 80px);
+  @include layout-flex(column, 60px);
   width: 100%;
   padding: $site-padding;
 }
@@ -81,7 +81,7 @@ footer {
 }
 
 article {
-  @include layout-flex(column, 25px);
+  @include layout-flex(column, 40px);
 }
 
 a:not([class]) {
