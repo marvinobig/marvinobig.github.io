@@ -52,6 +52,8 @@ const allPosts = await getCollection("blog");
 		<h1>Posts</h1>
 
 		<article>
+			{allPosts.length === 0 && <p>Coming Soon 👀...</p>}
+			
 			{
 				allPosts.map((post) => (
 					<section>
