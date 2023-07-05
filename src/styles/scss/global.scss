@@ -150,6 +150,15 @@ form {
   text-transform: capitalize;
 }
 
+.not-found, .success {
+  font-weight: $bolder-font;
+  text-transform: capitalize;
+}
+
+.success {
+  color: $success-colour;
+}
+
 .project-slider-btn {
   top: 95% !important;
 

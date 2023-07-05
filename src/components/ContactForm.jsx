@@ -76,7 +76,7 @@ function ContactForm() {
           <section style={formSectionStyle}>
             <FormTextareaInput inputValue={msgInput} setValue={setMsgInput} placeHolder="Enter Your Message" error={errors.message} />
             <Button btnType="button" btnText="Send" eventFunction={handleContact} />
-            {sent && <p>{sent}</p>}
+            {sent && <p className="success">{sent}</p>}
           </section>
         </form>
       </article>
