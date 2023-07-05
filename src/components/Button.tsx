@@ -6,7 +6,7 @@ const Button = ({ btnType, eventFunction, btnText }) => {
         backgroundColor: "#272727",
         color: "#fcfcfc",
         padding: "10px 20px",
-        border: "1px solid #272727"
+        border: "2px solid #272727"
     }
 
     return (
