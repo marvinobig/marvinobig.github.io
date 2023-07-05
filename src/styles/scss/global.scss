@@ -10,7 +10,20 @@
   font-family: $font-family;
 }
 
-/* Remove default margin */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: $background-color2;
+  border: 9px solid $background-color1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $background-color2;
+  border: 7px solid $background-color1;
+}
+
 body,
 h1,
 h2,
@@ -148,20 +161,6 @@ form {
     background-color: $background-color2;
     padding: 10px;
   }
-}
-
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-::-webkit-scrollbar-track {
-  background: $background-color2;
-  border: 9px solid $background-color1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: $background-color2;
-  border: 7px solid $background-color1;
 }
 
 @media (prefers-reduced-motion: reduce) {
