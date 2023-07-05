@@ -9,8 +9,7 @@ const workData = [
   {
     company: "Adaptive Web",
     title: "Apprentice Software Developer",
-    time: ["2022-11-14", "Present"],
-    companyLink: "https://www.adaptive.co.uk/team",
+    time: ["2022/11/14", "Present"],
     achievements: [
       "Moved parts of the mencap website over to bootstrap 5, SCSS & ES6 JavaScript from bootstrap 4, CSS & jQuery",
       "Helped implement the design for the CMSGuard.io landing page",
@@ -40,6 +39,32 @@ const workData = [
       {
         img: drupal,
         alt: "Drupal",
+      },
+    ],
+  },
+  {
+    company: "Help Juice",
+    title: "Freelance Web Developer on Upwork",
+    time: ["01/01/2022", "22/02/2022"],
+    achievements: [
+      "Using a mockup image of a page provided by the client I developed a landing page using HTML, CSS and Javascript for use on their knowledge base software."
+    ],
+    skillsUsed: [
+      {
+        img: git,
+        alt: "Git",
+      },
+      {
+        img: html,
+        alt: "HTML",
+      },
+      {
+        img: scss,
+        alt: "SCSS",
+      },
+      {
+        img: js,
+        alt: "Javascript",
       },
     ],
   },
