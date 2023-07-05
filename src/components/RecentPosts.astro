@@ -8,7 +8,27 @@ const posts = await getCollection("blog");
   article > header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
+  }
+
+  article > section {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  article > section > div {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 192px;
+    min-width: 335px;
+    max-width: 335px;
+    padding: 20px;
+    border: 2px solid #272727;
   }
 
   a {
@@ -39,7 +59,7 @@ const posts = await getCollection("blog");
         posts.slice(0, 5).map((post) => (
           <div>
             <a href={`/posts/${post.slug}`}>{post.data.title}</a>
-            <p>{moment(post.data.pubDate).format("dddd DD MMMM, YYYY")}</p>
+            <p class="date">{moment(post.data.pubDate).format("dddd DD MMMM, YYYY")}</p>
             <p>{post.data.summary}</p>
           </div>
         ))
