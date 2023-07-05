@@ -57,6 +57,15 @@ const ProjectSlider = ({ projects }) => {
         maxWidth: "30px"
     }
 
+    const linkStyle = {
+        fontWeight: 'normal',
+        backgroundColor: "#272727",
+        color: "#fcfcfc",
+        padding: "10px 20px",
+        border: "2px solid #272727",
+        textDecoration: "underline",
+    }
+
     return (
         <article>
             <h2>Projects</h2>
@@ -76,8 +85,8 @@ const ProjectSlider = ({ projects }) => {
                                 </section>
 
                                 <section style={sliderHeaderSectionStyle}>
-                                    <a href={project.live} target='_blank'>View</a>
-                                    <a href={project.github} target='_blank'>Code</a>
+                                    <a style={linkStyle} href={project.live} target='_blank'>View</a>
+                                    <a style={linkStyle} href={project.github} target='_blank'>Code</a>
                                 </section>
                             </header>
                             <img src={project.img} alt={project.name} />

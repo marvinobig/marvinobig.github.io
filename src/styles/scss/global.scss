@@ -65,7 +65,7 @@ body {
 
 main,
 footer {
-  @include layout-flex(column, 50px);
+  @include layout-flex(column, 80px);
   width: 100%;
   padding: $site-padding;
 }
@@ -76,16 +76,17 @@ footer {
   max-width: $site-width;
 }
 
+footer {
+  margin-top: 50px;
+}
+
 article {
   @include layout-flex(column, 25px);
 }
 
 a:not([class]) {
-  height: 44px;
-  background-color: $background-color2;
-  color: $background-color1;
-  padding: $content-padding;
-  border: $border;
+  font-weight: $bolder-font;
+  color: $background-color2;
   text-decoration: underline;
   text-decoration-skip-ink: auto;
 }
