@@ -3,7 +3,7 @@ const FormTextareaInput = ({ inputValue, setValue, placeHolder, error }) => {
         height: "100%",
         minHeight: "180px",
         padding: "20px",
-        border: "1px solid #272727",
+        border: "2px solid #272727",
         resize: 'none',
     }
 
