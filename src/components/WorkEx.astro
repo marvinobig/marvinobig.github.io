@@ -4,9 +4,26 @@ const { workData } = Astro.props;
 ---
 
 <style>
-    section {
-        border: 2px solid #272727;
+    article > section {
+        display: flex;
+        align-items: start;
+        gap: 20px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 20px;
+    }
+
+    article > section > div {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        min-height: 192px;
+        min-width: 635px;
+        max-width: 635px;
         padding: 20px;
+        border: 2px solid #272727;
     }
 </style>
 
@@ -20,17 +37,15 @@ const { workData } = Astro.props;
                     <h3>
                         {work.title} - {work.company}
                     </h3>
-                    <div>
-                        <p>
-                            {work.time[0]} - {work.time[1]}
-                        </p>
-                        <ul>
-                            {work.achievements.map((achievement) => (
-                                <li>{achievement}</li>
-                            ))}
-                        </ul>
-                    </div>
-                    <Skills skills={work.skillsUsed}/> 
+                    <p class="date">
+                        {work.time[0]} - {work.time[1]}
+                    </p>
+                    <ul>
+                        {work.achievements.map((achievement) => (
+                            <li>{achievement}</li>
+                        ))}
+                    </ul>
+                    <Skills skills={work.skillsUsed} />
                 </div>
             ))
         }

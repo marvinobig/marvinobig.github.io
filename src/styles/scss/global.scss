@@ -57,7 +57,9 @@ footer {
   padding: $site-padding;
 }
 
-nav, main, footer {
+nav,
+main,
+footer {
   max-width: $site-width;
 }
 
@@ -79,14 +81,23 @@ a:not([class]) {
   }
 }
 
-/* Make images easier to work with */
+ul,
+ol {
+  padding-inline-start: $site-padding;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  list-style-type: square;
+}
+
 img,
 picture {
   width: 100%;
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
@@ -120,6 +131,10 @@ form {
   }
 }
 
+.date {
+  font-weight: $bolder-font;
+}
+
 .error {
   color: $error-colour;
   text-transform: capitalize;
@@ -129,13 +144,26 @@ form {
   top: 95% !important;
 
   svg {
-    fill: #fcfcfc !important;
-    background-color: #272727;
+    fill: $background-color1 !important;
+    background-color: $background-color2;
     padding: 10px;
   }
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: $background-color2;
+  border: 9px solid $background-color1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $background-color2;
+  border: 7px solid $background-color1;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
