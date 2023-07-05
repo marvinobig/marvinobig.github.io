@@ -10,11 +10,15 @@ const ProjectSlider = ({ projects }) => {
         autoplay: true,
         lazyLoad: true,
         cover: true,
-        height: "600px"
+        height: "600px",
+        classes: {
+            prev: "splide__arrow--prev project-slider-btn",
+            next: "splide__arrow--next project-slider-btn",
+        }
     }
 
     const sliderContainer = {
-        border: "1px solid black",
+        border: "2px solid #272727",
     }
 
     const sliderHeaderStyle = {
@@ -53,18 +57,13 @@ const ProjectSlider = ({ projects }) => {
         maxWidth: "30px"
     }
 
-    const bgImgStyle = {
-
-    }
-
-
     return (
         <article>
             <h2>Projects</h2>
             <Splide options={sliderOptions} tag="section" hasTrack={false} aria-label="My Skills" style={sliderContainer}>
                 <SplideTrack>
                     {projects.map((project, index) => (
-                        <SplideSlide style={bgImgStyle} key={index}>
+                        <SplideSlide key={index}>
                             <header style={sliderHeaderStyle}>
                                 <h3 style={textStyle}>{project.name}</h3>
 
@@ -77,8 +76,8 @@ const ProjectSlider = ({ projects }) => {
                                 </section>
 
                                 <section style={sliderHeaderSectionStyle}>
-                                    <a style={textStyle} href={project.live} target='_blank'>View</a>
-                                    <a style={textStyle} href={project.github} target='_blank'>Code</a>
+                                    <a href={project.live} target='_blank'>View</a>
+                                    <a href={project.github} target='_blank'>Code</a>
                                 </section>
                             </header>
                             <img src={project.img} alt={project.name} />
