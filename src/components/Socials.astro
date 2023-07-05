@@ -23,6 +23,6 @@ const { socials } = Astro.props;
 
 <section>
     {socials.map((social) => (
-        <a href={social.href}>{social.text}</a>
+        <a href={social.href} target="_blank">{social.text}</a>
     ))}
 </section>
