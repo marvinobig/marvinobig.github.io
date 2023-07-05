@@ -24,8 +24,16 @@ dd {
   margin: 0;
 }
 
-ul[role='list'],
-ol[role='list'] {
+h1,
+h2 {
+  width: fit-content;
+  color: $background-color1;
+  background-color: $background-color2;
+  padding: $content-padding;
+}
+
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -34,24 +42,37 @@ html:focus-within {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  @include layout-flex(column, 0);
   align-items: center;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
-main, footer {
-  display: flex;
-  flex-direction: column;
+main,
+footer {
+  @include layout-flex(column, 0);
+  width: 100%;
   max-width: 1200px;
   gap: 40px;
-  padding: 20px;
+  padding: $site-padding;
+}
+
+article {
+  @include layout-flex(column, 40px);
 }
 
 a:not([class]) {
+  height: 44px;
+  background-color: $background-color2;
+  color: $background-color1;
+  padding: $content-padding;
+  border: $border;
+  text-decoration: none;
   text-decoration-skip-ink: auto;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /* Make images easier to work with */
@@ -69,12 +90,53 @@ select {
   font: inherit;
 }
 
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+label,
+textarea,
+button {
+  &:focus-within {
+    outline: $border;
+  }
+}
+
+form {
+  section {
+    @media screen and (max-width: 768px) {
+      max-width: 100% !important;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.error {
+  color: $error-colour;
+  text-transform: capitalize;
+}
+
+.project-slider-btn {
+  top: 95% !important;
+
+  svg {
+    fill: #fcfcfc !important;
+    background-color: #272727;
+    padding: 10px;
+  }
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
