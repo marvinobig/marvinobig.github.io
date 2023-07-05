@@ -44,7 +44,7 @@ function ContactForm() {
       if (sendEmail.status === 200) {
         setSent(sendEmailJson.msg);
       } else setSent("email not sent successfully");
-    } 
+    }
   }
 
   const formStyle = {
@@ -65,19 +65,21 @@ function ContactForm() {
 
   return (
     <footer>
-      <h2>Contact Me</h2>
-      <form style={formStyle} id="contact">
-        <section style={formSectionStyle}>
-          <FormInput labelText="From" inputType="email" inputValue={fromInput} setValue={setFromInput} placeHolder="Enter Your Email" error={errors.from}/>
-          <FormInput labelText="Name" inputType="text" inputValue={nameInput} setValue={setNameInput} placeHolder="Enter Your Full Name" error={errors.name}/>
-          <FormInput labelText="Subject" inputType="text" inputValue={subjectInput} setValue={setSubjectInput} placeHolder="Enter Email Subject" error={errors.subject}/>
-        </section>
-        <section style={formSectionStyle}>
-          <FormTextareaInput inputValue={msgInput} setValue={setMsgInput} placeHolder="Enter Your Message" error={errors.message}/>
-          <Button btnType="button" btnText="Send" eventFunction={handleContact}/>
-          {sent && <p>{sent}</p>}
-        </section>
-      </form>
+      <article>
+        <h2>Contact Me</h2>
+        <form style={formStyle} id="contact">
+          <section style={formSectionStyle}>
+            <FormInput labelText="From" inputType="email" inputValue={fromInput} setValue={setFromInput} placeHolder="Enter Your Email" error={errors.from} />
+            <FormInput labelText="Name" inputType="text" inputValue={nameInput} setValue={setNameInput} placeHolder="Enter Your Full Name" error={errors.name} />
+            <FormInput labelText="Subject" inputType="text" inputValue={subjectInput} setValue={setSubjectInput} placeHolder="Enter Email Subject" error={errors.subject} />
+          </section>
+          <section style={formSectionStyle}>
+            <FormTextareaInput inputValue={msgInput} setValue={setMsgInput} placeHolder="Enter Your Message" error={errors.message} />
+            <Button btnType="button" btnText="Send" eventFunction={handleContact} />
+            {sent && <p>{sent}</p>}
+          </section>
+        </form>
+      </article>
     </footer>
   );
 }
