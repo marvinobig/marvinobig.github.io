@@ -9,7 +9,7 @@ const workData = [
   {
     company: "Adaptive Web",
     title: "Apprentice Software Developer",
-    time: ["2022/11/14", "Present"],
+    time: ["14/11/2022", "Present"],
     achievements: [
       "Moved parts of the mencap website over to bootstrap 5, SCSS & ES6 JavaScript from bootstrap 4, CSS & jQuery",
       "Helped implement the design for the CMSGuard.io landing page",
