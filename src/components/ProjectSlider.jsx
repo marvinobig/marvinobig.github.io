@@ -49,7 +49,7 @@ const ProjectSlider = ({ projects }) => {
         gap: "20px",
         width: "fit-content",
         backgroundColor: "#272727",
-        padding: "10px 20px"
+        padding: "12px"
     }
 
     const skillImgStyle = {
