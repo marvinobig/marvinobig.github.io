@@ -3,6 +3,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 6px;
         width: 100%;
         padding: 20px;
         position: sticky;
@@ -12,16 +13,20 @@
 
     section {
         display: flex;
-        align-items: center;
-        gap: 20px;
+        gap: 6px;
     }
 
     a {
-        height: 44px;
         background-color: #272727;
         color: #fcfcfc;
         padding: 10px 20px;
         text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+        nav {
+            align-items: start;
+        }
     }
 </style>
 
