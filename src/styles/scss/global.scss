@@ -86,12 +86,8 @@ a:not([class]) {
   color: $background-color1;
   padding: $content-padding;
   border: $border;
-  text-decoration: none;
+  text-decoration: underline;
   text-decoration-skip-ink: auto;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 ul,

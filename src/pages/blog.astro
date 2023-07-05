@@ -6,6 +6,37 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 const allPosts = await getCollection("blog");
 ---
 
+<style>
+	article > section {
+		display: flex;
+		border: 2px solid #272727;
+	}
+
+	article > section > img {
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+		max-width: 200px;
+	}
+
+	article > section > div {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 20px;
+		padding: 20px;
+	}
+
+	a {
+		height: 44px;
+		width: fit-content;
+		background-color: #272727;
+		color: #fcfcfc;
+		padding: 10px 20px;
+		border: 2px solid #272727;
+		text-decoration: underline;
+	}
+</style>
+
 <BaseLayout pageTitle="Blog">
 	<main>
 		<h1>Posts</h1>
