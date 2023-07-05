@@ -35,6 +35,16 @@ const allPosts = await getCollection("blog");
 		border: 2px solid #272727;
 		text-decoration: underline;
 	}
+
+	@media screen and (max-width: 768px) {
+		article > section {
+			flex-direction: column;
+		}
+
+		article > section > img {
+			max-width: unset;
+		}
+	}
 </style>
 
 <BaseLayout pageTitle="Blog">
