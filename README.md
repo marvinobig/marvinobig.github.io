@@ -7,7 +7,7 @@ This is my portfolio. [View](https://marvinobig.github.io/) to learn a little ab
 - HTML
 - SCSS Modules
 - React Js
-- Astro
+- Astro Js
 - Node Js/Express Js (Contact Form)
 
 ## Live Link
