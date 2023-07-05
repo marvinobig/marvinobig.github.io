@@ -1,7 +1,7 @@
 import { useState } from "react";
 import formValidation from "../scripts/formValidation";
 import FormInput from "./FormInput";
-import FormTextareaInput from "./FormTextareaInput";
+import FormTextareaInput from "./FormTextAreaInput";
 import Button from "./Button";
 
 function ContactForm() {
@@ -43,24 +43,40 @@ function ContactForm() {
 
       if (sendEmail.status === 200) {
         setSent(sendEmailJson.msg);
-      } else setSent("Not Sent Successfully");
-    } else setSent("Not Sent Successfully");
+      } else setSent("email not sent successfully");
+    } 
+  }
+
+  const formStyle = {
+    display: 'flex',
+    height: "100%",
+    width: "100%",
+    gap: "20px",
+  }
+
+  const formSectionStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    gap: "20px",
+    width: "100%",
+    maxWidth: "50%"
   }
 
   return (
     <footer>
       <h2>Contact Me</h2>
-      <form id="contact">
-        <div>
+      <form style={formStyle} id="contact">
+        <section style={formSectionStyle}>
           <FormInput labelText="From" inputType="email" inputValue={fromInput} setValue={setFromInput} placeHolder="Enter Your Email" error={errors.from}/>
           <FormInput labelText="Name" inputType="text" inputValue={nameInput} setValue={setNameInput} placeHolder="Enter Your Full Name" error={errors.name}/>
           <FormInput labelText="Subject" inputType="text" inputValue={subjectInput} setValue={setSubjectInput} placeHolder="Enter Email Subject" error={errors.subject}/>
-        </div>
-        <div>
+        </section>
+        <section style={formSectionStyle}>
           <FormTextareaInput inputValue={msgInput} setValue={setMsgInput} placeHolder="Enter Your Message" error={errors.message}/>
           <Button btnType="button" btnText="Send" eventFunction={handleContact}/>
           {sent && <p>{sent}</p>}
-        </div>
+        </section>
       </form>
     </footer>
   );
