@@ -5,7 +5,7 @@ const FormInput = ({ labelText, inputType, inputValue, setValue, placeHolder, er
         gap: "10px",
         height: "80px",
         padding: "4px 16px",
-        border: "1px solid #272727"
+        border: "2px solid #272727"
     }
 
     const inputStyle = {
