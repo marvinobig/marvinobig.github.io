@@ -2,26 +2,47 @@
 import { getCollection } from "astro:content";
 import moment from "moment";
 const posts = await getCollection("blog");
-
 ---
 
-<article>
-    <header>
-      <h2>Posts</h2>
-      <a href="/blog">View More</a>
-    </header>
-    {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
+<style>
+  article > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    <section>
-      {
-        posts.length !== 0 &&
-          posts
-            .slice(0, 5)
-            .map((post) => (
-                <a href={`/posts/${post.slug}`}>{post.data.title}</p>
-                <p>{moment(post.data.pubDate).format("dddd DD MMMM, YYYY")}</p>
-                <p>{post.data.summary}</p>               
-            ))
-      }
-    </section>
+  a {
+    height: 44px;
+    background-color: #272727;
+    color: #fcfcfc;
+    padding: 10px 20px;
+    border: 2px solid #272727;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<article>
+  <header>
+    <h2>Posts</h2>
+    <a href="/blog">View More</a>
+  </header>
+
+  {posts.length === 0 && <p>Coming Soon 👀...</p>}
+
+  <section>
+    {
+      posts.length !== 0 &&
+        posts.slice(0, 5).map((post) => (
+          <div>
+            <a href={`/posts/${post.slug}`}>{post.data.title}</a>
+            <p>{moment(post.data.pubDate).format("dddd DD MMMM, YYYY")}</p>
+            <p>{post.data.summary}</p>
+          </div>
+        ))
+    }
+  </section>
 </article>
