@@ -1,0 +1,29 @@
+---
+const {skills} = Astro.props;
+---
+
+<style>
+    section {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: fit-content;
+        background-color: #272727;
+        padding: 12px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 30px;
+        max-height: 30px;
+        background-color: transparent;
+    }
+</style>
+
+<section>
+    {skills.map((skill) => (
+        <img src={skill.img} alt={skill.alt} />
+    ))}
+</section>

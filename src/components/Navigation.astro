@@ -1,0 +1,39 @@
+<style>
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6px;
+        width: 100%;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 6;
+    }
+
+    section {
+        display: flex;
+        gap: 6px;
+    }
+
+    a {
+        background-color: #272727;
+        color: #fcfcfc;
+        padding: 10px 20px;
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+        nav {
+            align-items: start;
+        }
+    }
+</style>
+
+<nav>
+    <a href="/">Marvin Obig</a>
+    <section>
+        <a href="/blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </section>
+</nav>

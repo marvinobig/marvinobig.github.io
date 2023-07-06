@@ -1,21 +1,18 @@
-# Marvin Obig Portfolio
+# Portfolio
 
-This is my portfolio website. [View](https://marvinobig.github.io/) to learn a little about me, my skills, my projects & how to contact me.
+This is my portfolio. [View](https://marvinobig.github.io/) to learn a little about me, my skills,my work experience, my projects & how to contact me.
 
 ## Languages/Tools used
 
 - HTML
 - SCSS Modules
 - React Js
+- Astro Js
 - Node Js/Express Js (Contact Form)
 
 ## Live Link
 
 [View my portfolio](https://marvinobig.github.io/)
-
-## Installation
-
-First download project from Github by going over to the green 'code' button and downloading the zip file. Once downloaded, extract the folder.
 
 ## Contributing
 

@@ -1,0 +1,86 @@
+---
+import { getCollection } from "astro:content";
+import moment from "moment";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostTags from "../../components/PostTags.astro";
+
+export async function getStaticPaths() {
+    const posts = await getCollection("blog");
+
+    return posts.map((post) => ({
+        params: { slug: post.slug },
+        props: { post },
+    }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<style>
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    header > img {
+        object-fit: cover;
+        height: 400px;
+    }
+
+    header > section {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    header > section > div {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    header > section > div > h1 {
+        width: 100%;
+    }
+
+    a {
+        background-color: transparent !important;
+        color: #272727 !important;
+        padding: 0 !important;
+    }
+
+    @media screen and (max-width: 768px) {
+        header > section > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: unset;
+            gap: 25px;
+        }
+    }
+</style>
+
+<BaseLayout pageTitle={post.data.title}>
+    <header>
+        <img src={post.data.banner.url} alt={post.data.banner.alt} />
+
+        <section>
+            <div>
+                <h1>
+                    {post.data.title}
+                </h1>
+                <p class="date">
+                    {moment(post.data.pubDate).format("dddd DD MMMM, YYYY")}
+                </p>
+            </div>
+
+            <PostTags tags={post.data.tags} />
+        </section>
+    </header>
+
+    <article>
+        <Content />
+    </article>
+</BaseLayout>

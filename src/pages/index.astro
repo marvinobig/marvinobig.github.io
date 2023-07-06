@@ -1,0 +1,78 @@
+---
+import workData from "../scripts/workData";
+import projectData from "../scripts/projectData";
+import skillsData from "../scripts/skillsData";
+import ProjectSlider from "../components/ProjectSlider";
+import WorkEx from "../components/WorkEx.astro";
+import MOImage from "../assets/images/m.o.png";
+import Skills from "../components/Skills.astro";
+import RecentPosts from "../components/RecentPosts.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Socials from "../components/Socials.astro";
+
+const socials = [
+	{
+		href: "https://github.com/marvinobig",
+		text: "Github",
+	},
+];
+---
+
+<style>
+	header {
+		border: 2px solid #272727;
+	}
+
+	header > section {
+		display: flex;
+	}
+
+	header > section > img {
+		max-width: 50%;
+		object-fit: cover;
+	}
+
+	header > section > div {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		max-width: 50%;
+		padding: 20px;
+	}
+
+	@media screen and (max-width: 768px) {
+		header > section {
+			flex-direction: column-reverse;
+			gap: unset;
+		}
+
+		header > section > img,
+		header > section > div {
+			max-width: unset;
+		}
+	}
+</style>
+
+<BaseLayout pageTitle="Marvin Obig">
+	<header>
+		<section>
+			<div>
+				<h1>HI, I'M MARVIN</h1>
+				<p>
+					I'm a Fullstack Developer. After my first experience with
+					coding, I realized that this is something I enjoyed a lot,
+					being able to have a mixture of creativity and logic and
+					turning an idea into a product/service. In my spare time, I
+					try to expand and develop my skills as much as I can by
+					completing online courses and carrying out my own projects.
+				</p>
+				<Skills skills={skillsData} />
+				<Socials socials={socials} />
+			</div>
+			<img src={MOImage} alt="marvin obig" />
+		</section>
+	</header>
+	<WorkEx workData={workData} />
+	<ProjectSlider projects={projectData} client:only="react" />
+	<RecentPosts />
+</BaseLayout>

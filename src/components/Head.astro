@@ -1,0 +1,12 @@
+---
+const { pageTitle } = Astro.props;
+---
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/mo.ico" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Portfolio: {pageTitle}</title>
+</head>
