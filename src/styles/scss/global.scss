@@ -8,6 +8,7 @@
   scroll-behavior: smooth;
   background-color: $background-color1;
   font-family: $font-family;
+  line-height: $line-height;
 }
 
 ::-webkit-scrollbar {
@@ -82,6 +83,7 @@ footer {
 
 article {
   @include layout-flex(column, 40px);
+  margin-top: 50px;
 }
 
 a:not([class]) {
@@ -89,6 +91,10 @@ a:not([class]) {
   color: $background-color2;
   text-decoration: underline;
   text-decoration-skip-ink: auto;
+}
+
+a, p, ul {
+  font-size: $text-font-size;
 }
 
 ul,
