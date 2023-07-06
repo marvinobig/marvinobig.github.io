@@ -11,18 +11,20 @@
   line-height: $line-height;
 }
 
-::-webkit-scrollbar {
-  width: 20px;
-}
+@media screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
 
-::-webkit-scrollbar-track {
-  background: $background-color2;
-  border: 9px solid $background-color1;
-}
+  ::-webkit-scrollbar-track {
+    background: $background-color2;
+    border: 9px solid $background-color1;
+  }
 
-::-webkit-scrollbar-thumb {
-  background: $background-color2;
-  border: 7px solid $background-color1;
+  ::-webkit-scrollbar-thumb {
+    background: $background-color2;
+    border: 7px solid $background-color1;
+  }
 }
 
 body,
@@ -93,7 +95,9 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-a, p, ul {
+a,
+p,
+ul {
   font-size: $text-font-size;
 }
 
@@ -156,7 +160,8 @@ form {
   text-transform: capitalize;
 }
 
-.not-found, .success {
+.not-found,
+.success {
   font-weight: $bolder-font;
   text-transform: capitalize;
 }
