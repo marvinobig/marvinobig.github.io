@@ -8,20 +8,19 @@
   line-height: 2.5rem;
 }
 
-::-webkit-scrollbar {
-  width: 20px;
+@media screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #272727;
+    border: 9px solid #fcfcfc;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #272727;
+    border: 7px solid #fcfcfc;
+  }
 }
-
-::-webkit-scrollbar-track {
-  background: #272727;
-  border: 9px solid #fcfcfc;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #272727;
-  border: 7px solid #fcfcfc;
-}
-
 body,
 h1,
 h2,
@@ -98,7 +97,9 @@ a:not([class]) {
           text-decoration-skip-ink: auto;
 }
 
-a, p, ul {
+a,
+p,
+ul {
   font-size: 1.25rem;
 }
 
@@ -157,7 +158,8 @@ button:focus-within {
   text-transform: capitalize;
 }
 
-.not-found, .success {
+.not-found,
+.success {
   font-weight: 900;
   text-transform: capitalize;
 }
