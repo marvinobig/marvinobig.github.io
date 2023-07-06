@@ -1,68 +1,29 @@
 ---
-import { getCollection } from "astro:content";
-import PostTags from "../components/PostTags.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PostCard from "../components/PostCard.astro";
+import { getCollection } from "astro:content";
+import TagsModal from "../components/TagsModal.astro";
 
 const allPosts = await getCollection("blog");
 ---
 
 <style>
-	article > section {
+	header {
 		display: flex;
-		border: 2px solid #272727;
-	}
-
-	article > section > img {
-		aspect-ratio: 1 / 1;
-		object-fit: cover;
-		max-width: 300px;
-	}
-
-	article > section > div {
-		display: flex;
-		flex-direction: column;
 		justify-content: space-between;
-		gap: 20px;
-		padding: 20px;
-	}
-
-	a {
-		width: fit-content;
-		background-color: #272727;
-		color: #fcfcfc;
-		padding: 10px 20px;
-		border: 2px solid #272727;
-		text-decoration: underline;
-	}
-
-	@media screen and (max-width: 768px) {
-		article > section {
-			flex-direction: column;
-		}
-
-		article > section > img {
-			max-width: unset;
-		}
+		align-items: center;
 	}
 </style>
 
 <BaseLayout pageTitle="Blog">
-	<h1>Posts</h1>
+	<header>
+		<h1>Posts</h1>
+		<TagsModal />
+	</header>
 
 	<article>
 		{allPosts.length === 0 && <p>Coming Soon 👀...</p>}
 
-		{
-			allPosts.map((post) => (
-				<section>
-					<img src={post.data.image.url} alt={post.data.image.alt} />
-					<div>
-						<a href={`/posts/${post.slug}`}>{post.data.title}</a>
-						<p>{post.data.summary}</p>
-						<PostTags tags={post.data.tags} />
-					</div>
-				</section>
-			))
-		}
+		{allPosts.map((post) => <PostCard post={post} />)}
 	</article>
 </BaseLayout>

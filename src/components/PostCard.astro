@@ -1,0 +1,54 @@
+---
+import PostTags from "../components/PostTags.astro";
+
+const {post} = Astro.props;
+---
+
+<style>
+	section {
+		display: flex;
+		border: 2px solid #272727;
+	}
+
+	section > img {
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+		max-width: 300px;
+	}
+
+	section > div {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 20px;
+		padding: 20px;
+	}
+
+	a {
+		width: fit-content;
+		background-color: #272727;
+		color: #fcfcfc;
+		padding: 10px 20px;
+		border: 2px solid #272727;
+		text-decoration: underline;
+	}
+
+	@media screen and (max-width: 768px) {
+		section {
+			flex-direction: column;
+		}
+
+		section > img {
+			max-width: unset;
+		}
+	}
+</style>
+
+<section>
+    <img src={post.data.image.url} alt={post.data.image.alt} />
+    <div>
+        <a href={`/posts/${post.slug}`}>{post.data.title}</a>
+        <p>{post.data.summary}</p>
+        <PostTags tags={post.data.tags} />
+    </div>
+</section>
