@@ -4,12 +4,29 @@ const { pageTitle } = Astro.props;
 
 <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="/mo.ico" type="image/x-icon">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="google-site-verification" content="Ye3UstPD21iLTsZL5CAoopB3YcSSLXddvQzDpdjN3Y4" />
+    <link rel="shortcut icon" href="/mo.ico" type="image/x-icon" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta
+        name="google-site-verification"
+        content="Ye3UstPD21iLTsZL5CAoopB3YcSSLXddvQzDpdjN3Y4"
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="View to learn a little about me, my skills, my work experience, my projects, how to contact me and also view my dev blog.">
+    <meta
+        name="description"
+        content="View to learn a little about me, my skills, my work experience, my projects, how to contact me and also view my dev blog."
+    />
     <meta name="theme-color" content="#272727" />
     <title>Portfolio: {pageTitle}</title>
+    <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-D0W90L1MGF"
+    ></script>
+    <script type="text/partytown">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-D0W90L1MGF");
+    </script>
 </head>
