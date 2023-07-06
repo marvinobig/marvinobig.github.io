@@ -1,10 +1,10 @@
 import { defineConfig } from 'astro/config';
 import react from "@astrojs/react";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://marvinobig.github.io/',
-  integrations: [
-    react(),
-  ],
+  site: 'https://www.marvinobig.online',
+  integrations: [react(), sitemap()]
 });
