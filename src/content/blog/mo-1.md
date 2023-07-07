@@ -4,7 +4,7 @@ pubDate: 2023-07-07
 author: 'marvinobig'
 summary: "I go over the principles of brutalist web design and how I used it to design my portfolio"
 banner:
-    src: '../blog-imgs/mo-1/banner.png'
+    src: '/blog-imgs/mo-1/banner.png'
     alt: "web design banner"
 thumbnail:
     src: '../blog-imgs/mo-1/craigslist.png' 
@@ -21,15 +21,15 @@ This might come across as boring to some people, particularly those who love CSS
 
 #### Craigslist
 
-![craigs list](../blog-imgs/mo-1/craigslist.png)
+![craigs list](/blog-imgs/mo-1/craigslist.png)
 
 #### Old Reddit
 
-![old reddit](../blog-imgs/mo-1/old-reddit.png)
+![old reddit](/blog-imgs/mo-1/old-reddit.png)
 
 #### Wikipedia
 
-![wikipedia](../blog-imgs/mo-1/wikipedia.png)
+![wikipedia](/blog-imgs/mo-1/wikipedia.png)
 
 ## Principles of Brutalism
 
