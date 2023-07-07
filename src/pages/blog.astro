@@ -5,6 +5,7 @@ import { getCollection } from "astro:content";
 import TagsModal from "../components/TagsModal.astro";
 
 const allPosts = await getCollection("blog");
+const publishedPosts = allPosts.filter((post) => !post.data.draft);
 ---
 
 <style>
@@ -22,8 +23,8 @@ const allPosts = await getCollection("blog");
 	</header>
 
 	<article>
-		{allPosts.length === 0 && <p>Coming Soon 👀...</p>}
+		{publishedPosts.length === 0 && <p>Coming Soon 👀...</p>}
 
-		{allPosts.map((post) => <PostCard post={post} />)}
+		{publishedPosts.map((post) => <PostCard post={post} />)}
 	</article>
 </BaseLayout>

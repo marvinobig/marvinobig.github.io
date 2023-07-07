@@ -1,7 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 import moment from "moment";
-const posts = await getCollection("blog");
+const allPosts = await getCollection("blog");
+const publishedPosts = allPosts.filter((post) => !post.data.draft);
 ---
 
 <style>
@@ -47,12 +48,12 @@ const posts = await getCollection("blog");
     <a href="/blog">View More</a>
   </header>
 
-  {posts.length === 0 && <p>Coming Soon 👀...</p>}
+  {publishedPosts.length === 0 && <p>Coming Soon 👀...</p>}
 
   <section>
     {
-      posts.length !== 0 &&
-        posts.slice(0, 5).map((post) => (
+      publishedPosts.length !== 0 &&
+        publishedPosts.slice(0, 5).map((post) => (
           <div>
             <a href={`/posts/${post.slug}`}>{post.data.title}</a>
             <p class="date">{moment(post.data.pubDate).format("dddd DD MMMM, YYYY")}</p>
