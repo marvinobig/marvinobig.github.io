@@ -10,7 +10,7 @@ thumbnail:
     src: '../blog-imgs/mo-1/craigslist.png' 
     alt: 'craigs list'
 tags: ["brutalist web design", "UI", "UX", "portfolio"]
-draft: false
+draft: true
 ---
 
 ## What is Brutalist Web Design
