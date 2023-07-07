@@ -4,8 +4,8 @@ pubDate: 2023-07-07
 author: 'marvinobig'
 summary: "I go over the principles of brutalist web design and how I used it to design my portfolio"
 banner:
-    src: 'https://docs.astro.build/assets/arc.webp'
-    alt: "My First Blog Post Banner"
+    src: '../blog-imgs/mo-1/banner.png'
+    alt: "web design banner"
 thumbnail:
     src: '../blog-imgs/mo-1/craigslist.png' 
     alt: 'craigs list'
