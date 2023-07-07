@@ -65,7 +65,7 @@ const publishedPosts = allPosts.filter((post) => !post.data.draft);
   <section>
     {
       publishedPosts.length !== 0 &&
-        publishedPosts.slice(0, 5).reverse().map((post) => (
+        publishedPosts.slice(0, 5).map((post) => (
           <div>
             <a href={`/posts/${post.slug}`}>{post.data.title}</a>
             <p class="date">
