@@ -1,5 +1,5 @@
-import cv_builder from "../assets/images/cv-builder.jpg";
-import elements from "../assets/images/elements.jpg";
+import cv_builder from "../assets/images/projects/cv-builder.jpg";
+import elements from "../assets/images/projects/elements.jpg";
 import css from "../assets/icons/front-end/css.png";
 import react from "../assets/icons/front-end/react.png";
 import js from "../assets/icons/front-end/javascript.png";
