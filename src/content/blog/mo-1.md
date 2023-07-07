@@ -1,16 +1,16 @@
 ---
-title: 'My First Blog Post'
-pubDate: 2023-07-28
+title: 'Brutalist Web Design And How I Utilised it Within my Portfolio Design'
+pubDate: 2023-07-07
 author: 'marvinobig'
-summary: "Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website."
+summary: "I go over the principles of brutalist web design and how I used it to design my portfolio"
 banner:
     url: 'https://docs.astro.build/assets/arc.webp'
     alt: "My First Blog Post Banner"
 image:
     url: 'https://docs.astro.build/assets/arc.webp' 
     alt: 'The full Astro logo.'
-tags: ["blog", "dev journey", "marvinobig"]
-draft: false
+tags: ["brutalist web design", "UI/UX", "portfolio"]
+draft: true
 ---
 
 ## What I've accomplished
