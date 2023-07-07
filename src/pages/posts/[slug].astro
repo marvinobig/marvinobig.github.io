@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import moment from "moment";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PostTags from "../../components/PostTags.astro";
+import DisplayAd from "../../components/DisplayAd.astro";
 
 export async function getStaticPaths() {
     const posts = await getCollection("blog");
@@ -74,6 +75,8 @@ const { Content } = await post.render();
             <PostTags tags={post.data.tags} />
         </section>
     </header>
+
+    <DisplayAd />
 
     <article>
         <Content />

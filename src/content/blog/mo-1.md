@@ -7,7 +7,7 @@ banner:
     src: '/blog-imgs/mo-1/banner.png'
     alt: "web design banner"
 thumbnail:
-    src: '../blog-imgs/mo-1/craigslist.png' 
+    src: '/blog-imgs/mo-1/craigslist.png' 
     alt: 'craigs list'
 tags: ["brutalist web design", "UI", "UX", "portfolio"]
 draft: false
@@ -43,7 +43,7 @@ Brutalist web design has principles that anyone implementing should follow and t
 - making sure you add decoration when needed and no unrelated content.
 - making performance a feature of your site.
 
-These principles where sourced from [here](https://brutalist-web.design/). The site goes into more detail concerning them so I recommend you have a read if this style of design interests you.
+These principles were sourced from [here](https://brutalist-web.design/). The site goes into more detail concerning them so I recommend you have a read if this style of design interests you.
 
 ## My Portfolio
 
