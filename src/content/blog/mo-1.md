@@ -10,6 +10,7 @@ image:
     url: 'https://docs.astro.build/assets/arc.webp' 
     alt: 'The full Astro logo.'
 tags: ["blog", "dev journey", "marvinobig"]
+draft: false
 ---
 
 ## What I've accomplished
