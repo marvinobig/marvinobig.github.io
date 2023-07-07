@@ -29,5 +29,5 @@ const { skills } = Astro.props;
 </style>
 
 <section>
-    {skills.map((skill) => <img src={skill.img} alt={skill.alt} />)}
+    {skills.map((skill) => <img src={skill.img.src} alt={skill.alt} />)}
 </section>
