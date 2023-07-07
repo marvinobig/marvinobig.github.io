@@ -69,7 +69,7 @@ const publishedPosts = allPosts.filter((post) => !post.data.draft);
           <div>
             <a href={`/posts/${post.slug}`}>{post.data.title}</a>
             <p class="date">
-              {moment(post.data.pubDate).format("dddd DD MMMM, YYYY")}
+              {moment(post.data.pubDate).format("dddd Do MMMM, YYYY")}
             </p>
             <p>{post.data.summary}</p>
           </div>

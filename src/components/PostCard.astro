@@ -57,7 +57,7 @@ const { post } = Astro.props;
 </style>
 
 <section>
-	<img src={post.data.image.url} alt={post.data.image.alt} />
+	<img src={post.data.thumbnail.src} alt={post.data.thumbnail.alt} />
 	<div>
 		<a href={`/posts/${post.slug}`}>{post.data.title}</a>
 		<p>{post.data.summary}</p>
