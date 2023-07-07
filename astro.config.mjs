@@ -6,5 +6,8 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.marvinobig.online',
-  integrations: [react(), sitemap()]
+  integrations: [react(), sitemap()],
+  experimental: {
+    assets: true
+   }
 });
