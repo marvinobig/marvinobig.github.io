@@ -10,6 +10,14 @@ const { tag } = Astro.props;
         border: 2px solid #272727;
         text-transform: capitalize;
     }
+
+    @media (prefers-color-scheme: dark) {
+        a {
+            background-color: #fcfcfc;
+            color: #272727;
+            border: 2px solid #fcfcfc;
+        }
+    }
 </style>
 
 <a href={`../tags/${tag}`}>{tag}</a>

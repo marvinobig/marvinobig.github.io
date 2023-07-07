@@ -69,7 +69,7 @@ const ProjectSlider = ({ projects }) => {
     return (
         <article>
             <h2>Projects</h2>
-            <Splide options={sliderOptions} tag="section" hasTrack={false} aria-label="My Skills" style={sliderContainer}>
+            <Splide options={sliderOptions} tag="section" hasTrack={false} aria-label="My Skills" style={sliderContainer} className='sliderContainer'>
                 <SplideTrack>
                     {projects.map((project, index) => (
                         <SplideSlide key={index}>

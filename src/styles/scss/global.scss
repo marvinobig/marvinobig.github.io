@@ -194,3 +194,54 @@ form {
     scroll-behavior: auto !important;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  *,
+  *::before,
+  *::after {
+    background-color: $background-color2;
+    color: $background-color1;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $background-color1;
+    border: 9px solid $background-color2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $background-color1;
+    border: 7px solid $background-color2;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: $background-color2;
+    background-color: $background-color1;
+  }
+
+  a:not([class]) {
+    color: $background-color1;
+  }
+
+  .sliderContainer {
+    border: 2px solid $background-color1 !important;
+  }
+
+  form {
+    textarea,
+    label {
+      border: 2px solid $background-color1 !important;
+
+      &:focus-within {
+        outline: 2px solid $background-color1 !important;
+      }
+    }
+
+    button {
+      background-color: $background-color1 !important;
+      color: $background-color2 !important;
+      border: 2px solid $background-color1 !important;
+    }
+  }
+}

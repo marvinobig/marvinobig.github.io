@@ -190,3 +190,44 @@ button:focus-within {
     scroll-behavior: auto !important;
   }
 }
+@media (prefers-color-scheme: dark) {
+  *,
+  *::before,
+  *::after {
+    background-color: #272727;
+    color: #fcfcfc;
+  }
+  ::-webkit-scrollbar-track {
+    background: #fcfcfc;
+    border: 9px solid #272727;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #fcfcfc;
+    border: 7px solid #272727;
+  }
+  h1,
+  h2,
+  h3 {
+    color: #272727;
+    background-color: #fcfcfc;
+  }
+  a:not([class]) {
+    color: #fcfcfc;
+  }
+  .sliderContainer {
+    border: 2px solid #fcfcfc !important;
+  }
+  form textarea,
+  form label {
+    border: 2px solid #fcfcfc !important;
+  }
+  form textarea:focus-within,
+  form label:focus-within {
+    outline: 2px solid #fcfcfc !important;
+  }
+  form button {
+    background-color: #fcfcfc !important;
+    color: #272727 !important;
+    border: 2px solid #fcfcfc !important;
+  }
+}

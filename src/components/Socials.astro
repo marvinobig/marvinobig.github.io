@@ -1,6 +1,7 @@
 ---
 const { socials } = Astro.props;
 ---
+
 <style>
     section {
         display: flex;
@@ -18,10 +19,21 @@ const { socials } = Astro.props;
     a:hover {
         text-decoration: underline;
     }
+
+    @media (prefers-color-scheme: dark) {
+        section > a {
+            background-color: #fcfcfc;
+            color: #272727;
+        }
+    }
 </style>
 
 <section>
-    {socials.map((social) => (
-        <a href={social.href} target="_blank">{social.text}</a>
-    ))}
+    {
+        socials.map((social) => (
+            <a href={social.href} target="_blank">
+                {social.text}
+            </a>
+        ))
+    }
 </section>

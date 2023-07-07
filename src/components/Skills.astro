@@ -1,5 +1,5 @@
 ---
-const {skills} = Astro.props;
+const { skills } = Astro.props;
 ---
 
 <style>
@@ -20,10 +20,14 @@ const {skills} = Astro.props;
         max-height: 30px;
         background-color: transparent;
     }
+
+    @media (prefers-color-scheme: dark) {
+        section {
+            background-color: #fcfcfc;
+        }
+    }
 </style>
 
 <section>
-    {skills.map((skill) => (
-        <img src={skill.img} alt={skill.alt} />
-    ))}
+    {skills.map((skill) => <img src={skill.img} alt={skill.alt} />)}
 </section>

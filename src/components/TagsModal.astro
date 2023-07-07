@@ -4,7 +4,9 @@ import Tag from "./Tag.astro";
 
 const allPosts = await getCollection("blog");
 const publishedPosts = allPosts.filter((post) => !post.data.draft);
-const uniqueTags = [...new Set(publishedPosts.map((post) => post.data.tags).flat())];
+const uniqueTags = [
+    ...new Set(publishedPosts.map((post) => post.data.tags).flat()),
+];
 ---
 
 <style>
@@ -20,19 +22,19 @@ const uniqueTags = [...new Set(publishedPosts.map((post) => post.data.tags).flat
     }
 
     dialog > header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         gap: 20px;
         margin-bottom: 20px;
-	}
+    }
 
     dialog > section {
-		display: flex;
+        display: flex;
         flex-wrap: wrap;
-		align-items: center;
+        align-items: center;
         gap: 20px;
-	}
+    }
 
     button {
         font-size: 24px;
@@ -47,6 +49,23 @@ const uniqueTags = [...new Set(publishedPosts.map((post) => post.data.tags).flat
     dialog > header > button:focus {
         outline: none;
     }
+
+    @media (prefers-color-scheme: dark) {
+        dialog {
+            border: 2px solid #fcfcfc;
+            background-color: #272727;
+        }
+
+        dialog::backdrop {
+            background-color: #fcfcfcad;
+        }
+
+        button {
+            background-color: #fcfcfc;
+            color: #272727;
+            border: 2px solid #fcfcfc;
+        }
+    }
 </style>
 
 <button id="tags-modal-open-btn"> Tags</button>
@@ -57,9 +76,7 @@ const uniqueTags = [...new Set(publishedPosts.map((post) => post.data.tags).flat
     </header>
 
     <section>
-        {uniqueTags.map((tag) => (
-            <Tag tag={tag} />
-        ))}
+        {uniqueTags.map((tag) => <Tag tag={tag} />)}
     </section>
 </dialog>
 

@@ -39,6 +39,12 @@ const { workData } = Astro.props;
             max-width: 335px;
         }
     }
+
+    @media (prefers-color-scheme: dark) {
+        article > section > div {
+            border: 2px solid #fcfcfc;
+        }
+    }
 </style>
 
 <article>

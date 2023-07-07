@@ -41,9 +41,9 @@ const socials = [
 	}
 
 	a {
-        color: #272727;
-        font-weight: bolder;
-    }
+		color: #272727;
+		font-weight: bolder;
+	}
 
 	@media screen and (max-width: 768px) {
 		header > section {
@@ -54,6 +54,12 @@ const socials = [
 		header > section > img,
 		header > section > div {
 			max-width: unset;
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		header {
+			border: 2px solid #fcfcfc;
 		}
 	}
 </style>
@@ -69,7 +75,8 @@ const socials = [
 					being able to have a mixture of creativity and logic and
 					turning an idea into a product/service. In my spare time, I
 					try to expand and develop my skills as much as I can by
-					completing online courses and carrying out my own projects. Use the <a href="#contact">contact form</a> below to get in touch. 
+					completing online courses and carrying out my own projects.
+					Use the <a href="#contact">contact form</a> below to get in touch.
 				</p>
 				<Skills skills={skillsData} />
 				<Socials socials={socials} />
