@@ -40,6 +40,18 @@ const publishedPosts = allPosts.filter((post) => !post.data.draft);
     border: 2px solid #272727;
     text-decoration: underline;
   }
+
+  @media (prefers-color-scheme: dark) {
+    article > section > div {
+      border: 2px solid #fcfcfc;
+    }
+
+    a {
+      background-color: #fcfcfc;
+      color: #272727;
+      border: 2px solid #fcfcfc;
+    }
+  }
 </style>
 
 <article>
@@ -56,7 +68,9 @@ const publishedPosts = allPosts.filter((post) => !post.data.draft);
         publishedPosts.slice(0, 5).map((post) => (
           <div>
             <a href={`/posts/${post.slug}`}>{post.data.title}</a>
-            <p class="date">{moment(post.data.pubDate).format("dddd DD MMMM, YYYY")}</p>
+            <p class="date">
+              {moment(post.data.pubDate).format("dddd DD MMMM, YYYY")}
+            </p>
             <p>{post.data.summary}</p>
           </div>
         ))

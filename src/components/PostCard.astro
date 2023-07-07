@@ -1,7 +1,7 @@
 ---
 import PostTags from "../components/PostTags.astro";
 
-const {post} = Astro.props;
+const { post } = Astro.props;
 ---
 
 <style>
@@ -42,13 +42,25 @@ const {post} = Astro.props;
 			max-width: unset;
 		}
 	}
+
+	@media (prefers-color-scheme: dark) {
+		section {
+			border: 2px solid #fcfcfc;
+		}
+
+		a {
+			background-color: #fcfcfc;
+			color: #272727;
+			border: 2px solid #fcfcfc;
+		}
+	}
 </style>
 
 <section>
-    <img src={post.data.image.url} alt={post.data.image.alt} />
-    <div>
-        <a href={`/posts/${post.slug}`}>{post.data.title}</a>
-        <p>{post.data.summary}</p>
-        <PostTags tags={post.data.tags} />
-    </div>
+	<img src={post.data.image.url} alt={post.data.image.alt} />
+	<div>
+		<a href={`/posts/${post.slug}`}>{post.data.title}</a>
+		<p>{post.data.summary}</p>
+		<PostTags tags={post.data.tags} />
+	</div>
 </section>
