@@ -80,7 +80,7 @@ const ProjectSlider = ({ projects }) => {
 
                                 <section style={skillContainerStyle}>
                                     {project.technologies.map((tech, index) => (
-                                        <img key={index} src={tech.img.src} alt={tech.alt} style={skillImgStyle} />
+                                        <img key={index} src={tech.img} alt={tech.alt} style={skillImgStyle} />
                                     ))}
                                 </section>
 
@@ -89,7 +89,7 @@ const ProjectSlider = ({ projects }) => {
                                     <a style={linkStyle} href={project.github} target='_blank'>Code</a>
                                 </section>
                             </header>
-                            <img src={project.img.src} alt={project.name} />
+                            <img src={project.img} alt={project.name} />
                         </SplideSlide>
                     ))}
                 </SplideTrack>

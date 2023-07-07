@@ -6,9 +6,9 @@ summary: "I go over the principles of brutalist web design and how I used it to 
 banner:
     url: 'https://docs.astro.build/assets/arc.webp'
     alt: "My First Blog Post Banner"
-image:
-    url: 'https://docs.astro.build/assets/arc.webp' 
-    alt: 'The full Astro logo.'
+thumbnail:
+    url: 'blog-imgs/mo-1/craigslist.png' 
+    alt: 'craigs list'
 tags: ["brutalist web design", "UI", "UX", "portfolio"]
 draft: false
 ---
@@ -21,15 +21,15 @@ This might come across as boring to some people, particularly those who love CSS
 
 #### Craigslist
 
-![craigs list](../../assets/images/blog-imgs/mo-1/craigslist.png)
+![craigs list](../blog-imgs/mo-1/craigslist.png)
 
 #### Old Reddit
 
-![old reddit](../../assets/images/blog-imgs/mo-1/old-reddit.png)
+![old reddit](../blog-imgs/mo-1/old-reddit.png)
 
 #### Wikipedia
 
-![wikipedia](../../assets/images/blog-imgs/mo-1/wikipedia.png)
+![wikipedia](../blog-imgs/mo-1/wikipedia.png)
 
 ## Principles of Brutalism
 
