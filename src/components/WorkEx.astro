@@ -1,5 +1,6 @@
 ---
 import Skills from "./Skills.astro";
+import moment from "moment";
 const { workData } = Astro.props;
 ---
 
@@ -59,7 +60,7 @@ const { workData } = Astro.props;
                             {work.title} - {work.company}
                         </h3>
                         <p class="date">
-                            {work.time[0]} - {work.time[1]}
+                            {moment(work.time[0]).format("Do, MMMM YYYY")} to {moment(work.time[1]).format("Do, MMMM YYYY")}
                         </p>
                         <ul>
                             {work.achievements.map((achievement) => (

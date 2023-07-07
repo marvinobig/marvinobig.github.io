@@ -65,11 +65,11 @@ const publishedPosts = allPosts.filter((post) => !post.data.draft);
   <section>
     {
       publishedPosts.length !== 0 &&
-        publishedPosts.slice(0, 5).map((post) => (
+        publishedPosts.slice(0, 5).reverse().map((post) => (
           <div>
             <a href={`/posts/${post.slug}`}>{post.data.title}</a>
             <p class="date">
-              {moment(post.data.pubDate).format("dddd DD MMMM, YYYY")}
+              {moment(post.data.pubDate).format("dddd Do MMMM, YYYY")}
             </p>
             <p>{post.data.summary}</p>
           </div>
