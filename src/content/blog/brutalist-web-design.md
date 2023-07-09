@@ -3,10 +3,10 @@ title: 'Brutalist Web Design And How I Utilized it Within my Portfolio Design'
 pubDate: 2023-07-07
 summary: "I go over the principles of brutalist web design and how I used it to design my portfolio"
 banner:
-    src: '/blog-imgs/mo-1/banner.png'
+    src: '/blog-imgs/mo-1/banner.webp'
     alt: "web design banner"
 thumbnail:
-    src: '/blog-imgs/mo-1/craigslist.png' 
+    src: '/blog-imgs/mo-1/craigslist.webp' 
     alt: 'craigs list'
 tags: ["brutalist web design", "UI", "UX", "portfolio"]
 draft: false
@@ -20,15 +20,15 @@ This might come across as boring to some people, particularly those who love CSS
 
 #### Craigslist
 
-![craigs list](/blog-imgs/mo-1/craigslist.png)
+![craigs list](/blog-imgs/mo-1/craigslist.webp)
 
 #### Old Reddit
 
-![old reddit](/blog-imgs/mo-1/old-reddit.png)
+![old reddit](/blog-imgs/mo-1/old-reddit.webp)
 
 #### Wikipedia
 
-![wikipedia](/blog-imgs/mo-1/wikipedia.png)
+![wikipedia](/blog-imgs/mo-1/wikipedia.webp)
 
 ## Principles of Brutalism
 
