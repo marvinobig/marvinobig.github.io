@@ -14,13 +14,13 @@ draft: false
 
 ## What is Visual Programming?
 
-Visual programming is GUI (graphical user interface) based form of programming that involves the use of visual blocks that represent a construct in text based programming like a block that deals with conditionals. Visual programming is used within game development in game engines like [Unity](https://unity.com/features/unity-visual-scripting) and [Unreal engine](https://docs.unrealengine.com/5.2/en-US/blueprints-visual-scripting-in-unreal-engine/) and outside game development engines in [Scratch](https://scratch.mit.edu/projects/editor/?tutorial=getStarted).
+Visual programming is a GUI (graphical user interface) based form of programming that involves the use of visual blocks that represent a construct in text based programming like a block that deals with conditionals. Visual programming is used within game development in game engines like [Unity](https://unity.com/features/unity-visual-scripting) and [Unreal engine](https://docs.unrealengine.com/5.2/en-US/blueprints-visual-scripting-in-unreal-engine/) and outside game development engines in [Scratch](https://scratch.mit.edu/projects/editor/?tutorial=getStarted).
 
 ![if statement in scratch](/blog-imgs/mo-2/scratch-if.webp)
 
 ## What is Scratch?
 
-Scratch is a block based visual programming language that allows users to create their own interactive stories, games and animations. It comes with blocks that can be linked to perform a task that you would have to write out in programming syntax in another language like C or Python. It can be accessed via the [internet](https://scratch.mit.edu/projects/editor/?tutorial=getStarted) or can be[ downloaded](https://scratch.mit.edu/download) onto your computer for local use.
+Scratch is a block based visual programming language that allows users to create their own interactive stories, games and animations. It comes with blocks that can be linked to perform a task that you would have to write out in text based programming syntax in another language like C or Python. It can be accessed via the [internet](https://scratch.mit.edu/projects/editor/?tutorial=getStarted) or can be[downloaded](https://scratch.mit.edu/download) onto your computer for local use.
 
 ![scratch script](/blog-imgs/mo-2/scratch-script.webp)
 
@@ -32,4 +32,4 @@ Furthermore, scratch uses different color blocks to allow it's users to more eas
 
 ![colors in scratch](/blog-imgs/mo-2/scratch-color.webp)
 
-This allows users of scratch to focus more on building their logic, problem solving skills and understanding of the core programming concepts instead of focusing on syntax rules like forgetting a comma in a function argument or a semi-colon at the end of a statement. Often times, starting with scratch can be a great stepping stone to more advanced text-based programming languages like the aforementioned general purpose programming language known as python.
+This allows users of scratch to focus more on building their logic, problem solving skills and understanding of the core programming concepts instead of focusing on syntax rules like forgetting a comma in a function argument or a semi-colon at the end of a statement. Often times, starting with scratch can be a great stepping stone to more advanced text based programming languages like the aforementioned general purpose programming language known as python.
