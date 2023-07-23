@@ -38,8 +38,6 @@ h1,
 h2,
 h3 {
   text-transform: uppercase;
-  width: -moz-fit-content;
-  width: fit-content;
   color: #fcfcfc;
   background-color: #272727;
   padding: 10px 20px;
