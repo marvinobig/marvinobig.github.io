@@ -25,6 +25,6 @@ const publishedPosts = allPosts.filter((post) => !post.data.draft);
 	<article>
 		{publishedPosts.length === 0 && <p>Coming Soon 👀...</p>}
 
-		{publishedPosts.map((post) => <PostCard post={post} />)}
+		{publishedPosts.reverse().map((post) => <PostCard post={post} />)}
 	</article>
 </BaseLayout>
