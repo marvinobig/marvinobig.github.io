@@ -12,9 +12,9 @@ tags: ["computer science", "web development", "online courses"]
 draft: false
 ---
 
-## Benefits of Online Courses
+## My First Online Courses
 
-My journey into software development started at university, however, university only taught me some of the fundamentals. When I left university, I was pretty clueless when it came to using technologies of any kind to develop a piece of software. Realizing this, I headed over to my computer one evening and searched for an online course or curriculum that could help me solve this problem. This is when I came across two free courses. One seemed to be widely known and respected by both learners and professionals everywhere and the other is just as good but not as widely known. The courses I found were **CS50s Introduction to Computer Science** and **The Odin Project**.
+My journey into software development started at university, however, university only taught me some of the fundamentals. When I left university, I was pretty clueless when it came to using technologies of any kind to develop a piece of software. Realizing this, I headed over to my computer one evening and searched for an online course or curriculum that could help me solve this problem. This is when I came across two free courses. One seemed to be widely known and respected by both learners and professionals everywhere and the other is just as good but not as widely known. The courses I found were **CS50s Introduction to Computer Science** and **The Odin Project**, the very first online courses I ever took.
 
 ## The Odin Project: Foundations
 
