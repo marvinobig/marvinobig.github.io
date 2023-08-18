@@ -1,5 +1,5 @@
 ---
-title: 'The Importance of Fitness And Health'
+title: 'The Importance of Health And Fitness'
 pubDate: 2023-08-18 
 summary: "I go over why health & fitness is and should be important to software developers."
 banner:
