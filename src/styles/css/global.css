@@ -65,7 +65,7 @@ main,
 footer {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 30px;
   width: 100%;
   padding: 20px;
 }
@@ -77,14 +77,14 @@ footer {
 }
 
 footer {
-  margin-top: 50px;
+  margin-bottom: 25px;
 }
 
 article {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 a:not([class]) {
@@ -103,8 +103,7 @@ ul {
 
 ul,
 ol {
-  -webkit-padding-start: 20px;
-          padding-inline-start: 20px;
+  padding-inline-start: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
