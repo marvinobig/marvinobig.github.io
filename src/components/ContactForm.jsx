@@ -27,7 +27,7 @@ function ContactForm() {
 
     if (formValidation(setErrors, emailObj)) {
       const sendEmail = await fetch(
-        "https://busy-red-elephant-hem.cyclic.app/api/contact",
+        "https://contact-api-33wd.onrender.com/api/contact",
         {
           headers: { "Content-Type": "application/json" },
           method: "POST",
