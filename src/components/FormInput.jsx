@@ -1,4 +1,4 @@
-const FormInput = ({ labelText, inputType, inputValue, setValue, placeHolder, error }) => {
+const FormInput = ({ id, labelText, inputType, inputValue, setValue, placeHolder, error }) => {
     const labelStyle = {
         display: 'flex',
         alignItems: 'center',
@@ -17,17 +17,18 @@ const FormInput = ({ labelText, inputType, inputValue, setValue, placeHolder, er
 
     return (
         <>
-            <label style={labelStyle}>
-                {labelText}
+            <label htmlFor={ id } style={ labelStyle }>
+                { labelText }
                 <input
-                    style={inputStyle}
-                    type={inputType}
-                    value={inputValue}
-                    onChange={(e) => setValue(e.target.value)}
-                    placeholder={placeHolder}
+                    id={ id }
+                    style={ inputStyle }
+                    type={ inputType }
+                    value={ inputValue }
+                    onChange={ (e) => setValue(e.target.value) }
+                    placeholder={ placeHolder }
                 />
             </label>
-            {error && <p className="error">{error}</p>}
+            { error && <p className="error">{ error }</p> }
         </>
     );
 };
