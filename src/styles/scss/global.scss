@@ -11,22 +11,6 @@
   line-height: $line-height;
 }
 
-@media screen and (min-width: 768px) {
-  ::-webkit-scrollbar {
-    width: 20px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: $background-color2;
-    border: 9px solid $background-color1;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: $background-color2;
-    border: 7px solid $background-color1;
-  }
-}
-
 body,
 h1,
 h2,
@@ -200,16 +184,6 @@ form {
   *::after {
     background-color: $background-color2;
     color: $background-color1;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: $background-color1;
-    border: 9px solid $background-color2;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: $background-color1;
-    border: 7px solid $background-color2;
   }
 
   h1,
