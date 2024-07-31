@@ -1,4 +1,4 @@
-const FormTextareaInput = ({ inputValue, setValue, placeHolder, error }) => {
+const FormTextareaInput = ({ id, inputValue, setValue, placeHolder, error }) => {
     const textAreaStyle = {
         height: "100%",
         minHeight: "180px",
@@ -10,12 +10,13 @@ const FormTextareaInput = ({ inputValue, setValue, placeHolder, error }) => {
     return (
         <>
             <textarea
-                style={textAreaStyle}
-                value={inputValue}
-                onChange={(e) => setValue(e.target.value)}
-                placeholder={placeHolder}
+                id={ id }
+                style={ textAreaStyle }
+                value={ inputValue }
+                onChange={ (e) => setValue(e.target.value) }
+                placeholder={ placeHolder }
             />
-            {error && <p className="error">{error}</p>}
+            { error && <p className="error">{ error }</p> }
         </>
     );
 }

@@ -8,19 +8,6 @@
   line-height: 2.5rem;
 }
 
-@media screen and (min-width: 768px) {
-  ::-webkit-scrollbar {
-    width: 20px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #272727;
-    border: 9px solid #fcfcfc;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #272727;
-    border: 7px solid #fcfcfc;
-  }
-}
 body,
 h1,
 h2,
@@ -65,7 +52,7 @@ main,
 footer {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
   width: 100%;
   padding: 20px;
 }
@@ -193,14 +180,6 @@ button:focus-within {
   *::after {
     background-color: #272727;
     color: #fcfcfc;
-  }
-  ::-webkit-scrollbar-track {
-    background: #fcfcfc;
-    border: 9px solid #272727;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #fcfcfc;
-    border: 7px solid #272727;
   }
   h1,
   h2,
