@@ -1,4 +1,4 @@
-const formValidation = (setErrors, { sender, subject, name, message }) => {
+const formValid = (setErrors, { sender, subject, name, message }) => {
   const validationObj = {
     from: "",
     subject: "",
@@ -20,8 +20,8 @@ const formValidation = (setErrors, { sender, subject, name, message }) => {
     }));
   }
 
-  if (!name.match(/^(\w{2,})\s(\w{2,})$/m)) {
-    validationObj.name = "field needs your first & last name";
+  if (!name.match(/^\w{2,}/m)) {
+    validationObj.name = "field needs your name";
     setErrors((currErrors) => ({
       ...currErrors,
       name: validationObj.name,
@@ -34,8 +34,8 @@ const formValidation = (setErrors, { sender, subject, name, message }) => {
     }));
   }
 
-  if (!subject.match(/[A-Za-z0-9]{5,}/)) {
-    validationObj.subject = "field needs to include 5 characters or more";
+  if (!subject.match(/[A-Za-z0-9]{2,}/)) {
+    validationObj.subject = "field needs to include 2 characters or more";
     setErrors((currErrors) => ({
       ...currErrors,
       subject: validationObj.subject,
@@ -65,7 +65,7 @@ const formValidation = (setErrors, { sender, subject, name, message }) => {
   const errorValues = Object.values(validationObj);
   const errorsDoNotExist = errorValues.every((value) => value === undefined);
 
-  return errorsDoNotExist ? true : false;
+  return errorsDoNotExist;
 };
 
-export default formValidation;
+export default formValid;
