@@ -20,7 +20,7 @@ const formValid = (setErrors, { sender, subject, name, message }) => {
     }));
   }
 
-  if (!name.match(/^\w{2,}/m)) {
+  if (!name.match(/[A-Za-z]{2,}/g)) {
     validationObj.name = "field needs your name";
     setErrors((currErrors) => ({
       ...currErrors,
@@ -34,7 +34,7 @@ const formValid = (setErrors, { sender, subject, name, message }) => {
     }));
   }
 
-  if (!subject.match(/[A-Za-z0-9]{2,}/)) {
+  if (!subject.match(/[A-Za-z0-9]{2,}/g)) {
     validationObj.subject = "field needs to include 2 characters or more";
     setErrors((currErrors) => ({
       ...currErrors,
@@ -48,7 +48,7 @@ const formValid = (setErrors, { sender, subject, name, message }) => {
     }));
   }
 
-  if (!message.match(/([A-Za-z0-9\W]{5,})+/m)) {
+  if (!message.match(/[A-Za-z0-9\s]{5,}/g)) {
     validationObj.message = "field needs to include a sentence";
     setErrors((currErrors) => ({
       ...currErrors,
