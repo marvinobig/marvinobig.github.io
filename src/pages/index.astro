@@ -11,88 +11,100 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Socials from "../components/Socials.astro";
 
 const socials = [
-	{
-		href: "https://github.com/marvinobig",
-		text: "Github",
-	},
-	{
-		href: "https://marvinobig.online/rss.xml",
-		text: "RSS Feed",
-	},
+  {
+    href: "https://github.com/marvinobig",
+    text: "Github",
+  },
+  {
+    href: "https://www.linkedin.com/in/marvin-obigwilo",
+    text: "LinkedIn",
+  },
+  {
+    href: "https://marvinobig.online/rss.xml",
+    text: "RSS Feed",
+  },
 ];
 ---
 
 <style>
-	header {
-		border: 2px solid #272727;
-	}
+  header {
+    border: 2px solid #272727;
+  }
 
-	header > section {
-		display: flex;
-	}
+  header > section {
+    display: flex;
+  }
 
-	header > section > img {
-		max-width: 50%;
-		object-fit: cover;
-	}
+  header > section > img {
+    max-width: 50%;
+    object-fit: cover;
+  }
 
-	header > section > div {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-		max-width: 50%;
-		padding: 20px;
-	}
+  header > section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 50%;
+    padding: 20px;
+  }
 
-	a {
-		color: #272727;
-		font-weight: bolder;
-	}
+  header p {
+	padding-top: 20px;
+  }
 
-	@media screen and (max-width: 768px) {
-		header > section {
-			flex-direction: column-reverse;
-			gap: unset;
-		}
+  a {
+    color: #272727;
+    font-weight: bolder;
+  }
 
-		header > section > img,
-		header > section > div {
-			max-width: unset;
-		}
-	}
+  @media screen and (max-width: 768px) {
+    header > section {
+      flex-direction: column-reverse;
+      gap: unset;
+    }
 
-	@media (prefers-color-scheme: dark) {
-		header {
-			border: 2px solid #fcfcfc;
-		}
+    header > section > img,
+    header > section > div {
+      max-width: unset;
+    }
+  }
 
-		a {
-			color: #fcfcfc;
-		}
-	}
+  @media (prefers-color-scheme: dark) {
+    header {
+      border: 2px solid #fcfcfc;
+    }
+
+    a {
+      color: #fcfcfc;
+    }
+  }
 </style>
 
 <BaseLayout pageTitle="Portfolio">
-	<header>
-		<section>
-			<div>
-				<h1>HI, I'M MARVIN</h1>
-				<p>
-					I'm a Fullstack Developer. After my first experience with
-					coding, I realized that this is something I enjoyed a lot,
-					being able to have a mixture of creativity and logic and
-					turning an idea into a product/service. In my spare time, I
-					try to expand and develop my skills as much as I can by
-					completing online courses and carrying out my own projects.
-					Use the <a href="#contact">contact form</a> below to get in touch.
-				</p>
-				<!-- <Skills skills={skillsData} /> -->
-				<Socials socials={socials} />
-			</div>
-			<img src={MOImage} alt="marvin obig" />
-		</section>
-	</header>
-	<!-- <WorkEx workData={workData} />
+  <header>
+    <section>
+      <div>
+        <div>
+          <h1>HI, I'M MARVIN</h1>
+          <p>
+            I'm a Fullstack Software Developer with 2 years of professional
+            experience. 
+          </p>
+          <p>
+            Use the <a href="#contact">contact form</a> below to get
+            in touch. If you prefer another communication method, my LinkedIn is
+            linked below.
+          </p>
+          <!-- <Skills skills={skillsData} /> -->
+        </div>
+
+        <Socials socials={socials} />
+      </div>
+      <img src={MOImage} alt="marvin obig" />
+    </section>
+  </header>
+  <!-- <WorkEx workData={workData} />
 	<ProjectSlider projects={projectData} client:only="react" /> -->
-	<RecentPosts />
+  <RecentPosts />
 </BaseLayout>
