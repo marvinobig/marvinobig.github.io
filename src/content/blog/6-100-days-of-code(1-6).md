@@ -24,23 +24,7 @@ I decided to program in python as through the language I could get exposure to c
 
 I began this challenge on the 24th of September, 2024. I also decided to use the most enrolled in course on Udemy provided by Dr. Angela Yu as a guide for the [challenge](https://www.udemy.com/course/100-days-of-code).
 
-    • Day 1
-      I spent this day leaning about variables
-
-    • Day 2
-      I spent this day leaning about data types
-
-    • Day 3
-      This day was about control flow and logical operators
-
-    • Day 4
-      I learnt about randomization, python lists and list comprehension
-
-    • Day 5
-      I went over python loops and the range() function
-
-    • Day 6
-      I played around with creating functions and utilizing the while loop
+I spent day one learning about variables. I spent day two learning about data types. Day three was about control flow and logical operators. During day four, I learnt about randomization, python lists and list comprehension. On day five, I went over python loops and the range() function and on day six, I played around with creating functions and utilizing the while loop.
 
 ## What I’ve Learnt so Far
 
