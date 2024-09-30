@@ -9,7 +9,7 @@ thumbnail:
   src: "/blog-imgs/mo-6/challenge-thumbnail.webp"
   alt: "challenge course"
 tags: ["100 days of code", "python"]
-draft: true
+draft: false
 ---
 
 ## Why I’m Doing This Challenge
