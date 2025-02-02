@@ -2,7 +2,9 @@
 import "../styles/css/global.css";
 import Head from "../components/Head.astro";
 import Navigation from "../components/Navigation.astro";
-import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer.astro";
+// import ContactForm from "../components/ContactForm";
+
 
 const { pageTitle } = Astro.props;
 ---
@@ -14,6 +16,7 @@ const { pageTitle } = Astro.props;
 		<main>
 			<slot />
 		</main>
-		<ContactForm client:only="react" />
+		<!-- <ContactForm client:only="react" /> -->
+		<Footer/>
 	</body>
 </html>
