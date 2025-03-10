@@ -1,6 +1,6 @@
 # Portfolio
 
-This is my portfolio. [View](https://marvinobig.online/) to learn a little about me, my skills, my work experience, my projects, how to contact me and also view my dev blog.
+This is my portfolio - [View](https://marvinobig.online/).
 
 ## Languages/Tools used
 
