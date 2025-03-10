@@ -8,7 +8,6 @@ This is my portfolio. [View](https://marvinobig.online/) to learn a little about
 - SCSS Modules
 - React Js
 - Astro Js
-- Node Js/Express Js (Contact Form)
 
 ## Live Link
 
