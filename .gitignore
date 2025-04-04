@@ -22,3 +22,5 @@ pnpm-debug.log*
 
 # editor specific files
 .vscode
+/nbproject/private/
+/nbproject

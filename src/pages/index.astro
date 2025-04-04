@@ -1,8 +1,8 @@
 ---
 import workData from "../scripts/workData";
-// import projectData from "../scripts/projectData";
+import projectData from "../scripts/projectData";
 // import skillsData from "../scripts/skillsData";
-// import ProjectSlider from "../components/ProjectSlider";
+import ProjectSlider from "../components/ProjectSlider";
 // import WorkEx from "../components/WorkEx.astro";
 import MOImage from "../assets/images/m.o.png";
 // import Skills from "../components/Skills.astro";
@@ -95,7 +95,7 @@ const socials = [
       <img src={MOImage} alt="marvin obig" />
     </section>
   </header>
-  <!-- <WorkEx workData={workData} />
-	<ProjectSlider projects={projectData} client:only="react" /> -->
+  <!-- <WorkEx workData={workData} /> -->
+    <ProjectSlider projects={projectData} client:only="react" />
   <RecentPosts />
 </BaseLayout>
