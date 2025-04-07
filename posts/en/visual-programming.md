@@ -3,10 +3,10 @@ title: 'Visual Programming With Scratch'
 date: 2023-07-14
 summary: "Why learning to program with scratch as a complete beginner in programming can help you when you decide to pick up a text based programming language."
 banner:
-    src: '/blog-imgs/mo-2/banner.webp'
+    src: '/assets/images/blog-imgs/mo-2/banner.webp'
     alt: "visual programming"
 thumbnail:
-    src: '/blog-imgs/mo-2/scratch.webp' 
+    src: '/assets/images/blog-imgs/mo-2/scratch.webp' 
     alt: 'scratch'
 ---
 

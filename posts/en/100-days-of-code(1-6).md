@@ -6,7 +6,7 @@ banner:
   src: "/assets/images/blog-imgs/mo-6/github-repo.webp"
   alt: "challenge for day 6"
 thumbnail:
-  src: "assets/images/blog-imgs/mo-6/challenge-thumbnail.webp"
+  src: "/assets/images/blog-imgs/mo-6/challenge-thumbnail.webp"
   alt: "challenge course"
 ---
 
