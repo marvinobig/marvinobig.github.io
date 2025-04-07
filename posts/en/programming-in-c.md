@@ -3,10 +3,10 @@ title: 'Programming in The C Language'
 pubDate: 2023-07-21
 summary: "My experience so far spending the entire week programming in C."
 banner:
-    src: '/blog-imgs/mo-3/banner.webp'
+    src: '/assets/images/blog-imgs/mo-3/banner.webp'
     alt: "luhn's algorithm"
 thumbnail:
-    src: '/blog-imgs/mo-3/c.webp' 
+    src: '/assets/images/blog-imgs/mo-3/c.webp' 
     alt: 'c language'
 ---
 

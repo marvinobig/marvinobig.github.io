@@ -3,12 +3,11 @@ title: "100 Days of Code Challenge: Days 1 - 6"
 pubDate: 2024-09-29
 summary: "Why I'm doing the 100 days of code challenge and my progress on it so far"
 banner:
-  src: "/blog-imgs/mo-6/github-repo.webp"
+  src: "/assets/images/blog-imgs/mo-6/github-repo.webp"
   alt: "challenge for day 6"
 thumbnail:
-  src: "/blog-imgs/mo-6/challenge-thumbnail.webp"
+  src: "assets/images/blog-imgs/mo-6/challenge-thumbnail.webp"
   alt: "challenge course"
-draft: false
 ---
 
 ## Why I’m Doing This Challenge
@@ -31,6 +30,6 @@ While I do have prior programming experience in an educational and professional 
 
 #### Chat GPT Generated Challenge
 
-![Chat GPT Challenge](/blog-imgs/mo-6/chat-gpt-challenge.webp)
+![Chat GPT Challenge](/assets/images/blog-imgs/mo-6/chat-gpt-challenge.webp)
 
 I’ve added all my code solutions to a [public repo](https://github.com/marvinobig/100-days-of-code) on my GitHub so that everything is tracked and backed up.
