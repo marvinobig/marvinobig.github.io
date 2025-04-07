@@ -2,7 +2,7 @@
 layout: layout.html
 ---
 
-{% for post in collections.post %}
+{% for post in collections.post limit:4 %}
 <a href="{{ post.url }}">
     <article>
         <h4>{{ post.data.title }}</h4>
