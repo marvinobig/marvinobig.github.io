@@ -1,6 +1,7 @@
 export default function (eleventyConfig) {
     // Set custom directories for output, includes, and data
-    eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy("assets/images");
+    eleventyConfig.addPassthroughCopy("assets/styles/css");
     eleventyConfig.addPassthroughCopy("site.webmanifest");
     eleventyConfig.addPassthroughCopy("CNAME");
     eleventyConfig.addPassthroughCopy("robots.txt");
