@@ -10,7 +10,7 @@ thumbnail:
     src: '/blog-imgs/mo-1/craigslist.webp' 
     alt: 'craigs list'
 tags: ["Deutsch", "Einleitung"]
-draft: false
+draft: true
 ---
 
 # Meine Einleitung
