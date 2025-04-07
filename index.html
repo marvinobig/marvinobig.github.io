@@ -20,6 +20,11 @@ lang: "en"
         </div>
 
         <p>{{ project.description }}</p>
+
+        <div>
+            <a href="{{ project.live }}" target="_blank">Live</a>
+            <a href="{{ project.github }}" target="_blank">Code</a>
+        </div>
     </article>
     {% endfor %}
 </section>
@@ -28,12 +33,14 @@ lang: "en"
     <h3>Posts</h3>
 
     {% for post in collections.latest %}
-    <a href="{{ post.url }}">
-        <article>
+    <article>
+        <img src="{{ post.data.thumbnail.src }}" alt="{{ post.data.thumbnail.alt }}">
+        <div>
             <h4>{{ post.data.title }}</h4>
             <p>{{ post.data.summary }}</p>
             <p>{{ post.data.date | date: "%A, %d %B %Y" }}</p>
-        </article>
-    </a>
+            <a href="{{ post.url }}">Read</a>
+        </div>
+    </article>
     {% endfor %}
 </section>

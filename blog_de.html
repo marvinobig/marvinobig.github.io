@@ -9,10 +9,13 @@ lang: "de"
 </header>
 
 {% for post in collections.de %}
-<a href="{{ post.url }}">
-    <article>
+<article>
+    <img src="{{ post.data.thumbnail.src }}" alt="{{ post.data.thumbnail.alt }}">
+    <div>
         <h4>{{ post.data.title }}</h4>
         <p>{{ post.data.summary }}</p>
-    </article>
-</a>
+        <p>{{ post.data.date | date: "%A, %d %B %Y" }}</p>
+        <a href="{{ post.url }}">Read</a>
+    </div>
+</article>
 {% endfor %}
