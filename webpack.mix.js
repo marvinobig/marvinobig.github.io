@@ -1,3 +1,3 @@
 const mix = require('laravel-mix');
 
-mix.sass("src/styles/scss/global.scss", "src/styles/css/global.css")
+mix.sass("/assets/styles/scss/main.scss", "/assets/styles/css/main.css")
