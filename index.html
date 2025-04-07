@@ -2,6 +2,16 @@
 layout: layout.html
 ---
 
+{% for project in projectData %}
+<article>
+    <h4>{{ project.name }}</h4>
+
+    {% for technology in project.technologies %}
+    <img src="{{ technology.img }}" alt="{{ technology.alt }}"/>
+    {% endfor %}
+</article>
+{% endfor %}
+
 {% for post in collections.post limit:4 %}
 <a href="{{ post.url }}">
     <article>
