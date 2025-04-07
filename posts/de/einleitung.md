@@ -1,5 +1,4 @@
 ---
-lang: "de"
 title: 'Eine Einleitung'
 pubDate: 2025-04-07
 summary: "Ich bin Marvin"
@@ -9,8 +8,6 @@ banner:
 thumbnail:
     src: '/blog-imgs/mo-1/craigslist.webp' 
     alt: 'craigs list'
-tags: ["Deutsch", "Einleitung"]
-draft: true
 ---
 
 # Meine Einleitung

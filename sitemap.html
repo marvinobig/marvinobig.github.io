@@ -5,10 +5,10 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for post in collections.post %}
-    {% if post.draft == false %}
+    {% if post.data.draft == false %}
     <url>
         <loc>{{ site.url }}{{ post.url | url }}</loc>
-        <lastmod>{{ post.pubDate | date: "%Y-%m-%d" }}</lastmod>
+        <lastmod>{{ post.data.pubDate | date: "%Y-%m-%d" }}</lastmod>
     </url>
     {% endif %}
     {% endfor %}

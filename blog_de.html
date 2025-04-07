@@ -1,0 +1,14 @@
+---
+layout: base_layout.html
+title : "Marvin Obig: German Blog"
+lang: "de"
+---
+
+{% for post in collections.de %}
+<a href="{{ post.url }}">
+    <article>
+        <h4>{{ post.data.title }}</h4>
+        <p>{{ post.data.summary }}</p>
+    </article>
+</a>
+{% endfor %}

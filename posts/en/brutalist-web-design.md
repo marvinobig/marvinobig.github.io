@@ -1,5 +1,4 @@
 ---
-lang: "en"
 title: 'Brutalist Web Design And How I Utilized it Within my Portfolio Design'
 pubDate: 2023-07-07
 summary: "I go over the principles of brutalist web design and how I used it to design my portfolio."
@@ -9,8 +8,6 @@ banner:
 thumbnail:
     src: '/blog-imgs/mo-1/craigslist.webp' 
     alt: 'craigs list'
-tags: ["brutalist web design", "UI", "UX", "portfolio"]
-draft: false
 ---
 
 ## What is Brutalist Web Design

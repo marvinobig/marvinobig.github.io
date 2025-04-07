@@ -1,5 +1,4 @@
 ---
-lang: "en"
 title: 'Online Courses That Propelled my Self Taught Journey'
 pubDate: 2023-07-28 
 summary: "I go over two online courses that propelled me through my self taught web-dev/programming journey."
@@ -9,8 +8,6 @@ banner:
 thumbnail:
     src: '/blog-imgs/mo-4/cs50.webp' 
     alt: 'cs50 course'
-tags: ["computer science", "web development", "online courses"]
-draft: false
 ---
 
 ## My First Online Courses

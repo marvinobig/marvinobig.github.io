@@ -1,5 +1,4 @@
 ---
-lang: "en"
 title: 'Programming in The C Language'
 pubDate: 2023-07-21
 summary: "My experience so far spending the entire week programming in C."
@@ -9,8 +8,6 @@ banner:
 thumbnail:
     src: '/blog-imgs/mo-3/c.webp' 
     alt: 'c language'
-tags: ["computer science", "algorithms", "c programming", "programming"]
-draft: false
 ---
 
 ## My Entire Week So Far

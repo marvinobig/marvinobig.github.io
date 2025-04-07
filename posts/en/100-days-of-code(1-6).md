@@ -1,5 +1,4 @@
 ---
-lang: "en"
 title: "100 Days of Code Challenge: Days 1 - 6"
 pubDate: 2024-09-29
 summary: "Why I'm doing the 100 days of code challenge and my progress on it so far"
@@ -9,7 +8,6 @@ banner:
 thumbnail:
   src: "/blog-imgs/mo-6/challenge-thumbnail.webp"
   alt: "challenge course"
-tags: ["100 days of code", "python"]
 draft: false
 ---
 

@@ -1,5 +1,4 @@
 ---
-lang: "en"
 title: 'The Importance of Health And Fitness'
 pubDate: 2023-08-18 
 summary: "I go over why health & fitness is and should be important to software developers."
@@ -9,8 +8,6 @@ banner:
 thumbnail:
     src: '/blog-imgs/mo-5/h-f.webp' 
     alt: 'pineapple by laptop'
-tags: ["fitness", "health", "training"]
-draft: false
 ---
 
 

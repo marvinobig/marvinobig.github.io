@@ -1,5 +1,6 @@
 ---
-layout: layout.html
+layout: base_layout.html
+lang: "en"
 ---
 
 {% for project in projectData %}
@@ -12,7 +13,7 @@ layout: layout.html
 </article>
 {% endfor %}
 
-{% for post in collections.post limit:4 %}
+{% for post in collections.post reversed %}
 <a href="{{ post.url }}">
     <article>
         <h4>{{ post.data.title }}</h4>
