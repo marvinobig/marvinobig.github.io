@@ -6,21 +6,31 @@ lang: "en"
 
 <h3>Total posts: {{ collections.post | size }}</h3>
 
-{% for project in projectData %}
-<article>
-    <h4>{{ project.name }}</h4>
+<section>
+    <h3>Projects</h3>
 
-    {% for technology in project.technologies %}
-    <img src="{{ technology.img }}" alt="{{ technology.alt }}"/>
-    {% endfor %}
-</article>
-{% endfor %}
-
-{% for post in collections.post reversed %}
-<a href="{{ post.url }}">
+    {% for project in projectData.projects %}
     <article>
-        <h4>{{ post.data.title }}</h4>
-        <p>{{ post.data.summary }}</p>
-    </article>    
-</a>
-{% endfor %}
+        <h4>{{ project.name }}</h4>
+
+        {% for technology in project.technologies %}
+        <img src="{{ technology.img }}" alt="{{ technology.alt }}" />
+        {% endfor %}
+
+        <p>{{ project.description }}</p>
+    </article>
+    {% endfor %}
+</section>
+
+<section>
+    <h3>Posts</h3>
+    
+    {% for post in collections.post reversed %}
+    <a href="{{ post.url }}">
+        <article>
+            <h4>{{ post.data.title }}</h4>
+            <p>{{ post.data.summary }}</p>
+        </article>
+    </a>
+    {% endfor %}
+</section>
