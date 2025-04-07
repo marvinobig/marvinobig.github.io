@@ -3,6 +3,10 @@ title : "Marvin Obig: German Blog"
 layout: base_layout.html
 lang: "de"
 ---
+<header>
+    <h1>{{ title }}</h1>
+    <h3>Total posts: {{ collections.de | size }}</h3>
+</header>
 
 {% for post in collections.de %}
 <a href="{{ post.url }}">
