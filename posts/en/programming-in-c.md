@@ -1,6 +1,6 @@
 ---
 title: 'Programming in The C Language'
-pubDate: 2023-07-21
+date: 2023-07-21
 summary: "My experience so far spending the entire week programming in C."
 banner:
     src: '/assets/images/blog-imgs/mo-3/banner.webp'

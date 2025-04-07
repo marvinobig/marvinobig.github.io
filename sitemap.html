@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
     {% if post.data.draft == false %}
     <url>
         <loc>{{ site.url }}{{ post.url | url }}</loc>
-        <lastmod>{{ post.data.pubDate | date: "%Y-%m-%d" }}</lastmod>
+        <lastmod>{{ post.data.date | date: "%Y-%m-%d" }}</lastmod>
     </url>
     {% endif %}
     {% endfor %}

@@ -1,6 +1,6 @@
 ---
 title: 'Brutalist Web Design And How I Utilized it Within my Portfolio Design'
-pubDate: 2023-07-07
+date: 2023-07-07
 summary: "I go over the principles of brutalist web design and how I used it to design my portfolio."
 banner:
     src: '/assets/images/blog-imgs/mo-1/banner.webp'

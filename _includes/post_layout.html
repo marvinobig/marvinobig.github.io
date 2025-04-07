@@ -24,6 +24,12 @@
         <img src="{{ banner.src }}" alt="{{ banner.alt }}">
     </header>
     <main>
+        {% if lang == "en" %}
+        <p>{{ date | date: "%A, %d %B %Y" }}</p>
+        {% else %}
+        <p>{{ date | date: "%A, %d %B %Y" | germanDate }}</p>
+        {% endif %}
+
         {{ content }}
     </main>
     <footer>

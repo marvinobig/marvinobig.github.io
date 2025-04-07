@@ -1,6 +1,6 @@
 ---
 title: "100 Days of Code Challenge: Days 1 - 6"
-pubDate: 2024-09-29
+date: 2024-09-29
 summary: "Why I'm doing the 100 days of code challenge and my progress on it so far"
 banner:
   src: "/assets/images/blog-imgs/mo-6/github-repo.webp"

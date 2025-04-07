@@ -1,6 +1,6 @@
 ---
 title: 'Eine Einleitung'
-pubDate: 2025-04-07
+date: 2025-04-07
 summary: "Ich bin Marvin"
 banner:
     src: '/assets/images/blog-imgs/mo-1/banner.webp'

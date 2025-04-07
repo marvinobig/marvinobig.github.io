@@ -13,9 +13,13 @@ lang: "en"
     <article>
         <h4>{{ project.name }}</h4>
 
-        {% for technology in project.technologies %}
-        <img src="{{ technology.img }}" alt="{{ technology.alt }}" />
-        {% endfor %}
+        <img src="{{ project.img }}" alt="{{ project.name }}">
+
+        <div>
+            {% for technology in project.technologies %}
+            <img src="{{ technology.img }}" alt="{{ technology.alt }}" />
+            {% endfor %}
+        </div>
 
         <p>{{ project.description }}</p>
     </article>
@@ -24,12 +28,13 @@ lang: "en"
 
 <section>
     <h3>Posts</h3>
-    
-    {% for post in collections.post reversed %}
+
+    {% for post in collections.latest %}
     <a href="{{ post.url }}">
         <article>
             <h4>{{ post.data.title }}</h4>
             <p>{{ post.data.summary }}</p>
+            <p>{{ post.data.date | date: "%A, %d %B %Y" }}</p>
         </article>
     </a>
     {% endfor %}
