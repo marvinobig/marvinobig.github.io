@@ -3,11 +3,12 @@
     line-height: 1.8;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
-    margin: 0;
     text-wrap: pretty;
 }
 
 body {
+    margin: auto;
+    padding: 0 20px;
     width: 100%;
     max-width: 800px;
 }
