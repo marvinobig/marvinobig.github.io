@@ -14,7 +14,14 @@ body {
 }
 
 nav {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
+}
+
+.nav-dropdown {
+    display: flex;
+    gap: 15px;
 }
 
 p {
