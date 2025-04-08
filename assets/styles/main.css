@@ -13,6 +13,10 @@ body {
     max-width: 800px;
 }
 
+nav {
+    margin-bottom: 20px;
+}
+
 p {
     font-size: larger;
 }
