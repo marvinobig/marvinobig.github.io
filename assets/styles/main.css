@@ -1,0 +1,36 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    margin: 0;
+    text-wrap: pretty;
+}
+
+body {
+    width: 100%;
+    max-width: 800px;
+}
+
+p {
+    font-size: larger;
+}
+
+img {
+    width: 100%;
+}
+
+.tech-icon {
+    max-width: 30px;
+}
+
+.thumbnail {
+    aspect-ratio: 1;
+    object-fit: cover;
+    max-width: 250px;
+}
+
+.banner {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
