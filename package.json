@@ -9,8 +9,6 @@
         "watch-css": "npx mix watch"
     },
     "devDependencies": {
-        "@11ty/eleventy": "^3.0.0",
-        "laravel-mix": "^6.0.49"
-    },
-    "type": "module"
+        "@11ty/eleventy": "^3.0.0"
+    }
 }
