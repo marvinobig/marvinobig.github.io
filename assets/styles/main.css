@@ -17,6 +17,7 @@ nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    font-size: larger;
 }
 
 .nav-dropdown {
