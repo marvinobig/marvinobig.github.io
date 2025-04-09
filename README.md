@@ -13,4 +13,4 @@ It also contains information on my developement projects (always being updated).
 
 ## Live Link
 
-[View my portfolio](https://marvinobig.online/)
+[View my portfolio & blog](https://marvinobig.online/)
