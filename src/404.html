@@ -6,9 +6,5 @@ permalink: 404.html
 ---
 <article>
     <h1>Page not found</h1>
-    <h2>Navigate to <a href="/blog_en">Blog (EN)</a> or
-        {% if collections.de %}
-        <a href="/blog_de">Blog (DE)</a>
-        {% endif %}
-    </h2>
+    <h2>Navigate to <a href="/blog_en">Blog (EN)</a>{% if collections.de %} or <a href="/blog_de">Blog (DE)</a>{% endif %}</h2>
 </article>
