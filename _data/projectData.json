@@ -32,35 +32,6 @@
                     "alt": "html"
                 }
             ]
-        },
-        {
-            "name": "Bod-trac",
-            "img": "/assets/images/project-imgs/bod-trac.png",
-            "description": "Track your body weight & BMI across time so you can keep track of your progress.",
-            "github": "https://github.com/marvinobig/bod-trac.git",
-            "live": "https://mobig.pythonanywhere.com/",
-            "technologies": [
-                {
-                    "img": "/assets/images/icons/back-end/sqlite.png",
-                    "alt": "sqlite"
-                },
-                {
-                    "img": "/assets/images/icons/tools/flask.png",
-                    "alt": "flask"
-                },
-                {
-                    "img": "/assets/images/icons/back-end/python.png",
-                    "alt": "python"
-                },
-                {
-                    "img": "/assets/images/icons/front-end/css.png",
-                    "alt": "css"
-                },
-                {
-                    "img": "/assets/images/icons/front-end/html.png",
-                    "alt": "html"
-                }
-            ]
         }
     ]
 }
