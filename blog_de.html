@@ -16,7 +16,7 @@ lang: "de"
             <h2>{{ post.data.title }}</h2>
         </a>
         <p>{{ post.data.summary }}</p>
-        <p>{{ post.data.date | date: "%A, %d %B %Y" }}</p>
+        <p class="date">{{ post.data.date | date: "%A, %d %B %Y" }}</p>
     </div>
 </article>
 {% endfor %}
