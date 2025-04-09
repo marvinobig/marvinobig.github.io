@@ -31,7 +31,14 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: List contents of dist (or _site)
+        run: ls -R ./dist  
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
