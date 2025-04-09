@@ -4,25 +4,56 @@
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
     text-wrap: pretty;
+    --margin: 20px;
+    --padding: 20px;
+    --gap: 20px;
+    --dark-colour: #454545;
+    --light-colour: #f4f4f4;
+    --accent-colour-1: #07a;
+    --accent-colour-2: #5C6C74;
 }
 
 body {
     margin: auto;
-    padding: 20px;
+    padding: var(--padding);
     width: 100%;
-    max-width: 800px;
+    max-width: 860px;
+    color: var(--dark-colour);
+    background-color: var(--light-colour);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: var(--margin);
     font-size: larger;
 }
 
+a,
+a:visited {
+    color: var(--accent-colour-1);
+    font-weight: bold;
+}
+
+button {
+    font-size: large;
+    padding: 0 calc(var(--margin) - 5px);
+    color: var(--dark-colour);
+}
+
 .nav-dropdown {
-    display: flex;
-    gap: 15px;
+    position: absolute;
+    right: 0;
+    border: solid 1px var(--accent-colour-2);
+    margin-top: calc(var(--margin) - 10px);
+    padding: calc(var(--padding) - 10px);
+    width: 118px;
+    z-index: 5;
+    background-color: var(--light-colour);
+}
+
+section:has(.nav-dropdown) {
+    position: relative;
 }
 
 p {
@@ -34,16 +65,47 @@ img {
 }
 
 .tech-icon {
-    max-width: 30px;
+    max-width: 50px;
 }
 
 .thumbnail {
     aspect-ratio: 1;
     object-fit: cover;
-    max-width: 250px;
+    max-width: 260px;
+
+    @media only screen and (max-width: 700px) {
+        max-width: 100%;
+    }
 }
 
 .banner {
     aspect-ratio: 16/9;
     object-fit: cover;
+}
+
+.date {
+    font-size: medium;
+    color: var(--accent-colour-2);
+}
+
+pre {
+    color: var(--light-colour);
+    background-color: var(--accent-colour-2);
+    margin: calc(var(--margin) + 10px) 0;
+    padding: var(--padding);
+    white-space: pre-wrap;
+}
+
+.card {
+    display: flex;
+    gap: var(--gap);
+    margin-bottom: calc(var(--margin) + 20px);
+
+    @media only screen and (max-width: 700px) {
+        flex-direction: column;
+    }
+}
+
+.link {
+    font-size: larger;
 }
