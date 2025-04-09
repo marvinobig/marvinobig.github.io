@@ -8,20 +8,20 @@ lang: "en"
     <h2>Projects</h2>
 
     {% for project in projectData.projects %}
-    <article>
+    <article class="card">
         <img class="thumbnail" src="{{ project.img }}" alt="{{ project.name }}">
 
         <div>
-            <h3>{{ project.name }}</h3>
+            <a href="{{ project.live }}" target="_blank">
+                <h3>{{ project.name }}</h3>
+            </a>
             <p>{{ project.description }}</p>
-            {% for technology in project.technologies %}
-            <img class="tech-icon" src="{{ technology.img }}" alt="{{ technology.alt }}" />
-            {% endfor %}
-
             <div>
-                <a href="{{ project.live }}" target="_blank">Live</a>
-                <a href="{{ project.github }}" target="_blank">Code</a>
+                {% for technology in project.technologies %}
+                <img class="tech-icon" src="{{ technology.img }}" alt="{{ technology.alt }}" />
+                {% endfor %}
             </div>
+            <a class="link" href="{{ project.github }}" target="_blank">View Code</a>
         </div>
     </article>
     {% endfor %}
@@ -31,7 +31,7 @@ lang: "en"
     <h2>Posts</h2>
 
     {% for post in collections.latest %}
-    <article>
+    <article class="card">
         <img class="thumbnail" src="{{ post.data.thumbnail.src }}" alt="{{ post.data.thumbnail.alt }}">
         <div>
             <a href="{{ post.url }}">

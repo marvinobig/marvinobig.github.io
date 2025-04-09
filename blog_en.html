@@ -10,7 +10,7 @@ lang: "en"
 </header>
 
 {% for post in collections.en reversed %}
-<article>
+<article class="card">
     <img class="thumbnail" src="{{ post.data.thumbnail.src }}" alt="{{ post.data.thumbnail.alt }}">
     <div>
         <a href="{{ post.url }}">
