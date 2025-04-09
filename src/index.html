@@ -1,0 +1,45 @@
+---
+title: "Marvin Obig: Portfolio & Blog"
+layout: base_layout.html
+lang: "en"
+---
+
+<section>
+    <h2>Projects</h2>
+
+    {% for project in projectData.projects %}
+    <article class="card">
+        <img class="thumbnail" src="{{ project.img }}" alt="{{ project.name }}">
+
+        <div>
+            <a href="{{ project.live }}" target="_blank">
+                <h3>{{ project.name }}</h3>
+            </a>
+            <p>{{ project.description }}</p>
+            <div>
+                {% for technology in project.technologies %}
+                <img class="tech-icon" src="{{ technology.img }}" alt="{{ technology.alt }}" />
+                {% endfor %}
+            </div>
+            <a class="link" href="{{ project.github }}" target="_blank">View Code</a>
+        </div>
+    </article>
+    {% endfor %}
+</section>
+
+<section>
+    <h2>Posts</h2>
+
+    {% for post in collections.latest %}
+    <article class="card">
+        <img class="thumbnail" src="{{ post.data.thumbnail.src }}" alt="{{ post.data.thumbnail.alt }}">
+        <div>
+            <a href="{{ post.url }}">
+                <h3>{{ post.data.title }}</h3>
+            </a>
+            <p>{{ post.data.summary }}</p>
+            <p class="date">{{ post.data.date | date: "%A, %d %B %Y" }}</p>
+        </div>
+    </article>
+    {% endfor %}
+</section>

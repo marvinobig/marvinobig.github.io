@@ -1,0 +1,28 @@
+<nav>
+    <a href="/">Home</a>
+
+    <section>
+        <button id="blog-dropdown-btn">
+            More
+        </button>
+        <div id="blog-dropdown" class="nav-dropdown">
+            <div>
+                <a href="https://github.com/marvinobig" target="_blank">Github</a>
+            </div>
+
+            <div>
+                <a href="/blog_en">Blog (EN)</a>
+            </div>
+
+            {% if collections.de %}
+            <div>
+                <a href="/blog_de">Blog (DE)</a>
+            </div>
+            {% endif %}
+
+            <div>
+                <a href="/sitemap.xml" target="_blank">RSS Feed</a>
+            </div>
+        </div>
+    </section>
+</nav>

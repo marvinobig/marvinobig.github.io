@@ -1,0 +1,23 @@
+---
+title : "Marvin Obig: English Blog"
+layout: base_layout.html
+lang: "en"
+---
+
+<header>
+    <h1>{{ title }}</h1>
+    <p>Total posts: {{ collections.en | size }}</p>
+</header>
+
+{% for post in collections.en reversed %}
+<article class="card">
+    <img class="thumbnail" src="{{ post.data.thumbnail.src }}" alt="{{ post.data.thumbnail.alt }}">
+    <div>
+        <a href="{{ post.url }}">
+            <h2>{{ post.data.title }}</h2>
+        </a>
+        <p>{{ post.data.summary }}</p>
+        <p class="date">{{ post.data.date | date: "%A, %d %B %Y" }}</p>
+    </div>
+</article>
+{% endfor %}
