@@ -2,7 +2,7 @@
     "projects": [
         {
             "name": "ORQ (One Rep Quest)",
-            "img": "/assets/images/project-imgs/orq.png",
+            "img": "/assets/images/project-imgs/orq.webp",
             "description": "A fitness web app that allows users to create and login to accounts to enable the creation of workout templates that users can use to generate workout logs.",
             "github": "https://github.com/marvinobig/orq-project.git",
             "live": "http://3.88.164.232/",
