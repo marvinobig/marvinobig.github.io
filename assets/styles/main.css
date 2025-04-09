@@ -7,6 +7,7 @@
     --margin: 20px;
     --padding: 20px;
     --gap: 20px;
+    --opacity: 1;
     --dark-colour: #454545;
     --light-colour: #f4f4f4;
     --accent-colour-1: #07a;
@@ -50,7 +51,7 @@ button {
     padding: calc(var(--padding) - 10px);
     width: 118px;
     z-index: 5;
-    opacity: 0;
+    opacity: var(--opacity);
     background-color: var(--light-colour);
     transition: opacity .2s ease, display .2s ease allow-discrete;
 }
@@ -62,7 +63,7 @@ button {
 
 @starting-style {
     .nav-dropdown.open {
-        opacity: 0;
+        opacity: var(--opacity);;
         display: block;
     }
 }
