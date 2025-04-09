@@ -1,0 +1,37 @@
+{
+    "projects": [
+        {
+            "name": "ORQ (One Rep Quest)",
+            "img": "/assets/images/project-imgs/orq.png",
+            "description": "A fitness web app that allows users to create and login to accounts to enable the creation of workout templates that users can use to generate workout logs.",
+            "github": "https://github.com/marvinobig/orq-project.git",
+            "live": "http://3.88.164.232/",
+            "technologies": [
+                {
+                    "img": "/assets/images/icons/deployment/aws.png",
+                    "alt": "aws"
+                },
+                {
+                    "img": "/assets/images/icons/tools/laravel.png",
+                    "alt": "laravel"
+                },
+                {
+                    "img": "/assets/images/icons/back-end/php.png",
+                    "alt": "php"
+                },
+                {
+                    "img": "/assets/images/icons/front-end/javascript.png",
+                    "alt": "javascript"
+                },
+                {
+                    "img": "/assets/images/icons/front-end/bootstrap.png",
+                    "alt": "bootstrap 5"
+                },
+                {
+                    "img": "/assets/images/icons/front-end/html.png",
+                    "alt": "html"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,127 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    --margin: 20px;
+    --padding: 20px;
+    --gap: 20px;
+    --opacity: 0;
+    --dark-colour: #454545;
+    --light-colour: #f4f4f4;
+    --accent-colour-1: #07a;
+    --accent-colour-2: #5C6C74;
+}
+
+body {
+    margin: auto;
+    padding: var(--padding);
+    width: 100%;
+    max-width: 860px;
+    color: var(--dark-colour);
+    background-color: var(--light-colour);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--margin);
+    font-size: larger;
+}
+
+a,
+a:visited {
+    color: var(--accent-colour-1);
+    font-weight: bold;
+}
+
+button {
+    font-size: large;
+    padding: 0 calc(var(--margin) - 5px);
+    color: var(--dark-colour);
+}
+
+.nav-dropdown {
+    position: absolute;
+    right: 0;
+    display: none;
+    border: solid 1px var(--accent-colour-2);
+    margin-top: calc(var(--margin) - 10px);
+    padding: calc(var(--padding) - 10px);
+    width: 118px;
+    z-index: 5;
+    opacity: var(--opacity);
+    background-color: var(--light-colour);
+    transition: opacity .2s ease, display .2s ease allow-discrete;
+}
+
+.nav-dropdown.open {
+    opacity: 1;
+    display: block;
+}
+
+@starting-style {
+    .nav-dropdown.open {
+        opacity: var(--opacity);
+        display: block;
+    }
+}
+
+section:has(.nav-dropdown) {
+    position: relative;
+}
+
+p {
+    font-size: larger;
+}
+
+img {
+    width: 100%;
+}
+
+.tech-icon {
+    max-width: 50px;
+}
+
+.thumbnail {
+    aspect-ratio: 1;
+    object-fit: cover;
+    max-width: 260px;
+
+    @media only screen and (max-width: 700px) {
+        max-width: 100%;
+    }
+}
+
+.banner {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.date {
+    font-size: medium;
+    color: var(--accent-colour-2);
+}
+
+pre {
+    color: var(--light-colour);
+    background-color: var(--accent-colour-2);
+    margin: calc(var(--margin) + 10px) 0;
+    padding: var(--padding);
+    white-space: pre-wrap;
+}
+
+.card {
+    display: flex;
+    gap: var(--gap);
+    margin-bottom: calc(var(--margin) + 20px);
+
+    @media only screen and (max-width: 700px) {
+        flex-direction: column;
+    }
+}
+
+.link {
+    font-size: larger;
+}

@@ -1,18 +1,16 @@
-# Portfolio
+# Portfolio & Blog
 
-This is my portfolio - [View](https://marvinobig.online/).
+This is my portfolio and blog - [View](https://marvinobig.online/).
+
+It also contains information on my developement projects (always being updated).
 
 ## Languages/Tools used
 
 - HTML
-- SCSS Modules
-- React Js
-- Astro Js
+- CSS
+- JavaScript
+- 11ty
 
 ## Live Link
 
-[View my portfolio](https://marvinobig.online/)
-
-## Contributing
-
-Pull requests aren't nessesary as this is just my portfolio. View my other projects if you want to contribute.
+[View my portfolio & blog](https://marvinobig.online/)
