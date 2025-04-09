@@ -1,9 +1,9 @@
 export default function (eleventyConfig) {
     // Set custom directories for output, includes, and data
-    eleventyConfig.addPassthroughCopy("assets");
-    eleventyConfig.addPassthroughCopy("site.webmanifest");
-    eleventyConfig.addPassthroughCopy("CNAME");
-    eleventyConfig.addPassthroughCopy("robots.txt");
+    eleventyConfig.addPassthroughCopy("src/assets");
+    eleventyConfig.addPassthroughCopy("src/site.webmanifest");
+    eleventyConfig.addPassthroughCopy("src/CNAME");
+    eleventyConfig.addPassthroughCopy("src/robots.txt");
 
     eleventyConfig.addCollection("latest", function (collectionApi) {
         return collectionApi.getFilteredByTag("post").sort(function (a, b) {
@@ -32,6 +32,7 @@ export default function (eleventyConfig) {
     return {
         passthroughFileCopy: true,
         dir: {
+            input : "src",
             includes: "_includes",
             data: "_data",
             output: "dist"
