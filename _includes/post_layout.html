@@ -7,12 +7,12 @@
     {% include "nav.html" %}
 
     <header>
-        <img src="{{ banner.src }}" alt="{{ banner.alt }}">
+        <img class="banner" src="{{ banner.src }}" alt="{{ banner.alt }}">
         <h1>{{ title }}</h1>
         {% if lang == "en" %}
-        <p>{{ date | date: "%A, %d %B %Y" }}</p>
+        <p class="date">{{ date | date: "%A, %d %B %Y" }}</p>
         {% else %}
-        <p>{{ date | date: "%A, %d %B %Y" | germanDate }}</p>
+        <p class="date">{{ date | date: "%A, %d %B %Y" | germanDate }}</p>
         {% endif %}
     </header>
     <main>
