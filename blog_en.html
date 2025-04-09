@@ -9,7 +9,7 @@ lang: "en"
     <p>Total posts: {{ collections.en | size }}</p>
 </header>
 
-{% for post in collections.en %}
+{% for post in collections.en reversed %}
 <article>
     <img class="thumbnail" src="{{ post.data.thumbnail.src }}" alt="{{ post.data.thumbnail.alt }}">
     <div>

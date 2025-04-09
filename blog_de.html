@@ -8,7 +8,7 @@ lang: "de"
     <p>Total posts: {{ collections.de | size }}</p>
 </header>
 
-{% for post in collections.de %}
+{% for post in collections.de reversed %}
 <article>
     <img class="thumbnail" src="{{ post.data.thumbnail.src }}" alt="{{ post.data.thumbnail.alt }}">
     <div>
