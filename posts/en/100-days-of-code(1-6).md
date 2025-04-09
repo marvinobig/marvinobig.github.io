@@ -26,10 +26,10 @@ I spent day one learning about variables. I spent day two learning about data ty
 
 ## What I’ve Learnt so Far
 
-While I do have prior programming experience in an educational and professional setting, it has been a couple months since I’ve looked at code so I felt I needed a refresher to get me going which is what this week was all about. While I relied on the linked course above for guidance in my learning, I also utilized Chat GPT to help analyze my code solutions and generate challenges based on what I had learned on the day.
+While I do have prior programming experience in an educational and professional setting, it has been a couple months since I’ve looked at code so I felt I needed a refresher to get me going which is what this week was all about. 
 
 #### Chat GPT Generated Challenge
 
 ![Chat GPT Challenge](/assets/images/blog-imgs/mo-6/chat-gpt-challenge.webp)
 
-I’ve added all my code solutions to a [public repo](https://github.com/marvinobig/100-days-of-code) on my GitHub so that everything is tracked and backed up.
+While I relied on the linked course above for guidance in my learning, I also utilized Chat GPT to help analyze my code solutions and generate challenges based on what I had learned on the day.
