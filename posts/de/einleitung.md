@@ -15,5 +15,13 @@ thumbnail:
 Ich bin Marvin und ich bin sechsundzwanzig jahre alt.
 
 ```python
-print("hello, world!")
+print("Hello world!")
+```
+
+```php
+echo "Hello world!";
+```
+
+```javascript
+console.log("Hello world");
 ```
