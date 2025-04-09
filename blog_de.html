@@ -5,17 +5,18 @@ lang: "de"
 ---
 <header>
     <h1>{{ title }}</h1>
-    <h3>Total posts: {{ collections.de | size }}</h3>
+    <p>Total posts: {{ collections.de | size }}</p>
 </header>
 
 {% for post in collections.de %}
 <article>
-    <img src="{{ post.data.thumbnail.src }}" alt="{{ post.data.thumbnail.alt }}">
+    <img class="thumbnail" src="{{ post.data.thumbnail.src }}" alt="{{ post.data.thumbnail.alt }}">
     <div>
-        <h4>{{ post.data.title }}</h4>
+        <a href="{{ post.url }}">
+            <h2>{{ post.data.title }}</h2>
+        </a>
         <p>{{ post.data.summary }}</p>
         <p>{{ post.data.date | date: "%A, %d %B %Y" }}</p>
-        <a href="{{ post.url }}">Read</a>
     </div>
 </article>
 {% endfor %}

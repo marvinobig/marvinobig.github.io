@@ -5,41 +5,40 @@ lang: "en"
 ---
 
 <section>
-    <h3>Projects</h3>
+    <h2>Projects</h2>
 
     {% for project in projectData.projects %}
     <article>
-        <h4>{{ project.name }}</h4>
-
-        <img src="{{ project.img }}" alt="{{ project.name }}">
+        <img class="thumbnail" src="{{ project.img }}" alt="{{ project.name }}">
 
         <div>
+            <h3>{{ project.name }}</h3>
+            <p>{{ project.description }}</p>
             {% for technology in project.technologies %}
-            <img src="{{ technology.img }}" alt="{{ technology.alt }}" />
+            <img class="tech-icon" src="{{ technology.img }}" alt="{{ technology.alt }}" />
             {% endfor %}
-        </div>
 
-        <p>{{ project.description }}</p>
-
-        <div>
-            <a href="{{ project.live }}" target="_blank">Live</a>
-            <a href="{{ project.github }}" target="_blank">Code</a>
+            <div>
+                <a href="{{ project.live }}" target="_blank">Live</a>
+                <a href="{{ project.github }}" target="_blank">Code</a>
+            </div>
         </div>
     </article>
     {% endfor %}
 </section>
 
 <section>
-    <h3>Posts</h3>
+    <h2>Posts</h2>
 
     {% for post in collections.latest %}
     <article>
-        <img src="{{ post.data.thumbnail.src }}" alt="{{ post.data.thumbnail.alt }}">
+        <img class="thumbnail" src="{{ post.data.thumbnail.src }}" alt="{{ post.data.thumbnail.alt }}">
         <div>
-            <h4>{{ post.data.title }}</h4>
+            <a href="{{ post.url }}">
+                <h3>{{ post.data.title }}</h3>
+            </a>
             <p>{{ post.data.summary }}</p>
-            <p>{{ post.data.date | date: "%A, %d %B %Y" }}</p>
-            <a href="{{ post.url }}">Read</a>
+            <p class="date">{{ post.data.date | date: "%A, %d %B %Y" }}</p>
         </div>
     </article>
     {% endfor %}
