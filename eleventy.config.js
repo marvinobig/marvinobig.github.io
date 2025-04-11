@@ -39,7 +39,7 @@ export default function (eleventyConfig) {
             limit: 0,     
         },
         metadata: {
-            language: ["en", "de"],
+            language: "de",
             title: "Marvin Obig: Portfolio & Blog",
             subtitle: "I write about my experiences as a developer.",
             base: "https://marvinobig.online/",
