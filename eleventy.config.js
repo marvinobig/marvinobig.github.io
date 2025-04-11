@@ -1,3 +1,5 @@
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+
 export default function (eleventyConfig) {
     // Set custom directories for output, includes, and data
     eleventyConfig.addPassthroughCopy("src/assets");
@@ -27,6 +29,24 @@ export default function (eleventyConfig) {
         const weekday = dateObj.getDay();
 
         return `${germanDays[weekday]}, ${day}. ${germanMonths[month]} ${year}`;
+    });
+
+    eleventyConfig.addPlugin(feedPlugin, {
+        type: "atom",
+        outputPath: "/feed.xml",
+        collection: {
+            name: "post", 
+            limit: 0,     
+        },
+        metadata: {
+            language: ["en", "de"],
+            title: "Marvin Obig: Portfolio & Blog",
+            subtitle: "I write about my experiences as a developer.",
+            base: "https://marvinobig.online/",
+            author: {
+                name: "marvinobig",
+            }
+        }
     });
 
     return {
