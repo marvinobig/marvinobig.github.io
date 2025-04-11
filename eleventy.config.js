@@ -1,4 +1,5 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import embedEverything from "eleventy-plugin-embed-everything";
 
 export default function (eleventyConfig) {
     // Set custom directories for output, includes, and data
@@ -35,8 +36,8 @@ export default function (eleventyConfig) {
         type: "atom",
         outputPath: "/feed.xml",
         collection: {
-            name: "post", 
-            limit: 0,     
+            name: "post",
+            limit: 0,
         },
         metadata: {
             language: "de",
@@ -49,10 +50,12 @@ export default function (eleventyConfig) {
         }
     });
 
+    eleventyConfig.addPlugin(embedEverything);
+
     return {
         passthroughFileCopy: true,
         dir: {
-            input : "src",
+            input: "src",
             includes: "_includes",
             data: "_data",
             output: "dist"
