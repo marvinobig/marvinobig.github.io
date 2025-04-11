@@ -2,15 +2,29 @@
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="/assets/images/mo.ico" type="image/x-icon" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="alternate" href="https://marvinobig.online/feed.xml" type="application/atom+xml" title="Marvin Obig: Portfolio & Blog">
+    <link rel="alternate" href="{{ site.url }}/feed.xml" type="application/atom+xml"
+        title="{{ title }}">
 
     <meta name="google-site-verification" content="Ye3UstPD21iLTsZL5CAoopB3YcSSLXddvQzDpdjN3Y4" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="My portfolio and blog" />
+    <meta name="title" content="{{ title }}">
+    <meta name="description" content="I write about my experiences as a developer." />
     <meta name="theme-color" content="#272727" />
 
     <title>{{ title }}</title>
 
     <link rel="stylesheet" href="/assets/styles/main.css">
     <script src="/assets/scripts/main.js" defer></script>
+
+    <meta property="og:type" content="Marvin Obig: Portfolio & Blog">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ summary }}">
+    <meta property="og:image" content="{{ site.url }}{{ thumbnail.src }}">
+
+    <meta property="twitter:card" content="Marvin Obig: Portfolio & Blog">
+    <meta property="twitter:url" content="{{ site.url }}">
+    <meta property="twitter:title" content="{{ title }}">
+    <meta property="twitter:description" content="{{ summary }}">
+    <meta property="twitter:image" content="{{ site.url }}{{ thumbnail.src }}">
 </head>
