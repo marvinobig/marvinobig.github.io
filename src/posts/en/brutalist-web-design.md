@@ -44,6 +44,8 @@ These principles were sourced from [here](https://brutalist-web.design/). The si
 
 ## My Portfolio
 
-As you can see from my portfolio, I've utilized the principles above as much as I could while also adding a touch of my own creativity. You'll see this in the way I style my links in the navigation to make it obvious that it is a link but also style it so that it fits in with my portfolio's design or in the way I style my headers while also making it clear that it is a header.
+As you can see from my portfolio, I've utilized the principles above as much as I could while also making design decisions that show brutalist design isn't about intentional ugliness or distracting colours as a quick web search on google will have you believing. You'll see this in the way I style my links in the navigation to make it obvious that it is a link but also style it so that it fits in with my portfolio's design or in the way I style post cards so that they are laid out in a way that looks pleasant (to me anyways).
 
-I haven't implemented pagination as I was applying the **"making all content viewable by scrolling"** principle but I have implemented post filtering by tags to make it a little easier to find a post. I've kept my colors simple but also implemented automatic dark mode so I don't burn your eyes with the default white background color of the site's pages. So you see, brutalist web design is pretty flexible even when working within the above principles and can be implemented by non designers like myself.
+I have made sure that all content is reachable through scrolling and clicks on links alone (the **"making all content viewable by scrolling"** principle). I've kept my colors simple and low contrast so I don't burn your eyes. Brutalist web design is pretty flexible even when working within the above principles and can be implemented by non designers like myself easily. 
+
+It emphasizes simplicity and function over anything else.
