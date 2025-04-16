@@ -1,5 +1,5 @@
 ---
-title: 'The Vue From WordPress'
+title: 'The Vue From WordPress: Plan'
 date: 2025-04-14
 summary: "Introducing a project I am currently working on to improve and add to my current skill set."
 banner:
