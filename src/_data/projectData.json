@@ -32,6 +32,34 @@
                     "alt": "html"
                 }
             ]
+        },
+        {
+            "name": "Computing Hardware Through Time",
+            "img": "/assets/images/project-imgs/chtt.webp",
+            "description": "A historical website showcasing significant contributions to computing hardware over time. This site functions as an MVP.",
+            "github": "https://github.com/marvinobig/computing-hardware-through-time-hd.git",
+            "technologies": [
+                {
+                    "img": "/assets/images/icons/deployment/docker.png",
+                    "alt": "aws"
+                },
+                {
+                    "img": "/assets/images/icons/back-end/php.png",
+                    "alt": "php"
+                },
+                {
+                    "img": "/assets/images/icons/front-end/javascript.png",
+                    "alt": "javascript"
+                },
+                {
+                    "img": "/assets/images/icons/front-end/css.png",
+                    "alt": "bootstrap 5"
+                },
+                {
+                    "img": "/assets/images/icons/front-end/html.png",
+                    "alt": "html"
+                }
+            ]
         }
     ]
 }
