@@ -1,7 +1,7 @@
 ---
 title: 'The Vue From Laravel Development: 3'
 date: 2025-04-20
-summary: "What I've learned so far on wordpress and some thoughts on the layout of the online course I used"
+summary: "My thoughts on wordpress and some thoughts on the layout of the online course I used"
 banner:
     src: '/assets/images/blog-imgs/tvfw.webp'
     alt: "the vue from wordPress banner"
