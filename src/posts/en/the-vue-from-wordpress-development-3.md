@@ -16,7 +16,7 @@ So as I mentioned in my previous [post](https://marvinobig.online/posts/en/the-v
 
 ![Local Installation Guide Placement](/assets/images/blog-imgs/course.webp)
 
-As the picture above shows, this unit was placed towards the end of the course. Why not at the start or after the first unit explaining what wordpress is? I mean the course goes over the REST API plugin before covering local installation. I feel this is a bit of a misplacement but other than this, the course dos do a good job of introducing wordpress to developers. I haven't completed the course due to reasons mentioned below.
+As the picture above shows, this unit was placed towards the end of the course. Why not at the start or after the first unit explaining what wordpress is? I mean the course goes over the REST API plugin before covering local installation. I feel this is a bit of a misplacement but other than this, the course does do a good job of introducing wordpress to developers. I haven't completed the course due to reasons mentioned below.
 
 Despite my wanting to learn WordPress, I've never really liked CMSs. I've always thought they were for people who want to quickly build a website without really knowing how, which I feel has lead to the somewhat bad reputation PHP has within the development community. This lack of knowledge has lead to people installing external plugins to fix all their problems, introducing security risks due to lack of updates or bad code in said plugins. However, I do think wordpress is a very good option for freelance work or developing quick solutions to business problems.
 
