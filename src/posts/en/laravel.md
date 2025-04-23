@@ -23,7 +23,7 @@ The image above is a bit pixelated but it does illustrate the simplicity of the 
 
 ![Vue From Laravel Backend](/assets/images/blog-imgs/vue-laravel-be.webp)
 
-I did still develop more than a REST API endpoint on the backend. The image above shows off a very minimalist dashboard with no authentication but it does provide basic crud functionality with pagination and makes use of Laravel's form validation features (form request classes).
+I did develop more than a REST API endpoint on the backend. The image above shows off a very minimalist dashboard with no authentication but it does provide basic CRUD functionality with pagination and makes use of Laravel's form validation features (form request classes).
 
 ```php
 <?php
@@ -85,7 +85,7 @@ public function store(StorePostsRequest $request)
 
 ![Vue From Laravel Backend Pagination Example](/assets/images/blog-imgs/vue-laravel-be-3.webp)
 
-Laravel also provides a very easy way to implement pagination. It only takes calls to one method on the query (this takes the number of results on a page as an argument) and another on the result to render pagination links.
+Laravel also provides a very easy way to implement pagination. It only takes calls to one method on the query (this takes the number of results on a page as an argument) and another on the result within a template view to render pagination links.
 
 ```php
 public function index()
