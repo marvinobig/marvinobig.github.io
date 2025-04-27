@@ -79,4 +79,4 @@ This code block is the most important piece of the algorithm as it determines wh
 
 If the search value is less than the middle value in the array, it sets the end index to the middle index of the array minus one. If the search value is greater however, it sets the start index to the middle index of the array plus one. It keeps doing this until either the value is found or it no longer has any space to search through.
 
-This makes the algorithm very effective for very large data sets as its performance, when measured with big O, is O(log N). This means that, every time the data searched through is doubled, the number of steps till the value is found goes up by 1.
+This makes the algorithm very effective for very large data sets as its performance, when measured with big O, is O(log N). This means that, every time the data searched through is doubled, the number of steps till the value is found, goes up by 1.
