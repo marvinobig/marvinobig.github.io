@@ -45,12 +45,12 @@ class Algos():
 
 The code above is the full implementation of binary search. I plan to learn more algorithms so I've built a class that provides the algos as methods for easy use. 
 
+## Code Explanation
+
 ```python
 startIndex = 0
 endIndex = len(array) - 1
 ```
-
-- explain your code
 
 The 'binarySearch' method starts by setting the start and end index variables. These control where the algorithm searches. 
 
