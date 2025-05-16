@@ -3,11 +3,11 @@ title: 'Learning German'
 date: 2025-05-16
 summary: "A tool I made to help speed up vocabulary acquisition in my journey to acquire German"
 banner:
-    src: '/assets/images/blog-imgs/more-algorithms.webp'
-    alt: "binary search"
+    src: '/assets/images/blog-imgs/learning-german.webp'
+    alt: "learning german"
 thumbnail:
-    src: '/assets/images/blog-imgs/selection-sort.webp' 
-    alt: 'code snapshot of binary search implementation'
+    src: '/assets/images/blog-imgs/learning-german-tn.webp' 
+    alt: 'snapshot of CLI tool repo'
 ---
 
 ## How I Use The CLI Tool to Learn German
@@ -34,4 +34,4 @@ The script uses a translation [package](https://pypi.org/project/translate/) tha
 4. The script generates a CSV file in the **/translations** folder.
 5. I import the CSV into Anki for regular review.
 
-This workflow has dramatically improved my ability to retain new German words. Give it a try if you’re also learning a new language!
+This workflow has dramatically improved my ability to acquire new German words. Give it a try if you’re also learning a new language!
