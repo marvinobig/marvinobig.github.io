@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.marvinobig.online/sitemap.xml
+Sitemap: https://marvinobig.github.io/sitemap.xml
